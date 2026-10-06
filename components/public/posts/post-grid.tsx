@@ -195,7 +195,7 @@ export async function PostGridPage({
 
             {/* Grid */}
             {posts.length === 0 ? (
-                <div className="flex flex-col items-center justify-center py-24 gap-3 border border-line rounded-lg bg-white">
+                <div className="flex flex-col items-center justify-center py-24 gap-3 border border-line rounded-lg bg-card">
                     <FileText className="h-12 w-12 text-[#a1a1a1]" />
                     <p className="text-lg font-semibold text-ink">No posts found</p>
                     <p className="text-sm text-[#a1a1a1]">

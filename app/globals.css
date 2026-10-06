@@ -58,16 +58,19 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 
-  /* ---------- Brand design tokens ---------- */
+  /* ---------- Brand design tokens ----------
+     Colour tokens reference runtime variables (--light, --line, --ink, …)
+     so `bg-light`, `border-line`, `text-ink` and their opacity variants all
+     reflow under `.dark`. */
 
-  --color-blue: #2387c0;
-  --color-blue-dark: #0a72ad;
-  --color-blue-light: #60bbee;
-  --color-ink: #242527;
-  --color-brand-muted: #8e9297;
-  --color-light: #f6f6f6;
-  --color-line: #e9e9e9;
-  --color-dark: #222222;
+  --color-blue: var(--blue);
+  --color-blue-dark: var(--blue-dark);
+  --color-blue-light: var(--blue-light);
+  --color-ink: var(--ink);
+  --color-brand-muted: var(--brand-muted);
+  --color-light: var(--light);
+  --color-line: var(--line);
+  --color-dark: var(--dark);
 
   --font-brand: var(--font-poppins);
   --font-dm: var(--font-dm-sans);
@@ -91,6 +94,16 @@
 }
 
 :root {
+  /* Brand colour values (light mode) */
+  --blue: #2387c0;
+  --blue-dark: #0a72ad;
+  --blue-light: #60bbee;
+  --ink: #242527;
+  --brand-muted: #8e9297;
+  --light: #f6f6f6;
+  --line: #e9e9e9;
+  --dark: #222222;
+
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
 
@@ -185,7 +198,13 @@
   --sidebar-border: #333333;
   --sidebar-ring: #60bbee;
 
-  --color-brand-muted: #9ca3af;
+  /* Brand token values flip in dark mode so light-grey panels and borders
+     (`bg-light`, `border-line`) and ink text (`text-ink`) never show
+     light-on-light or dark-on-dark. */
+  --brand-muted: #9ca3af;
+  --light: #2a2a2a;
+  --line: #333333;
+  --ink: #f6f6f6;
 }
 
 /* ---------- Base ---------- */
@@ -336,6 +355,12 @@
 
 .dark .section-copy {
   color: #9ca3af;
+}
+
+/* Brand accent text (`text-blue-dark`) is too dark against dark surfaces,
+   so brighten it without touching the btn-brand background token. */
+.dark .text-blue-dark {
+  color: #60bbee;
 }
 
 .dark .team-section {

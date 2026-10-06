@@ -31,7 +31,7 @@ export default function ServicesPage() {
             <Process />
 
             <section className="container-x py-16 sm:py-20">
-                <div className="rounded-2xl border border-line bg-linear-to-br from-blue/5 via-white to-white p-8 sm:p-12 shadow-soft text-center">
+                <div className="rounded-2xl border border-line bg-linear-to-br from-blue/10 via-card to-muted p-8 sm:p-12 shadow-soft text-center">
                     <span className="text-[11px] font-semibold uppercase tracking-[2.4px] text-blue">
                         Not sure where to start?
                     </span>

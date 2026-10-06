@@ -61,7 +61,7 @@ export default function ContactPage() {
                         {CONTACT_INFO.map((item) => {
                             const Icon = item.icon
                             const content = (
-                                <div className="rounded-lg border border-line bg-white p-6 flex flex-col gap-3 items-center text-center hover:shadow-soft transition-shadow">
+                                <div className="rounded-lg border border-line bg-card p-6 flex flex-col gap-3 items-center text-center hover:shadow-soft transition-shadow">
                                     <div className="h-10 w-10 rounded-full bg-blue/12 flex items-center justify-center">
                                         <Icon className="h-5 w-5 text-blue-dark" />
                                     </div>

@@ -117,7 +117,7 @@ export default async function CategoryArchivePage({
                             <Link
                                 key={sub.id}
                                 href={`/categories/${sub.slug}`}
-                                className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 text-sm font-medium hover:bg-line transition-colors"
+                                className="inline-flex items-center gap-1.5 rounded-full border border-line bg-card px-3 py-1.5 text-sm font-medium hover:bg-line transition-colors"
                             >
                                 {sub.name}
                                 {typeof sub.post_count === "number" && (

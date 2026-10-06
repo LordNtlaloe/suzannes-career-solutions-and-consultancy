@@ -136,7 +136,7 @@ export default async function PublicPostPage({ params }: PageProps) {
                 <img
                     src={coverUrl}
                     alt={coverAlt ?? post.title}
-                    className="mt-8 w-full aspect-video object-cover border border-line bg-white p-1.75"
+                    className="mt-8 w-full aspect-video object-cover border border-line bg-card p-1.75"
                     loading="eager"
                 />
             )}

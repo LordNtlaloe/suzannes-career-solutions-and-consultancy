@@ -35,7 +35,7 @@ export function ContactCta() {
             id="contact"
             className="scroll-mt-16 mx-auto w-full max-w-6xl px-4 py-16 sm:py-24"
         >
-            <div className="rounded-2xl border border-line bg-linear-to-br from-blue/5 via-white to-white p-8 sm:p-12 shadow-soft">
+            <div className="rounded-2xl border border-line bg-linear-to-br from-blue/10 via-card to-muted p-8 sm:p-12 shadow-soft">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                     {/* Copy */}
                     <div className="flex flex-col gap-4">
@@ -59,7 +59,7 @@ export function ContactCta() {
                     </div>
 
                     {/* Form */}
-                    <div className="rounded-xl border border-line bg-white p-6 shadow-soft dark:bg-[#242527] dark:border-[#333]">
+                    <div className="rounded-xl border border-line bg-card p-6 shadow-soft dark:bg-[#242527] dark:border-[#333]">
                         {sent ? (
                             <div className="flex flex-col items-center gap-2 py-8 text-center">
                                 <h3 className="font-semibold">
@@ -81,7 +81,7 @@ export function ContactCta() {
                                         required
                                         disabled={loading}
                                         aria-label="Name"
-                                        className="w-full h-10 rounded-md border border-line bg-white px-3 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
+                                        className="w-full h-10 rounded-md border border-line bg-card px-3 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
                                     />
                                     <input
                                         name="email"
@@ -91,14 +91,14 @@ export function ContactCta() {
                                         disabled={loading}
                                         aria-label="Email"
                                         autoComplete="email"
-                                        className="w-full h-10 rounded-md border border-line bg-white px-3 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
+                                        className="w-full h-10 rounded-md border border-line bg-card px-3 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
                                     />
                                 </div>
 
                                 <select
                                     name="interest"
                                     aria-label="What this is about"
-                                    className="w-full h-10 rounded-md border border-line bg-white px-3 text-[13px] text-ink outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors"
+                                    className="w-full h-10 rounded-md border border-line bg-card px-3 text-[13px] text-ink outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:border-[#333]"
                                     disabled={loading}
                                 >
                                     <option value="candidate">
@@ -122,7 +122,7 @@ export function ContactCta() {
                                     disabled={loading}
                                     placeholder="Tell us a bit about what you're working on..."
                                     aria-label="Message"
-                                    className="w-full rounded-md border border-line bg-white px-3 py-2 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors resize-none"
+                                    className="w-full rounded-md border border-line bg-card px-3 py-2 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors resize-none dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
                                 />
 
                                 <button

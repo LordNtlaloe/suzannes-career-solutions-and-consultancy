@@ -139,7 +139,7 @@ function ValueCard({
     body: string
 }) {
     return (
-        <div className="rounded-lg border border-line bg-white p-6 flex flex-col gap-3">
+        <div className="rounded-lg border border-line bg-card p-6 flex flex-col gap-3">
             <div className="h-8 w-8 rounded-full bg-blue/12 flex items-center justify-center">
                 <Check className="h-4 w-4 text-blue-dark" />
             </div>

@@ -33,7 +33,7 @@ export default async function TagsIndexPage() {
             </header>
 
             {sorted.length === 0 ? (
-                <div className="flex flex-col items-center justify-center py-24 gap-3 border border-line rounded-lg bg-white">
+                <div className="flex flex-col items-center justify-center py-24 gap-3 border border-line rounded-lg bg-card">
                     <Hash className="h-12 w-12 text-[#a1a1a1]" />
                     <p className="text-lg font-semibold text-ink">No tags yet</p>
                 </div>
@@ -43,7 +43,7 @@ export default async function TagsIndexPage() {
                         <Link
                             key={tag.id}
                             href={`/tags/${tag.slug}`}
-                            className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 text-[13px] font-semibold text-blue-dark hover:border-blue-dark hover:shadow-soft transition-all"
+                            className="inline-flex items-center gap-1.5 rounded-full border border-line bg-card px-3 py-1.5 text-[13px] font-semibold text-blue-dark hover:border-blue-dark hover:shadow-soft transition-all"
                         >
                             <Hash className="h-3.5 w-3.5 opacity-60" />
                             {tag.name}

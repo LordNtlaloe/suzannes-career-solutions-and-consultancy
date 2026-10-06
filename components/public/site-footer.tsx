@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const COMPANY_LINKS = [
     { href: "/about", label: "About" },
+    { href: "/step", label: "STEP Programme" },
     { href: "/team", label: "Our Team" },
     { href: "/posts", label: "Articles" },
     { href: "/contact", label: "Contact" },

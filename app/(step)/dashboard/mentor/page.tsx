@@ -59,7 +59,7 @@ export default async function MentorDashboardPage() {
                                     <Link
                                         key={String(s.id)}
                                         href={link(`/dashboard/mentor/sessions/${s.id}`)}
-                                        className="rounded-md border border-blue/30 bg-blue/5 p-4 transition-colors hover:border-blue/60"
+                                        className="rounded-0 border border-blue/30 bg-blue/5 p-4 transition-colors hover:border-blue/60"
                                     >
                                         <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
                                             <p className="text-[14px] font-semibold">{String(s.title)}</p>
@@ -91,7 +91,7 @@ export default async function MentorDashboardPage() {
                                     <Link
                                         key={String(s.id)}
                                         href={link(`/dashboard/mentor/sessions/${s.id}`)}
-                                        className="flex items-center justify-between rounded-md border border-line bg-card px-4 py-3 transition-colors hover:border-blue/40"
+                                        className="flex items-center justify-between rounded-0 border border-line bg-card px-4 py-3 transition-colors hover:border-blue/40"
                                     >
                                         <p className="text-[14px] font-semibold">{String(s.title)}</p>
                                         {s.scheduled_at ? (
@@ -116,7 +116,7 @@ export default async function MentorDashboardPage() {
                                 return (
                                     <div
                                         key={String(a.id)}
-                                        className="flex flex-wrap items-center gap-x-4 gap-y-1 rounded-md border border-line bg-card px-4 py-3"
+                                        className="flex flex-wrap items-center gap-x-4 gap-y-1 rounded-0 border border-line bg-card px-4 py-3"
                                     >
                                         <p className="text-[14px] font-semibold">
                                             {String(a.participant_name)}
@@ -157,7 +157,7 @@ export default async function MentorDashboardPage() {
                                 {data.actions.map((a) => (
                                     <div
                                         key={String(a.id)}
-                                        className="flex items-center justify-between rounded-md border border-line bg-light/60 px-4 py-2.5"
+                                        className="flex items-center justify-between rounded-0 border border-line bg-light/60 px-4 py-2.5"
                                     >
                                         <div>
                                             <p className="text-[13px] font-semibold">{String(a.title)}</p>

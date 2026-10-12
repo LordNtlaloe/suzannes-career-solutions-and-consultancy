@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "STEP — Skills, Talent & Employment Pathway",
   description:
-    "A six-month industry-based incubation and opportunity pathway for 600+ Basotho participants.",
+    "An opportunity pathway for Basotho talent — four connected programmes linking learning, mentorship, supervised experience and markets.",
 };
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {

@@ -85,18 +85,18 @@ export function PassportShareManager({
     return (
         <div className="flex flex-col gap-4">
             {error && (
-                <p className="rounded-md border border-destructive/40 bg-destructive/10 px-2 py-1.5 text-[11px] text-destructive">
+                <p className="rounded-0 border border-destructive/40 bg-destructive/10 px-2 py-1.5 text-[11px] text-destructive">
                     {error}
                 </p>
             )}
 
-            <div className="flex flex-col gap-3 rounded-md border border-line bg-card p-4">
+            <div className="flex flex-col gap-3 rounded-0 border border-line bg-card p-4">
                 <div className="flex flex-col gap-1.5">
                     <Label className="text-[11px] font-semibold">Share scope</Label>
                     <select
                         value={scope}
                         onChange={(e) => setScope(e.target.value as "limited" | "full")}
-                        className="h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none"
+                        className="h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none"
                     >
                         <option value="limited">Limited — selected achievements only</option>
                         <option value="full">Full — all verified achievements</option>
@@ -115,7 +115,7 @@ export function PassportShareManager({
                             {PASSPORT_ENTRY_TYPES.map((t) => (
                                 <label
                                     key={t.value}
-                                    className="flex items-center gap-1.5 rounded-md border border-line px-2.5 py-1 text-[12px]"
+                                    className="flex items-center gap-1.5 rounded-0 border border-line px-2.5 py-1 text-[12px]"
                                 >
                                     <input
                                         type="checkbox"
@@ -137,7 +137,7 @@ export function PassportShareManager({
                         min={1}
                         value={expiresInDays}
                         onChange={(e) => setExpiresInDays(e.target.value)}
-                        className="h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none"
+                        className="h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none"
                     />
                 </div>
 
@@ -158,7 +158,7 @@ export function PassportShareManager({
                     {activeShares.map((s) => (
                         <div
                             key={s.id}
-                            className="flex flex-wrap items-center gap-x-3 gap-y-1 rounded-md border border-line bg-card px-4 py-2.5"
+                            className="flex flex-wrap items-center gap-x-3 gap-y-1 rounded-0 border border-line bg-card px-4 py-2.5"
                         >
                             <span className="text-[12px] font-semibold">{s.scope}</span>
                             <span className="text-[12px] text-brand-muted">

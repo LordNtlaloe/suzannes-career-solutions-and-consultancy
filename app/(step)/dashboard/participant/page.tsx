@@ -104,7 +104,7 @@ export default async function ParticipantDashboardPage() {
                                             {JOURNEY_PHASES.map((phase, i) => (
                                                 <div
                                                     key={phase.key}
-                                                    className={`rounded-md border px-1 py-2 text-center ${
+                                                    className={`rounded-0 border px-1 py-2 text-center ${
                                                         i === phaseIndex
                                                             ? "border-blue bg-blue/10"
                                                             : i < phaseIndex
@@ -150,7 +150,7 @@ export default async function ParticipantDashboardPage() {
                                         </p>
 
                                         {nextLevel && unmetRequirements.length + unmetAssessments.length > 0 && (
-                                            <div className="mt-3 flex flex-col gap-1.5 rounded-md border border-line bg-light/60 p-3">
+                                            <div className="mt-3 flex flex-col gap-1.5 rounded-0 border border-line bg-light/60 p-3">
                                                 <p className="text-[11px] font-semibold text-brand-muted">
                                                     To reach {levelLabel(nextLevel)} you still need:
                                                 </p>
@@ -214,7 +214,7 @@ export default async function ParticipantDashboardPage() {
                                                     {sessions.slice(0, 3).map((s) => (
                                                         <div
                                                             key={`session-${String(s.id)}`}
-                                                            className="flex items-center justify-between rounded-md border border-line bg-light/60 px-4 py-2.5"
+                                                            className="flex items-center justify-between rounded-0 border border-line bg-light/60 px-4 py-2.5"
                                                         >
                                                             <p className="text-[13px] font-semibold">
                                                                 {String(s.title)}
@@ -239,7 +239,7 @@ export default async function ParticipantDashboardPage() {
                                             <Link
                                                 key={String(a.id)}
                                                 href={link(`/dashboard/participant/assignments/${a.id}`)}
-                                                className="mt-2 flex items-center justify-between rounded-md border border-line bg-light/60 px-4 py-2.5 transition-colors hover:border-blue/40"
+                                                className="mt-2 flex items-center justify-between rounded-0 border border-line bg-light/60 px-4 py-2.5 transition-colors hover:border-blue/40"
                                             >
                                                 <p className="text-[13px] font-semibold">{String(a.title)}</p>
                                                 <span className="text-[12px] text-brand-muted">
@@ -292,7 +292,7 @@ export default async function ParticipantDashboardPage() {
                                         {passportEntries.map((entry) => (
                                             <div
                                                 key={entry.id}
-                                                className="flex items-center justify-between rounded-md border border-line bg-card px-4 py-2.5"
+                                                className="flex items-center justify-between rounded-0 border border-line bg-card px-4 py-2.5"
                                             >
                                                 <div>
                                                     <p className="text-[13px] font-semibold">{entry.title}</p>
@@ -341,7 +341,7 @@ export default async function ParticipantDashboardPage() {
                                 {introductions.map((i) => (
                                     <div
                                         key={String(i.id)}
-                                        className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-md border border-line bg-card px-4 py-3"
+                                        className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-0 border border-line bg-card px-4 py-3"
                                     >
                                         <div>
                                             <p className="text-[13px] font-semibold">
@@ -405,7 +405,7 @@ function ActionLink({
     return (
         <Link
             href={href}
-            className={`flex items-center justify-between rounded-md border px-4 py-2.5 transition-colors hover:border-blue/40 ${
+            className={`flex items-center justify-between rounded-0 border px-4 py-2.5 transition-colors hover:border-blue/40 ${
                 tone === "overdue" ? "border-destructive/40 bg-destructive/5" : "border-line bg-light/60"
             }`}
         >

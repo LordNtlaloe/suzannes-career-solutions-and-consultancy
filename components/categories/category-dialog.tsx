@@ -235,7 +235,7 @@ export function CategoryDialog({
                                 onChange={(e) => setDescription(e.target.value)}
                                 placeholder="Optional description"
                                 disabled={loading}
-                                className="w-full px-3 py-2 border border-input rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                                className="w-full px-3 py-2 border border-input rounded-0 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
                                 rows={3}
                             />
                             {errors.description && (

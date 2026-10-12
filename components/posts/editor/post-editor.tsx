@@ -364,7 +364,7 @@ export function PostEditor({ initial, mode, onCancel, onSaved }: PostEditorProps
                                     alt={
                                         coverMedia.alt_text ?? coverMedia.file_name
                                     }
-                                    className="rounded-md w-full aspect-video object-cover border"
+                                    className="rounded-0 w-full aspect-video object-cover border"
                                 />
                                 <div className="flex items-center gap-1">
                                     <Button
@@ -451,7 +451,7 @@ export function PostEditor({ initial, mode, onCancel, onSaved }: PostEditorProps
                             placeholder="Short summary shown in lists and previews"
                             rows={3}
                             disabled={loading}
-                            className="w-full px-2.5 py-1.5 border border-input rounded-md text-xs focus:outline-none focus:ring-2 focus:ring-ring"
+                            className="w-full px-2.5 py-1.5 border border-input rounded-0 text-xs focus:outline-none focus:ring-2 focus:ring-ring"
                         />
                         {errors.excerpt && (
                             <p className="text-xs text-red-500">

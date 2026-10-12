@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 
 const inputClass =
-    "h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none focus-visible:border-ring";
+    "h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none focus-visible:border-ring";
 
 export function PartnerManage({ partnerId }: { partnerId: string }) {
     const router = useRouter();

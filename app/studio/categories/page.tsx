@@ -153,7 +153,7 @@ export default function CategoriesPage() {
                     />
                 </div>
 
-                <div className="inline-flex rounded-md border border-line p-0.5 bg-white">
+                <div className="inline-flex rounded-0 border border-line p-0.5 bg-white">
                     <button
                         type="button"
                         onClick={() => setView("tree")}

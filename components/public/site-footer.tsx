@@ -39,10 +39,9 @@ export function SiteFooter() {
                     </Link>
 
                     <p className="mt-5.5 max-w-107.5 font-dm text-[13px] leading-[1.75] text-white/80">
-                        STEP is a six-month industry-based incubation and
-                        opportunity pathway for 600+ Basotho participants —
-                        through learning, coaching, mentoring, practical
-                        application and assessment.
+                        STEP is a proposed youth-led, non-profit institution
+                        connecting Basotho talent to practical learning,
+                        mentorship, supervised experience and markets.
                     </p>
 
                     <div className="mt-6.25 flex gap-2.5">

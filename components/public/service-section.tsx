@@ -10,18 +10,18 @@ export function ServicesSection() {
                 <SectionIntro
                     heading={
                         <>
-                            What STEP
+                            Four connected
                             <br />
-                            Delivers
+                            programmes
                         </>
                     }
                 >
-                    STEP links learning to application, application to assessment,
-                    and verified preparedness to opportunity &mdash; so participants
-                    finish work-ready with a Skills Passport.
+                    STEP links learning, mentorship, supervised experience and
+                    markets into one continuous pathway — from school to
+                    sustainable livelihoods.
                 </SectionIntro>
 
-                <div className="mt-[62px] grid grid-cols-1 gap-[24px] md:grid-cols-3">
+                <div className="mt-[62px] grid grid-cols-1 gap-[24px] sm:grid-cols-2 lg:grid-cols-4">
                     {services.map((service) => (
                         <article key={service.slug}>
                             <div className="h-[287px] border border-[#eee] bg-white p-[7px] dark:border-[#333] dark:bg-[#242527]">
@@ -36,7 +36,7 @@ export function ServicesSection() {
                                 {service.text}
                             </p>
 
-                            <ReadMore href="/" />
+                            <ReadMore href="/apply" />
                         </article>
                     ))}
                 </div>

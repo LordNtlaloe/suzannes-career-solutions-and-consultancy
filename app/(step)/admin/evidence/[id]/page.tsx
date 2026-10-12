@@ -62,7 +62,7 @@ export default async function EvidenceDetailPage({
                 </p>
 
                 {evidence.body ? (
-                    <div className="mt-4 rounded-md border border-line bg-light/60 p-4">
+                    <div className="mt-4 rounded-0 border border-line bg-light/60 p-4">
                         <p className="text-[13px] whitespace-pre-wrap">{evidence.body}</p>
                     </div>
                 ) : null}
@@ -79,7 +79,7 @@ export default async function EvidenceDetailPage({
                         <p className="section-copy">No reviews yet.</p>
                     ) : (
                         reviews.map((r) => (
-                            <div key={String(r.id)} className="rounded-md border border-line bg-light/60 p-4">
+                            <div key={String(r.id)} className="rounded-0 border border-line bg-light/60 p-4">
                                 <div className="flex items-center justify-between">
                                     <span className="text-[12px] font-semibold text-blue-dark">
                                         {String(r.decision).replace("_", " ")}

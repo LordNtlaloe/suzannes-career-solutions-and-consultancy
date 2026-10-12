@@ -110,7 +110,7 @@ export default async function ProgressionPage() {
                             )}
 
                             {nextLevel && readiness && unmet > 0 && (
-                                <div className="mt-3 flex flex-col gap-2 rounded-md border border-line bg-light/60 p-3">
+                                <div className="mt-3 flex flex-col gap-2 rounded-0 border border-line bg-light/60 p-3">
                                     {readiness.requirements.map((r) => (
                                         <div
                                             key={String(r.id)}

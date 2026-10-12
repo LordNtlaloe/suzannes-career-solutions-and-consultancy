@@ -40,7 +40,7 @@ export function ApplicationReviewForm({ applicationId }: { applicationId: string
     }
 
     const textareaClass =
-        "rounded-md border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30";
+        "rounded-0 border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30";
 
     return (
         <div className="flex flex-col gap-4 rounded-lg border border-line bg-card p-6">
@@ -76,7 +76,7 @@ export function ApplicationReviewForm({ applicationId }: { applicationId: string
             </div>
 
             {error && (
-                <p className="rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-[12px] text-destructive">
+                <p className="rounded-0 border border-destructive/40 bg-destructive/10 px-3 py-2 text-[12px] text-destructive">
                     {error}
                 </p>
             )}

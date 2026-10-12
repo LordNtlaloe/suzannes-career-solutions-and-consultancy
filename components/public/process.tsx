@@ -1,19 +1,19 @@
 const STEPS = [
     {
-        title: "Apply",
-        body: "Register online and the programme team reviews your application for cohort allocation.",
+        title: "Outreach & access",
+        body: "National digital and community mobilisation, with assisted registration where needed.",
     },
     {
-        title: "Baseline",
-        body: "A baseline profile and development plan place you at the right level and pathway.",
+        title: "Screening & onboarding",
+        body: "Transparent criteria, commitment assessment, a skills baseline and consent.",
     },
     {
-        title: "Learn & practise",
-        body: "Six months of coursework, coaching, mentoring and assessed practical application.",
+        title: "Learning & mentorship",
+        body: "Blended training, projects, peer learning and expert guidance.",
     },
     {
-        title: "Verify & transition",
-        body: "Finish with a STEP Skills Passport and consented introductions to opportunity providers.",
+        title: "Progression & follow-up",
+        body: "Readiness assessment, placement or showcase matching, and outcomes tracking.",
     },
 ]
 
@@ -32,8 +32,7 @@ export function Process() {
                         How it works
                     </h2>
                     <p className="section-copy">
-                        Four steps from application to a verified Skills
-                        Passport.
+                        Four stages from outreach to outcomes tracking.
                     </p>
                 </header>
 

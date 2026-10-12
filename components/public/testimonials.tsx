@@ -8,14 +8,14 @@ type Testimonial = {
 
 const TESTIMONIALS: Testimonial[] = [
     {
-        quote: "I had qualifications but no clear path. STEP gave me structure, a cohort, and a Skills Passport that employers actually looked at.",
+        quote: "I had qualifications but no clear path. STEP gave me structure, mentorship, and a Skills Passport that employers actually looked at.",
         author: "Reitumetse K.",
-        role: "STEP Graduate, Business & Finance",
+        role: "Career Readiness Academy",
     },
     {
         quote: "The mentoring was the part I didn't know I needed. Six months later I walked into interviews with evidence, not just confidence.",
         author: "Thabo M.",
-        role: "STEP Graduate, Technology & Data",
+        role: "Talent Experience Pathway",
     },
     {
         quote: "As an employer, the passport told me what a candidate could actually do. We've hired two STEP graduates so far.",

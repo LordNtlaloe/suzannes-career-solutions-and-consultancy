@@ -55,7 +55,7 @@ function BadgesOrStack({
             {selected.map((option) => (
                 <span
                     key={option.id}
-                    className="inline-flex items-center gap-1 rounded-md border border-blue-dark/20 bg-blue-dark/10 px-2 py-0.5 text-[11px] font-semibold text-blue-dark"
+                    className="inline-flex items-center gap-1 rounded-0 border border-blue-dark/20 bg-blue-dark/10 px-2 py-0.5 text-[11px] font-semibold text-blue-dark"
                 >
                     {option.name}
                     {typeof option.post_count === "number" && (
@@ -145,7 +145,7 @@ function Chip({
             onClick={onClick}
             aria-pressed={active}
             className={cn(
-                "inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-[11px] font-semibold transition-colors",
+                "inline-flex items-center gap-1 rounded-0 px-2 py-0.5 text-[11px] font-semibold transition-colors",
                 active
                     ? "bg-blue-dark text-white shadow-btn"
                     : "border border-line text-[#a1a1a1] hover:border-blue-dark hover:text-blue-dark dark:border-[#333] dark:text-[#6b7280]"

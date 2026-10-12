@@ -27,7 +27,7 @@ export default async function PartnersIndexPage() {
                         <Link
                             key={p.id}
                             href={link(`/partners/${p.id}`)}
-                            className="flex flex-wrap items-center gap-x-4 gap-y-1 rounded-md border border-line bg-card px-4 py-3 transition-colors hover:border-blue/40"
+                            className="flex flex-wrap items-center gap-x-4 gap-y-1 rounded-0 border border-line bg-card px-4 py-3 transition-colors hover:border-blue/40"
                         >
                             <p className="text-[14px] font-semibold">{p.name}</p>
                             {p.contact_email ? (

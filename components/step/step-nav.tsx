@@ -111,7 +111,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                                     <DropdownMenuTrigger asChild>
                                         <button
                                             type="button"
-                                            className="flex max-w-52 items-center gap-2 rounded-md border border-white/20 px-3 py-1.5 text-left text-[12px] font-semibold text-white transition-colors hover:border-white/40"
+                                            className="flex max-w-52 items-center gap-2 rounded-0 border border-white/20 px-3 py-1.5 text-left text-[12px] font-semibold text-white transition-colors hover:border-white/40"
                                         >
                                             <UserRound className="size-3.5 shrink-0 text-blue-light" />
                                             <span className="truncate">
@@ -157,7 +157,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                             {hasAdminTools && (
                                 <Link
                                     href={path("/admin")}
-                                    className="hidden rounded-md border border-white/20 px-3 py-1.5 text-[12px] font-semibold text-[#e6e6e6] transition-colors hover:border-white/40 hover:text-white sm:inline-flex"
+                                    className="hidden rounded-0 border border-white/20 px-3 py-1.5 text-[12px] font-semibold text-[#e6e6e6] transition-colors hover:border-white/40 hover:text-white sm:inline-flex"
                                 >
                                     Admin
                                 </Link>
@@ -166,7 +166,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                             {hasPartners && (
                                 <Link
                                     href={path("/partners")}
-                                    className="hidden rounded-md border border-white/20 px-3 py-1.5 text-[12px] font-semibold text-[#e6e6e6] transition-colors hover:border-white/40 hover:text-white sm:inline-flex"
+                                    className="hidden rounded-0 border border-white/20 px-3 py-1.5 text-[12px] font-semibold text-[#e6e6e6] transition-colors hover:border-white/40 hover:text-white sm:inline-flex"
                                 >
                                     Partners
                                 </Link>
@@ -175,7 +175,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                             <button
                                 type="button"
                                 onClick={handleSignOut}
-                                className="hidden items-center gap-1.5 rounded-md border border-white/20 px-3 py-1.5 text-[12px] font-semibold text-[#e6e6e6] transition-colors hover:border-white/40 hover:text-white sm:inline-flex"
+                                className="hidden items-center gap-1.5 rounded-0 border border-white/20 px-3 py-1.5 text-[12px] font-semibold text-[#e6e6e6] transition-colors hover:border-white/40 hover:text-white sm:inline-flex"
                             >
                                 <LogOut className="size-3.5" />
                                 Sign out
@@ -222,7 +222,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                                     <SheetClose key={link.href} asChild>
                                         <Link
                                             href={link.href}
-                                            className="rounded-md px-3 py-2.5 text-[14px] font-semibold text-white transition-colors hover:bg-white/10"
+                                            className="rounded-0 px-3 py-2.5 text-[14px] font-semibold text-white transition-colors hover:bg-white/10"
                                         >
                                             {link.label}
                                         </Link>
@@ -233,7 +233,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                                     <SheetClose key={`role-${role}`} asChild>
                                         <Link
                                             href={path(`/dashboard/${role}`)}
-                                            className="rounded-md px-3 py-2.5 text-[14px] text-[#e6e6e6] transition-colors hover:bg-white/10 hover:text-white"
+                                            className="rounded-0 px-3 py-2.5 text-[14px] text-[#e6e6e6] transition-colors hover:bg-white/10 hover:text-white"
                                         >
                                             {ROLE_LABELS[role]} workspace
                                         </Link>
@@ -244,7 +244,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                                     <SheetClose asChild>
                                         <Link
                                             href={path("/admin")}
-                                            className="rounded-md px-3 py-2.5 text-[14px] text-[#e6e6e6] transition-colors hover:bg-white/10 hover:text-white"
+                                            className="rounded-0 px-3 py-2.5 text-[14px] text-[#e6e6e6] transition-colors hover:bg-white/10 hover:text-white"
                                         >
                                             Admin
                                         </Link>
@@ -255,7 +255,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                                     <SheetClose asChild>
                                         <Link
                                             href={path("/partners")}
-                                            className="rounded-md px-3 py-2.5 text-[14px] text-[#e6e6e6] transition-colors hover:bg-white/10 hover:text-white"
+                                            className="rounded-0 px-3 py-2.5 text-[14px] text-[#e6e6e6] transition-colors hover:bg-white/10 hover:text-white"
                                         >
                                             Partners
                                         </Link>
@@ -268,7 +268,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                                             <button
                                                 type="button"
                                                 onClick={handleSignOut}
-                                                className="flex w-full items-center gap-2 rounded-md px-3 py-2.5 text-[14px] font-semibold text-white transition-colors hover:bg-white/10"
+                                                className="flex w-full items-center gap-2 rounded-0 px-3 py-2.5 text-[14px] font-semibold text-white transition-colors hover:bg-white/10"
                                             >
                                                 <LogOut className="size-4" />
                                                 Sign out
@@ -278,7 +278,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                                         <SheetClose asChild>
                                             <Link
                                                 href={signInHref}
-                                                className="flex w-full items-center justify-center rounded-md bg-white px-3 py-2.5 text-[14px] font-semibold text-hero-grad"
+                                                className="flex w-full items-center justify-center rounded-0 bg-white px-3 py-2.5 text-[14px] font-semibold text-hero-grad"
                                             >
                                                 Sign in
                                             </Link>

@@ -64,7 +64,7 @@ export default async function PartnerDetailPage({
                         {agreements.map((a) => (
                             <div
                                 key={String(a.id)}
-                                className="flex items-center justify-between rounded-md border border-line bg-light/60 px-4 py-2.5"
+                                className="flex items-center justify-between rounded-0 border border-line bg-light/60 px-4 py-2.5"
                             >
                                 <p className="text-[13px] font-semibold">{String(a.title)}</p>
                                 <span className="text-[12px] text-brand-muted">{String(a.status)}</span>
@@ -84,7 +84,7 @@ export default async function PartnerDetailPage({
                         {contributions.map((c) => (
                             <div
                                 key={String(c.id)}
-                                className="flex items-center justify-between rounded-md border border-line bg-light/60 px-4 py-2.5"
+                                className="flex items-center justify-between rounded-0 border border-line bg-light/60 px-4 py-2.5"
                             >
                                 <div>
                                     <p className="text-[13px] font-semibold">{String(c.area)}</p>

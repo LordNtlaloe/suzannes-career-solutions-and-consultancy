@@ -47,7 +47,7 @@ export function PublicSearch({ placeholder = "Search posts...", debounce = 300 }
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
                 placeholder={placeholder}
-                className="w-full h-10 rounded-md border border-line bg-white pl-9 pr-9 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:border-[#333] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280]"
+                className="w-full h-10 rounded-0 border border-line bg-white pl-9 pr-9 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:border-[#333] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280]"
             />
             {value && (
                 <button

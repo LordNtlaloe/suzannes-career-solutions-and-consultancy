@@ -17,25 +17,27 @@ export function MissionVision() {
                             </span>
                         </div>
                         <h3 className="section-heading text-[clamp(28px,3vw,34px)]! leading-snug">
-                            Close the gap between access and preparedness.
+                            Connect Basotho talent to learning, mentorship and
+                            markets.
                         </h3>
                         <p className="section-copy leading-relaxed">
-                            STEP exists to convert access to learning into
-                            verified preparedness — linking learning to
-                            application, application to assessment, and
-                            verified readiness to opportunity.
+                            STEP connects Basotho talent to practical learning,
+                            professional mentorship, supervised experience,
+                            industry networks and markets — through inclusive,
+                            accountable partnerships.
                         </p>
                         <ul className="flex flex-col gap-3 pt-2">
                             <Bullet>
-                                600+ Basotho participants supported each intake.
+                                Four connected programmes, from school to
+                                sustainable livelihoods.
                             </Bullet>
                             <Bullet>
-                                Every level is earned through assessed
-                                evidence.
+                                Measured outcomes and published first-cycle
+                                targets.
                             </Bullet>
                             <Bullet>
-                                No participant is introduced without their
-                                consent.
+                                Safeguarding and consent built into every
+                                placement and activity.
                             </Bullet>
                         </ul>
                     </div>
@@ -49,23 +51,27 @@ export function MissionVision() {
                             </span>
                         </div>
                         <h3 className="section-heading text-[clamp(28px,3vw,34px)]! leading-snug">
-                            A Basotho workforce that is seen, verified and
-                            opportunity-ready.
+                            A Lesotho where every young person can develop
+                            their potential.
                         </h3>
                         <p className="section-copy leading-relaxed">
-                            We want STEP to be the pathway people trust — not
-                            because it promises work, but because it proves
-                            readiness and opens doors fairly.
+                            A Lesotho where every young person, regardless of
+                            background, can develop their potential and access
+                            meaningful opportunities in work, enterprise and
+                            the creative economy.
                         </p>
                         <ul className="flex flex-col gap-3 pt-2">
                             <Bullet>
-                                Verified by evidence, not by connections.
+                                Purpose: close the gap between qualifications,
+                                capabilities and opportunity.
                             </Bullet>
                             <Bullet>
-                                Open across every career stage and industry.
+                                Continuous pathways beyond one-off career
+                                events or isolated training.
                             </Bullet>
                             <Bullet>
-                                Outcomes that last beyond the six months.
+                                Representation across Lesotho&rsquo;s ten
+                                districts.
                             </Bullet>
                         </ul>
                     </div>

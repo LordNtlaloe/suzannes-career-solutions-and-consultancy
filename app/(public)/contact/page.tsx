@@ -105,10 +105,10 @@ export default function ContactPage() {
                         Not ready to apply yet?
                     </span>
                     <h2 className="section-heading leading-tight max-w-2xl">
-                        Learn more about the programme first.
+                        Learn more about the programmes first.
                     </h2>
                     <p className="section-copy max-w-lg">
-                        Explore the cohorts and the six-month journey. When
+                        Explore the four programmes and the delivery model. When
                         you&apos;re ready, we&apos;re here.
                     </p>
                     <div className="flex items-center gap-4 mt-2">

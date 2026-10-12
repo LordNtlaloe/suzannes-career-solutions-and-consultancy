@@ -61,7 +61,7 @@ export function AdminSubNav({
                         key={item.key}
                         href={href}
                         aria-current={active ? "page" : undefined}
-                        className={`flex shrink-0 items-center gap-1.5 rounded-md px-3 py-1.5 text-[12px] font-semibold transition-colors ${
+                        className={`flex shrink-0 items-center gap-1.5 rounded-0 px-3 py-1.5 text-[12px] font-semibold transition-colors ${
                             active
                                 ? "bg-blue/12 text-blue-dark"
                                 : "text-brand-muted hover:bg-light hover:text-brand"

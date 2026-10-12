@@ -100,12 +100,12 @@ export function TiptapEditor({
 
     if (!editor) {
         return (
-            <div className="rounded-md border bg-light min-h-100 animate-pulse" />
+            <div className="rounded-0 border bg-light min-h-100 animate-pulse" />
         )
     }
 
     return (
-        <div className={cn("rounded-md border border-line bg-white", className)}>
+        <div className={cn("rounded-0 border border-line bg-white", className)}>
             <EditorToolbar editor={editor} onInsertImage={onInsertImage} />
             <EditorContent editor={editor} />
             <div className="flex items-center justify-between border-t border-line px-3 py-1.5 text-xs text-brand-muted">

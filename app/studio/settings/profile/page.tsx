@@ -296,7 +296,7 @@ function UpdateProfileCard({
                 </div>
 
                 {!user.emailVerified && (
-                    <div className="rounded-md border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-sm text-amber-700 dark:text-amber-400">
+                    <div className="rounded-0 border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-sm text-amber-700 dark:text-amber-400">
                         <p>
                             Your email address is unverified.{" "}
                             <button
@@ -514,7 +514,7 @@ function ActivityPostRow({ post }: { post: any }) {
                 href={`/news/${post.slug}`}
                 className="flex items-center gap-3 rounded-lg border border-line bg-white p-3 hover:border-ink/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue"
             >
-                <div className="relative h-12 w-16 shrink-0 overflow-hidden rounded-md border border-line bg-light">
+                <div className="relative h-12 w-16 shrink-0 overflow-hidden rounded-0 border border-line bg-light">
                     {cover ? (
                         <Image
                             src={cover}
@@ -555,7 +555,7 @@ function ActivitySkeleton() {
                     key={i}
                     className="flex items-center gap-3 rounded-lg border border-line bg-white p-3"
                 >
-                    <div className="h-12 w-16 shrink-0 rounded-md bg-light animate-pulse" />
+                    <div className="h-12 w-16 shrink-0 rounded-0 bg-light animate-pulse" />
                     <div className="flex-1 flex flex-col gap-2">
                         <div className="h-3.5 w-3/4 rounded bg-light animate-pulse" />
                         <div className="h-3 w-1/2 rounded bg-light animate-pulse" />

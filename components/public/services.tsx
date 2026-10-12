@@ -17,27 +17,27 @@ type Service = {
 const CANDIDATE_SERVICES: Service[] = [
     {
         icon: FileText,
-        title: "Apply & baseline",
-        body: "Register online, get reviewed by the programme team, and start from a baseline profile that places you on the right pathway.",
-        price: "Month 0",
+        title: "Career Readiness Academy",
+        body: "Six months of blended training, mentorship, coaching and competency assessment — finishing with a STEP Skills Passport.",
+        price: "6 months",
     },
     {
         icon: MessageSquare,
-        title: "Learning & coaching",
-        body: "Structured coursework, coaching and mentoring delivered around your industry cohort.",
-        price: "Months 1–3",
+        title: "Talent Experience Pathway",
+        body: "Time-bound, supervised work experience with host organisations and employer exposure.",
+        price: "Placements",
     },
     {
         icon: Target,
-        title: "Practical application",
-        body: "Assessed projects and real-world practice that turn learning into demonstrated skill.",
-        price: "Month 4",
+        title: "Schools Career Discovery Bootcamps",
+        body: "Fee-based career guidance and foundational digital and creative skills for secondary-school learners.",
+        price: "Direct registration",
     },
     {
         icon: Rocket,
-        title: "Verified readiness",
-        body: "Readiness assessment, progression decisions and a verified STEP Skills Passport.",
-        price: "Months 5–6",
+        title: "Entrepreneurship & Creative Economy Lab",
+        body: "Enterprise development, creator skills, showcases, market links and paid commissions.",
+        price: "Incubation",
     },
 ]
 
@@ -45,13 +45,13 @@ const COMPANY_SERVICES: Service[] = [
     {
         icon: Users,
         title: "Provide opportunities",
-        body: "Offer placements, projects, introductions or hiring pathways for verified participants.",
+        body: "Employers and professional bodies offer mentorship, work-experience hosting, sector guidance and recruitment insight.",
         price: "Partner",
     },
     {
         icon: Briefcase,
-        title: "Contribute & mentor",
-        body: "Fund, mentor or support the programme and gain consented, field-scoped access to outcomes.",
+        title: "Fund & support",
+        body: "Development partners and funders provide institutional grants, programme sponsorship, stipend pools and monitoring support.",
         price: "Partner",
     },
 ]
@@ -64,14 +64,15 @@ export function Services() {
         >
             <header className="flex flex-col gap-3 max-w-2xl mb-12">
                 <span className="text-[11px] font-semibold uppercase tracking-[2.4px] text-blue">
-                    The programme
+                    The programmes
                 </span>
                 <h2 className="section-heading">
-                    How STEP works
+                    Four connected programmes
                 </h2>
                 <p className="section-copy">
-                    A structured six-month pathway for participants — and a
-                    clear way for partners to open doors for them.
+                    One continuous pathway linking learning, mentorship,
+                    supervised experience and markets — for participants and
+                    the partners who open doors for them.
                 </p>
             </header>
 

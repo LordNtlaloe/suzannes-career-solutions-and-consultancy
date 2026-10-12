@@ -80,7 +80,7 @@ export default function SignupForm({
                         placeholder="John Doe"
                         required
                         disabled={loading}
-                        className="h-10 rounded-md border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
+                        className="h-10 rounded-0 border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
                     />
                 </Field>
                 <Field>
@@ -94,7 +94,7 @@ export default function SignupForm({
                         placeholder="m@example.com"
                         required
                         disabled={loading}
-                        className="h-10 rounded-md border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
+                        className="h-10 rounded-0 border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
                     />
                     <p className="mt-1 text-[11px] text-white/50">
                         We&apos;ll use this to contact you. We will not share your email
@@ -112,7 +112,7 @@ export default function SignupForm({
                         minLength={8}
                         required
                         disabled={loading}
-                        className="h-10 rounded-md border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
+                        className="h-10 rounded-0 border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
                     />
                     <p className="mt-1 text-[11px] text-white/50">
                         Must be at least 8 characters long.
@@ -129,7 +129,7 @@ export default function SignupForm({
                         minLength={8}
                         required
                         disabled={loading}
-                        className="h-10 rounded-md border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
+                        className="h-10 rounded-0 border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
                     />
                     <p className="mt-1 text-[11px] text-white/50">Please confirm your password.</p>
                 </Field>

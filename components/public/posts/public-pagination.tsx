@@ -107,7 +107,7 @@ function PageLink({
     if (disabled) {
         return (
             <span
-                className="inline-flex items-center justify-center min-w-9 h-9 rounded-md text-[13px] text-[#a1a1a1] opacity-50 px-3"
+                className="inline-flex items-center justify-center min-w-9 h-9 rounded-0 text-[13px] text-[#a1a1a1] opacity-50 px-3"
                 {...rest}
             >
                 {children}
@@ -118,7 +118,7 @@ function PageLink({
         <Link
             href={href}
             className={cn(
-                "inline-flex items-center justify-center min-w-9 h-9 rounded-md border text-[13px] font-semibold transition-colors px-3",
+                "inline-flex items-center justify-center min-w-9 h-9 rounded-0 border text-[13px] font-semibold transition-colors px-3",
                 active
                     ? "bg-blue-dark text-white border-blue-dark shadow-btn"
                     : "border-line text-[#a1a1a1] hover:border-blue-dark hover:text-blue-dark dark:border-[#333] dark:text-[#6b7280]"

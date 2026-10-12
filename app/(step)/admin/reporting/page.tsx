@@ -35,7 +35,7 @@ export default async function ReportingPage() {
                 <h2 className="text-[15px] font-semibold">Programme reporting</h2>
                 <Link
                     href={link("/admin/reporting/export")}
-                    className="ml-auto rounded-md border border-line px-3 py-1.5 text-[12px] font-semibold text-blue-dark transition-colors hover:border-blue/40"
+                    className="ml-auto rounded-0 border border-line px-3 py-1.5 text-[12px] font-semibold text-blue-dark transition-colors hover:border-blue/40"
                 >
                     Export CSV
                 </Link>

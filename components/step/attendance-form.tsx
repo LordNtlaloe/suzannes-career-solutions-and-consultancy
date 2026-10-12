@@ -66,7 +66,7 @@ export function AttendanceForm({
     return (
         <div className="flex flex-col gap-3">
             {error && (
-                <p className="rounded-md border border-destructive/40 bg-destructive/10 px-2 py-1.5 text-[11px] text-destructive">
+                <p className="rounded-0 border border-destructive/40 bg-destructive/10 px-2 py-1.5 text-[11px] text-destructive">
                     {error}
                 </p>
             )}
@@ -77,7 +77,7 @@ export function AttendanceForm({
                 return (
                     <div
                         key={id}
-                        className="flex flex-col gap-3 rounded-md border border-line bg-card p-4"
+                        className="flex flex-col gap-3 rounded-0 border border-line bg-card p-4"
                     >
                         <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
                             <p className="text-[14px] font-semibold">{String(r.participant_name)}</p>
@@ -127,7 +127,7 @@ export function AttendanceForm({
                                 }))
                             }
                             placeholder="Session feedback (optional)"
-                            className="rounded-md border border-input bg-input/20 px-2 py-1.5 text-[12px] outline-none"
+                            className="rounded-0 border border-input bg-input/20 px-2 py-1.5 text-[12px] outline-none"
                         />
 
                         <Button

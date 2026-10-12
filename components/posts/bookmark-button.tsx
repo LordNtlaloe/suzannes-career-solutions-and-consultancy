@@ -83,7 +83,7 @@ export function BookmarkButton({
             disabled={pending}
             aria-pressed={bookmarked}
             className={cn(
-                "inline-flex items-center gap-1.5 rounded-md border border-line bg-white px-3 py-1.5 text-[11px] font-semibold text-[#a1a1a1] hover:border-blue-dark hover:text-blue-dark transition-colors",
+                "inline-flex items-center gap-1.5 rounded-0 border border-line bg-white px-3 py-1.5 text-[11px] font-semibold text-[#a1a1a1] hover:border-blue-dark hover:text-blue-dark transition-colors",
                 bookmarked && "text-blue-dark border-blue-dark/40",
                 className
             )}

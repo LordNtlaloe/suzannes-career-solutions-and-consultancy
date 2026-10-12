@@ -86,7 +86,7 @@ export default async function ApplicationDetailPage({
                 </div>
 
                 {application.review_note ? (
-                    <div className="mt-6 rounded-md border border-line bg-light/60 p-4">
+                    <div className="mt-6 rounded-0 border border-line bg-light/60 p-4">
                         <p className="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-muted">
                             Private review note
                         </p>
@@ -98,7 +98,7 @@ export default async function ApplicationDetailPage({
             {actionable ? (
                 <ApplicationReviewForm applicationId={application.id as string} />
             ) : (
-                <p className="rounded-md border border-line bg-light/60 p-4 text-[13px] text-brand-muted">
+                <p className="rounded-0 border border-line bg-light/60 p-4 text-[13px] text-brand-muted">
                     This application has already been {applicationStatusLabel(status).toLowerCase()}.
                 </p>
             )}

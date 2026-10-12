@@ -72,7 +72,7 @@ export default async function EvidenceQueuePage({
                         <Link
                             key={s}
                             href={`${link("/admin/evidence")}?status=${s}`}
-                            className={`rounded-md px-3 py-1.5 text-[11px] font-semibold ${
+                            className={`rounded-0 px-3 py-1.5 text-[11px] font-semibold ${
                                 status === s
                                     ? "bg-blue/12 text-blue-dark"
                                     : "border border-line text-brand-muted"
@@ -130,7 +130,7 @@ export default async function EvidenceQueuePage({
                 {page > 1 ? (
                     <Link
                         href={`${link("/admin/evidence")}?status=${status}&page=${page - 1}`}
-                        className="rounded-md border border-line px-3 py-1.5 font-semibold text-brand"
+                        className="rounded-0 border border-line px-3 py-1.5 font-semibold text-brand"
                     >
                         Previous
                     </Link>
@@ -143,7 +143,7 @@ export default async function EvidenceQueuePage({
                 {page < totalPages ? (
                     <Link
                         href={`${link("/admin/evidence")}?status=${status}&page=${page + 1}`}
-                        className="rounded-md border border-line px-3 py-1.5 font-semibold text-brand"
+                        className="rounded-0 border border-line px-3 py-1.5 font-semibold text-brand"
                     >
                         Next
                     </Link>

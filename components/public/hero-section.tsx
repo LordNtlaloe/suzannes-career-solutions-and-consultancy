@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
     return (
@@ -10,41 +11,46 @@ export function HeroSection() {
             <div className="hero-image-bg absolute inset-0 left-[59%] opacity-[.86] max-[1100px]:left-[52%] max-md:inset-0 max-md:opacity-35" />
 
             {/* Hero content */}
-            <div className="container-x relative z-2 pt-9.5x-md:pt-[70px]">
+            <div className="container-x relative z-2 pt-9.5 max-md:pt-[70px]">
                 <p className="mb-5.5 text-[11px] font-semibold tracking-[2.4px] text-blue-light">
                     SKILLS, TALENT &amp; EMPLOYMENT PATHWAY
                 </p>
 
                 <h1 className="text-[clamp(46px,5.1vw,72px)] font-medium leading-[1.22] tracking-[-2px] max-md:text-[47px] max-md:tracking-[-1px] max-[520px]:text-[40px]">
-                    Six Months.
+                    An opportunity pathway
                     <br />
-                    <span className="text-white">Real Skills.</span>
-                    <br />
-                    <strong className="font-medium">Verified Readiness.</strong>
+                    <span className="text-white">for Basotho talent.</span>
                 </h1>
 
                 <p className="mt-8.5 w-142.5 max-w-full text-[14px] leading-[1.75] text-[#c4c4c4] max-md:text-[13px]">
-                    STEP is a six-month industry-based incubation and opportunity
-                    pathway for 600+ Basotho participants &mdash; built on learning,
-                    coaching, mentoring, practical application and assessment.
+                    STEP is a proposed youth-led, non-profit institution
+                    designed to help young Basotho move from education and
+                    ambition to demonstrable skills, practical experience,
+                    enterprise growth and sustainable livelihoods.
                 </p>
 
-                <Link
-                    href="/apply"
-                    className="btn-brand mt-9 bg-btn-grad"
-                >
-                    Apply to STEP
-                </Link>
+                <div className="mt-9 flex flex-wrap items-center gap-5">
+                    <Link href="/apply" className="btn-brand bg-btn-grad">
+                        Apply to STEP
+                    </Link>
+                    <Link
+                        href="#partners"
+                        className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-white/90 transition-opacity hover:opacity-70"
+                    >
+                        Partner with STEP
+                        <ArrowRight className="h-4 w-4" />
+                    </Link>
+                </div>
             </div>
 
             {/* Hero stats */}
             <div className="container-x absolute bottom-23.75 left-1/2 z-2 -translate-x-1/2 max-md:bottom-23.75 max-[520px]:bottom-26.25">
                 <div className="flex gap-13.5 max-md:gap-6.25 max-[520px]:gap-4.5">
-                    <Stat value="600+" label={<>Basotho<br />Participants</>} />
-                    <Stat value="8" label={<>Industry<br />Cohorts</>} />
+                    <Stat value="4" label={<>Connected<br />Programmes</>} />
+                    <Stat value="6" label={<>Month<br />Academy</>} />
                     <Stat
-                        value="6"
-                        label={<>Months to<br />Readiness</>}
+                        value="10"
+                        label={<>Districts<br />Served</>}
                         className="max-[520px]:hidden"
                     />
                 </div>
@@ -59,17 +65,17 @@ export function HeroSection() {
                     </div>
 
                     <div className="flex items-center gap-2">
-                        <strong className="text-[36px] leading-none">6</strong>
+                        <strong className="text-[36px] leading-none">4</strong>
                         <span className="text-[11px] leading-[1.4]">
-                            Months
+                            Connected
                             <br />
-                            Pathway
+                            Programmes
                         </span>
                     </div>
 
                     <p className="ml-auto max-w-75 text-[11px] leading-[1.7] max-md:hidden">
-                        A structured pathway linking learning to application,
-                        assessment and verified opportunity.
+                        A youth-led, non-profit pathway linking learning,
+                        mentorship, experience and markets.
                     </p>
                 </div>
             </div>

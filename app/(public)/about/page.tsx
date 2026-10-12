@@ -9,11 +9,11 @@ import { TrustBar } from "@/components/public/trust-bar"
 export const metadata: Metadata = {
     title: "About — STEP",
     description:
-        "Learn more about STEP — a six-month incubation and opportunity pathway for 600+ Basotho participants.",
+        "Learn more about STEP — a proposed youth-led, non-profit institution helping Basotho move from education and ambition to demonstrable skills, practical experience, enterprise growth and sustainable livelihoods.",
     openGraph: {
         title: "About — STEP",
         description:
-            "Learn more about STEP — a six-month incubation and opportunity pathway for 600+ Basotho participants.",
+            "Learn more about STEP — a proposed youth-led, non-profit institution helping Basotho move from education and ambition to demonstrable skills, practical experience, enterprise growth and sustainable livelihoods.",
     },
 }
 
@@ -22,8 +22,8 @@ export default function AboutPage() {
         <>
             <Hero
                 eyebrow="ABOUT STEP"
-                title="A pathway from potential to verified readiness."
-                text="STEP links learning to application, application to assessment, and verified preparedness to opportunity — for 600+ Basotho participants every intake."
+                title="An opportunity pathway for Basotho talent."
+                text="STEP links learning, mentorship, supervised experience and markets into one continuous pathway — from school and ambition to sustainable livelihoods."
             />
 
             {/* Story section */}
@@ -48,28 +48,28 @@ export default function AboutPage() {
 
                         <div className="section-copy flex flex-col gap-4 leading-relaxed">
                             <p>
-                                STEP started with a simple observation: access
-                                to learning isn&apos;t the same as preparedness.
-                                Many Basotho hold qualifications, experience,
-                                creative ability and viable ideas — yet remain
-                                disconnected from structured development,
-                                credible guidance and visible pathways into
-                                opportunity.
+                                STEP was conceived by Mammenyane Suzanne
+                                Mots&rsquo;oane, founder of Suzanne&rsquo;s Career
+                                Solutions &amp; Consultancy, through years of
+                                supporting job seekers with applications, career
+                                guidance and employability preparation.
                             </p>
                             <p>
-                                We built STEP to bridge that gap. Six months of
-                                learning, coaching, mentoring and practical
-                                application, organised around eight industry
-                                cohorts and finished with a verified STEP
-                                Skills Passport. Every level is earned through
-                                assessed evidence — never time served.
+                                A strong CV or a single coaching session could
+                                not overcome missing skills, experience and
+                                networks. STEP is the independent, longer-term
+                                response: a proposed non-profit institution
+                                running four connected programmes — the Career
+                                Readiness Academy, the Talent Experience
+                                Pathway, Schools Career Discovery Bootcamps and
+                                the Entrepreneurship &amp; Creative Economy Lab.
                             </p>
                             <p>
-                                Whether you&apos;re a participant ready to be
-                                developed or a partner ready to open doors,
-                                STEP brings the same principles: clear
-                                structure, verified progress and follow-through
-                                that lasts beyond the six months.
+                                Whether you&apos;re a job seeker, a professional,
+                                a learner or a partner, STEP brings the same
+                                principles: clear structure, verified
+                                capabilities and follow-through that lasts
+                                beyond a one-off event.
                             </p>
                         </div>
 
@@ -102,28 +102,28 @@ export default function AboutPage() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         <ValueCard
-                            title="Verified, not assumed"
-                            body="Every level is earned through assessed evidence, audited progression and recorded decisions."
+                            title="Continuous pathway"
+                            body="Four connected programmes move talent from school and ambition to skills, experience and livelihoods."
                         />
                         <ValueCard
-                            title="Industry-aligned"
-                            body="Eight cohorts keep learning, mentoring and practice relevant to real pathways into work."
+                            title="Verified capabilities"
+                            body="Assessed learning, mentor records and a STEP Skills Passport prove what participants can do."
                         />
                         <ValueCard
-                            title="Participant-first"
-                            body="Applications are reviewed individually, and no participant is introduced without their consent."
+                            title="Inclusive access"
+                            body="Representation across Lesotho&apos;s ten districts, with reasonable accommodations and alternative registration channels."
                         />
                         <ValueCard
-                            title="Transparent process"
-                            body="You always know your level, your progress and exactly what&apos;s required to advance."
+                            title="Accountable partnerships"
+                            body="Written scopes, agreed outcomes and safeguarding requirements apply to every engagement."
                         />
                         <ValueCard
-                            title="Confidentiality"
-                            body="Demographic and safeguarding data is restricted to the people who genuinely need it."
+                            title="Measured outcomes"
+                            body="Published first-cycle targets for completion, competency gains, mentoring and inclusion."
                         />
                         <ValueCard
-                            title="Lasting outcomes"
-                            body="Success is measured by verified readiness and real opportunity — not attendance."
+                            title="Safeguarding first"
+                            body="Child safeguarding, consent and data protection are mandatory across every programme."
                         />
                     </div>
                 </div>

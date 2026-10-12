@@ -41,13 +41,13 @@ export function ProgressionForm({
     }
 
     return (
-        <div className="flex flex-col gap-3 rounded-md border border-line bg-light/60 p-4">
+        <div className="flex flex-col gap-3 rounded-0 border border-line bg-light/60 p-4">
             <div className="flex flex-col gap-1.5">
                 <Label className="text-[11px] font-semibold">Advance to level</Label>
                 <select
                     value={toLevel}
                     onChange={(e) => setToLevel(e.target.value)}
-                    className="h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none"
+                    className="h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none"
                 >
                     <option value="">Select level…</option>
                     {PARTICIPANT_LEVELS.filter(
@@ -70,12 +70,12 @@ export function ProgressionForm({
                     value={overrideReason}
                     onChange={(e) => setOverrideReason(e.target.value)}
                     placeholder="Why is the requirement being waived?"
-                    className="rounded-md border border-input bg-input/20 px-2 py-1.5 text-[12px] outline-none"
+                    className="rounded-0 border border-input bg-input/20 px-2 py-1.5 text-[12px] outline-none"
                 />
             </div>
 
             {error && (
-                <p className="rounded-md border border-destructive/40 bg-destructive/10 px-2 py-1.5 text-[11px] text-destructive">
+                <p className="rounded-0 border border-destructive/40 bg-destructive/10 px-2 py-1.5 text-[11px] text-destructive">
                     {error}
                 </p>
             )}

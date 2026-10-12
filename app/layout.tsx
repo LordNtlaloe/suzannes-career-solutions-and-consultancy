@@ -22,7 +22,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "STEP — Skills, Talent & Employment Pathway",
   description:
-    "A six-month industry-based incubation and opportunity pathway for 600+ Basotho participants — through learning, coaching, mentoring, practical application and assessment.",
+    "An opportunity pathway for Basotho talent. A proposed youth-led, non-profit institution connecting Basotho talent to learning, mentorship, supervised experience and markets.",
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

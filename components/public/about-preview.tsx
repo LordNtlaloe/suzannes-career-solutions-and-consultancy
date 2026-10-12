@@ -18,17 +18,17 @@ export function AboutPreview() {
                     </h2>
                     <div className="section-copy flex flex-col gap-4 leading-relaxed">
                         <p>
-                            STEP started because we kept watching capable,
-                            qualified Basotho get filtered out — not for lack
-                            of ability, but for lack of structure, evidence
-                            and a visible pathway into opportunity.
+                            STEP was conceived by Mammenyane Suzanne
+                            Mots&rsquo;oane through years of supporting job
+                            seekers — people with qualifications and ambition
+                            who were filtered out for lack of structure,
+                            evidence and a visible pathway into opportunity.
                         </p>
                         <p>
-                            So we built one: six months of learning, coaching,
-                            mentoring and assessed practice, organised around
-                            eight industry cohorts and finished with a verified
-                            STEP Skills Passport. Enough structure to develop
-                            people, enough rigour to prove what they can do.
+                            So she designed a continuous, non-profit pathway:
+                            four connected programmes linking learning,
+                            mentorship, supervised experience and markets,
+                            finished with a verified STEP Skills Passport.
                         </p>
                     </div>
                     <div>
@@ -44,10 +44,10 @@ export function AboutPreview() {
 
                 {/* Right column — visual anchor */}
                 <div className="grid grid-cols-2 gap-4">
-                    <StatCard value="600" label="Basotho participants" />
-                    <StatCard value="8" label="Industry cohorts" />
-                    <StatCard value="5" label="Readiness levels" />
-                    <StatCard value="1" label="Skills Passport" />
+                    <StatCard value="4" label="Connected programmes" />
+                    <StatCard value="75%" label="Completion target" />
+                    <StatCard value="80%" label="Mentoring target" />
+                    <StatCard value="10" label="Districts served" />
                 </div>
             </div>
         </section>

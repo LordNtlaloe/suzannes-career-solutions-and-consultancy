@@ -12,7 +12,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
 const inputClass =
-    "h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none focus-visible:border-ring";
+    "h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none focus-visible:border-ring";
 
 export function SafeguardingSubmit() {
     const router = useRouter();
@@ -89,7 +89,7 @@ export function SafeguardingSubmit() {
                     rows={3}
                     value={body}
                     onChange={(e) => setBody(e.target.value)}
-                    className="rounded-md border border-input bg-input/20 px-2 py-1.5 text-[12px] outline-none"
+                    className="rounded-0 border border-input bg-input/20 px-2 py-1.5 text-[12px] outline-none"
                 />
             </div>
 

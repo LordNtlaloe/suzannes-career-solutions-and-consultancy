@@ -36,7 +36,7 @@ export function EvidenceSubmitForm({ assignmentId }: { assignmentId: string }) {
     }
 
     const inputClass =
-        "h-9 rounded-md border border-input bg-input/20 px-3 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30";
+        "h-9 rounded-0 border border-input bg-input/20 px-3 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30";
 
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 rounded-lg border border-line bg-card p-6">
@@ -72,12 +72,12 @@ export function EvidenceSubmitForm({ assignmentId }: { assignmentId: string }) {
                     rows={4}
                     required
                     placeholder="Describe your work, or paste a link to it."
-                    className="rounded-md border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30"
+                    className="rounded-0 border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30"
                 />
             </div>
 
             {error && (
-                <p className="rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-[12px] text-destructive">
+                <p className="rounded-0 border border-destructive/40 bg-destructive/10 px-3 py-2 text-[12px] text-destructive">
                     {error}
                 </p>
             )}

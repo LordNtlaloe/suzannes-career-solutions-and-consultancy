@@ -116,7 +116,7 @@ export function ApplicationsBrowser({
     }
 
     const inputClass =
-        "h-9 rounded-md border border-input bg-input/20 px-3 text-[12px] outline-none focus-visible:border-ring";
+        "h-9 rounded-0 border border-input bg-input/20 px-3 text-[12px] outline-none focus-visible:border-ring";
 
     return (
         <div className="flex flex-col gap-4">
@@ -331,7 +331,7 @@ export function ApplicationsBrowser({
                     type="button"
                     disabled={page <= 1}
                     onClick={() => updateQuery({ page: page - 1 })}
-                    className="rounded-md border border-line px-3 py-1.5 font-semibold text-brand disabled:opacity-40"
+                    className="rounded-0 border border-line px-3 py-1.5 font-semibold text-brand disabled:opacity-40"
                 >
                     Previous
                 </button>
@@ -342,7 +342,7 @@ export function ApplicationsBrowser({
                     type="button"
                     disabled={page >= totalPages}
                     onClick={() => updateQuery({ page: page + 1 })}
-                    className="rounded-md border border-line px-3 py-1.5 font-semibold text-brand disabled:opacity-40"
+                    className="rounded-0 border border-line px-3 py-1.5 font-semibold text-brand disabled:opacity-40"
                 >
                     Next
                 </button>

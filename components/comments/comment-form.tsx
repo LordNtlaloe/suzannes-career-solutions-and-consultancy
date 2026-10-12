@@ -74,7 +74,7 @@ export function CommentForm({
                 rows={compact ? 2 : 3}
                 disabled={loading}
                 className={cn(
-                    "w-full rounded-md border border-line bg-white px-3 py-2 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors resize-none",
+                    "w-full rounded-0 border border-line bg-white px-3 py-2 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors resize-none",
                     compact ? "min-h-16" : "min-h-24"
                 )}
             />
@@ -85,7 +85,7 @@ export function CommentForm({
                         type="button"
                         onClick={onCancel}
                         disabled={loading}
-                        className="inline-flex items-center gap-1 rounded-md border border-line px-3 py-1.5 text-[11px] font-semibold text-[#a1a1a1] hover:border-blue-dark hover:text-blue-dark transition-colors"
+                        className="inline-flex items-center gap-1 rounded-0 border border-line px-3 py-1.5 text-[11px] font-semibold text-[#a1a1a1] hover:border-blue-dark hover:text-blue-dark transition-colors"
                     >
                         <X className="h-3.5 w-3.5" />
                         Cancel

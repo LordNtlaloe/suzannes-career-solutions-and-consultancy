@@ -81,7 +81,7 @@ export function ContactCta() {
                                         required
                                         disabled={loading}
                                         aria-label="Name"
-                                        className="w-full h-10 rounded-md border border-line bg-card px-3 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
+                                        className="w-full h-10 rounded-0 border border-line bg-card px-3 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
                                     />
                                     <input
                                         name="email"
@@ -91,14 +91,14 @@ export function ContactCta() {
                                         disabled={loading}
                                         aria-label="Email"
                                         autoComplete="email"
-                                        className="w-full h-10 rounded-md border border-line bg-card px-3 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
+                                        className="w-full h-10 rounded-0 border border-line bg-card px-3 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
                                     />
                                 </div>
 
                                 <select
                                     name="interest"
                                     aria-label="What this is about"
-                                    className="w-full h-10 rounded-md border border-line bg-card px-3 text-[13px] text-ink outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:border-[#333]"
+                                    className="w-full h-10 rounded-0 border border-line bg-card px-3 text-[13px] text-ink outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:border-[#333]"
                                     disabled={loading}
                                 >
                                     <option value="participant">
@@ -122,7 +122,7 @@ export function ContactCta() {
                                     disabled={loading}
                                     placeholder="Tell us a bit about yourself and which pathway interests you..."
                                     aria-label="Message"
-                                    className="w-full rounded-md border border-line bg-card px-3 py-2 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors resize-none dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
+                                    className="w-full rounded-0 border border-line bg-card px-3 py-2 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors resize-none dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
                                 />
 
                                 <button

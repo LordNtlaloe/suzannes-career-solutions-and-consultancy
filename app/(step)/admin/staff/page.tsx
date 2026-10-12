@@ -34,7 +34,7 @@ export default async function StaffPage() {
                 staff.map((s) => (
                     <div
                         key={String(s.id)}
-                        className="flex flex-wrap items-center gap-x-4 gap-y-1 rounded-md border border-line bg-card px-4 py-3"
+                        className="flex flex-wrap items-center gap-x-4 gap-y-1 rounded-0 border border-line bg-card px-4 py-3"
                     >
                         <div>
                             <p className="text-[14px] font-semibold">

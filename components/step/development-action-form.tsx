@@ -39,7 +39,7 @@ export function DevelopmentActionForm({ assigned }: { assigned: Assigned[] }) {
     }
 
     return (
-        <div className="flex flex-col gap-3 rounded-md border border-line bg-card p-4">
+        <div className="flex flex-col gap-3 rounded-0 border border-line bg-card p-4">
             <p className="text-[12px] font-semibold uppercase tracking-[1.2px] text-brand-muted">
                 New development action
             </p>
@@ -49,7 +49,7 @@ export function DevelopmentActionForm({ assigned }: { assigned: Assigned[] }) {
                 <select
                     value={enrolmentId}
                     onChange={(e) => setEnrolmentId(e.target.value)}
-                    className="h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none"
+                    className="h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none"
                 >
                     <option value="">Select participant…</option>
                     {assigned.map((a) => (
@@ -66,7 +66,7 @@ export function DevelopmentActionForm({ assigned }: { assigned: Assigned[] }) {
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     placeholder="e.g. Review CV and share feedback"
-                    className="h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none"
+                    className="h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none"
                 />
             </div>
 
@@ -76,7 +76,7 @@ export function DevelopmentActionForm({ assigned }: { assigned: Assigned[] }) {
                     type="date"
                     value={dueDate}
                     onChange={(e) => setDueDate(e.target.value)}
-                    className="h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none"
+                    className="h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none"
                 />
             </div>
 

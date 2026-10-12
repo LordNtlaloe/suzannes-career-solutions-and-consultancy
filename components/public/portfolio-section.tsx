@@ -10,17 +10,17 @@ export function PortfolioSection() {
                 <SectionHeadingRow
                     heading={
                         <>
-                            Industry cohorts
+                            Four programmes
                             <br />
-                            pathways into work
+                            one pathway
                         </>
                     }
                     action={
                         <Link
-                            href="/"
+                            href="/apply"
                             className="text-link-brand transition-opacity hover:opacity-70"
                         >
-                            Explore cohorts
+                            Apply to STEP
                             <ArrowRight size={16} />
                         </Link>
                     }
@@ -30,7 +30,7 @@ export function PortfolioSection() {
                     {portfolio.map((item, index) => (
                         <Link
                             key={item.slug}
-                            href="/"
+                            href="/apply"
                             className="group relative h-[478px] overflow-hidden max-[520px]:h-[400px]"
                         >
                             <img

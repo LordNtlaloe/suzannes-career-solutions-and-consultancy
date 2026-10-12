@@ -134,7 +134,8 @@
   --chart-4: oklch(0.518 0.253 323.949);
   --chart-5: oklch(0.452 0.211 324.591);
 
-  --radius: 0.625rem;
+  --radius: 0px;
+  --radius-xs: 0px;
 
   --sidebar: #f6f6f6;
   --sidebar-foreground: #242527;
@@ -205,6 +206,31 @@
   --light: #2a2a2a;
   --line: #333333;
   --ink: #f6f6f6;
+}
+
+/* ---------- Square corners ----------
+   STEP uses sharp, square corners throughout. The radius scale is zeroed
+   in `:root` above; this block also flattens the utilities that bypass the
+   scale (`rounded-full`, bare `rounded` and the bare corner variants).
+   Kept un-layered so it wins over Tailwind's `@layer utilities`. */
+
+.rounded,
+.rounded-full,
+.rounded-t,
+.rounded-b,
+.rounded-l,
+.rounded-r,
+.rounded-tl,
+.rounded-tr,
+.rounded-bl,
+.rounded-br,
+.rounded-s,
+.rounded-e,
+.rounded-ss,
+.rounded-se,
+.rounded-es,
+.rounded-ee {
+  border-radius: 0;
 }
 
 /* ---------- Base ---------- */

@@ -55,7 +55,7 @@ function CategoryNode({
     return (
         <div>
             <div
-                className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-line group"
+                className="flex items-center gap-2 px-2 py-2 rounded-0 hover:bg-line group"
                 style={{ paddingLeft: `${level * 20 + 8}px` }}
             >
                 {hasChildren ? (
@@ -75,7 +75,7 @@ function CategoryNode({
                     <div className="h-5 w-5" />
                 )}
 
-                <div className="flex items-center justify-center h-7 w-7 rounded-md bg-light shrink-0">
+                <div className="flex items-center justify-center h-7 w-7 rounded-0 bg-light shrink-0">
                     <Folder className="h-3.5 w-3.5 text-brand-muted" />
                 </div>
 

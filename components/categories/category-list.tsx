@@ -55,11 +55,11 @@ function CategoryRow({
     return (
         <div
             className={cn(
-                "group flex items-center gap-3 rounded-md border border-line bg-white px-3 py-2",
+                "group flex items-center gap-3 rounded-0 border border-line bg-white px-3 py-2",
                 "hover:border-ink/20 transition-colors"
             )}
         >
-            <div className="flex items-center justify-center h-8 w-8 rounded-md bg-light shrink-0">
+            <div className="flex items-center justify-center h-8 w-8 rounded-0 bg-light shrink-0">
                 <Icon className="h-4 w-4 text-brand-muted" />
             </div>
 

@@ -56,7 +56,7 @@ export default async function StepDashboardEntry() {
                             </dl>
 
                             {application.feedback ? (
-                                <div className="rounded-md border border-line bg-card p-4 text-left">
+                                <div className="rounded-0 border border-line bg-card p-4 text-left">
                                     <p className="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-muted">
                                         Feedback from the review team
                                     </p>

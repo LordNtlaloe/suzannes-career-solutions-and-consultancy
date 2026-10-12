@@ -39,8 +39,9 @@ export default async function StepLayout({
                     <div className="container-x flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                         <p className="text-[13px] text-brand-muted">
                             STEP &mdash; Skills, Talent &amp; Employment Pathway. A
-                            six-month incubation and opportunity pathway for 600
-                            Basotho participants.
+                            proposed youth-led, non-profit institution connecting
+                            Basotho talent to learning, mentorship, supervised
+                            experience and markets.
                         </p>
                         <Link
                             href="/contact"

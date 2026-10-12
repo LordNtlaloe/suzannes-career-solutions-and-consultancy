@@ -1,10 +1,8 @@
 const COHORTS = [
-    { label: "BUSINESS & FINANCE", small: false },
-    { label: "TECHNOLOGY & DATA", small: false },
-    { label: "MEDIA & CREATIVE", small: true },
-    { label: "ENGINEERING & INFRA", small: true },
-    { label: "HEALTH & IMPACT", small: false },
-    { label: "ENTREPRENEURSHIP", small: true },
+    { label: "CAREER READINESS ACADEMY", small: false },
+    { label: "TALENT EXPERIENCE", small: false },
+    { label: "SCHOOLS BOOTCAMPS", small: true },
+    { label: "CREATIVE ECONOMY LAB", small: true },
 ];
 
 export function ClientStrip() {

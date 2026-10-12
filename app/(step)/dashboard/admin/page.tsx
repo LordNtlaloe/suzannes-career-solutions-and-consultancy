@@ -56,7 +56,7 @@ export default async function AdminDashboardPage() {
                         {data.cycles.map((c) => (
                             <div
                                 key={c.id}
-                                className="flex items-center justify-between rounded-md border border-line bg-card px-4 py-3"
+                                className="flex items-center justify-between rounded-0 border border-line bg-card px-4 py-3"
                             >
                                 <p className="text-[14px] font-semibold">{c.name}</p>
                                 <span className="text-[12px] text-brand-muted">{c.status}</span>
@@ -73,7 +73,7 @@ export default async function AdminDashboardPage() {
                         {data.staff.map((s) => (
                             <div
                                 key={String(s.id)}
-                                className="flex items-center justify-between rounded-md border border-line bg-light/60 px-4 py-2.5"
+                                className="flex items-center justify-between rounded-0 border border-line bg-light/60 px-4 py-2.5"
                             >
                                 <p className="text-[13px] font-semibold">
                                     {String(s.staff_name ?? s.user_id)}

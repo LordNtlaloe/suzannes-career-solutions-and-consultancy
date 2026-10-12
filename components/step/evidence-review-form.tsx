@@ -44,12 +44,12 @@ export function EvidenceReviewForm({ evidenceId }: { evidenceId: string }) {
                     value={feedback}
                     onChange={(e) => setFeedback(e.target.value)}
                     placeholder="What should change, or why was this accepted?"
-                    className="rounded-md border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30"
+                    className="rounded-0 border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30"
                 />
             </div>
 
             {error && (
-                <p className="rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-[12px] text-destructive">
+                <p className="rounded-0 border border-destructive/40 bg-destructive/10 px-3 py-2 text-[12px] text-destructive">
                     {error}
                 </p>
             )}

@@ -21,15 +21,15 @@ export function TeamSection() {
                             className="mx-auto mb-[20px] h-[100px] w-[100px] rounded-full object-top"
                         />
 
-                        <strong className="block text-[20px]">Mpho Lerotholi</strong>
+                        <strong className="block text-[20px]">Mammenyane Suzanne Motsoane</strong>
 
                         <p className="mt-[5px] text-[11px] text-[#ddd]">
-                            Programme Lead
+                            Founder, STEP
                         </p>
 
                         <small className="mt-[20px] block text-[10px] leading-[1.7] text-[#e5e5e5]">
-                            Supporting 600+ Basotho participants through a
-                            six-month pathway to verified readiness.
+                            Founder of Suzanne&rsquo;s Career Solutions &amp;
+                            Consultancy and the Career Excellence Youth Seminar.
                         </small>
                     </div>
                 </div>
@@ -37,15 +37,15 @@ export function TeamSection() {
                 {/* Copy */}
                 <div className="feature-copy max-md:mt-[10px]">
                     <h2 className="text-[46px] font-semibold leading-[1.5] max-[520px]:text-[38px]">
-                        Meet the team
+                        Meet the founder
                         <br />
                         behind the programme
                     </h2>
 
                     <p className="mt-[25px] max-w-[470px] text-[14px] leading-[1.8] text-[#a1a1a1]">
-                        Programme staff, coaches and mentors guide participants
-                        through learning, practice and assessment — and connect
-                        verified readiness to real opportunity.
+                        STEP is a youth-led, non-profit institution built with
+                        employers, mentors, schools and creative-industry
+                        partners across Lesotho.
                     </p>
 
                     <div className="mt-[34px] flex items-center gap-[30px]">

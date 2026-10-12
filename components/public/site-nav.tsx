@@ -56,7 +56,7 @@ export function SiteNav() {
                                 {isStaff && (
                                     <Link
                                         href="/dashboard"
-                                        className="hidden items-center gap-1.5 rounded-md border border-white/20 px-3 py-1.5 text-[11px] font-semibold text-[#c4c4c4] transition-colors hover:border-white/40 hover:text-white md:inline-flex"
+                                        className="hidden items-center gap-1.5 rounded-0 border border-white/20 px-3 py-1.5 text-[11px] font-semibold text-[#c4c4c4] transition-colors hover:border-white/40 hover:text-white md:inline-flex"
                                     >
                                         <LayoutDashboard className="h-3.5 w-3.5" />
                                         Dashboard
@@ -93,7 +93,7 @@ export function SiteNav() {
                         <SheetTrigger asChild>
                             <button
                                 type="button"
-                                className="ml-2 inline-flex h-8 w-8 items-center justify-center rounded-md text-[#c4c4c4] hover:text-white md:hidden"
+                                className="ml-2 inline-flex h-8 w-8 items-center justify-center rounded-0 text-[#c4c4c4] hover:text-white md:hidden"
                                 aria-label="Open menu"
                             >
                                 <Menu className="h-5 w-5" />
@@ -114,7 +114,7 @@ export function SiteNav() {
                                             key={link.href}
                                             href={link.href}
                                             onClick={() => setOpen(false)}
-                                            className="rounded-md px-3 py-2.5 text-sm text-[#c4c4c4] transition-colors hover:bg-white/10 hover:text-white"
+                                            className="rounded-0 px-3 py-2.5 text-sm text-[#c4c4c4] transition-colors hover:bg-white/10 hover:text-white"
                                         >
                                             {link.label}
                                         </Link>
@@ -131,7 +131,7 @@ export function SiteNav() {
                                                     <Link
                                                         href="/dashboard"
                                                         onClick={() => setOpen(false)}
-                                                        className="inline-flex items-center gap-2 rounded-md px-3 py-2.5 text-sm text-[#c4c4c4] transition-colors hover:bg-white/10 hover:text-white"
+                                                        className="inline-flex items-center gap-2 rounded-0 px-3 py-2.5 text-sm text-[#c4c4c4] transition-colors hover:bg-white/10 hover:text-white"
                                                     >
                                                         <LayoutDashboard className="h-4 w-4" />
                                                         Dashboard
@@ -151,7 +151,7 @@ export function SiteNav() {
                                                 <Link
                                                     href="/sign-in"
                                                     onClick={() => setOpen(false)}
-                                                    className="rounded-md px-3 py-2.5 text-sm text-[#c4c4c4] transition-colors hover:bg-white/10 hover:text-white"
+                                                    className="rounded-0 px-3 py-2.5 text-sm text-[#c4c4c4] transition-colors hover:bg-white/10 hover:text-white"
                                                 >
                                                     Sign in
                                                 </Link>

@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 
 const inputClass =
-    "h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none focus-visible:border-ring";
+    "h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none focus-visible:border-ring";
 
 type Provider = { id: string; name: string; contact_email?: string | null };
 type Participant = { participant_id: string; participant_name: string };
@@ -187,7 +187,7 @@ export function IntroductionsManager({
                         return (
                             <div
                                 key={i.id}
-                                className="flex flex-col gap-3 rounded-md border border-line bg-card p-4"
+                                className="flex flex-col gap-3 rounded-0 border border-line bg-card p-4"
                             >
                                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
                                     <p className="text-[14px] font-semibold">{i.participant_name}</p>

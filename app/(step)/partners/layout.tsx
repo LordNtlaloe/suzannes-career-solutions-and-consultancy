@@ -49,14 +49,14 @@ export default async function PartnersLayout({
             <nav aria-label="Partners" className="flex gap-1 overflow-x-auto border-b border-line pb-3">
                 <Link
                     href={link("/partners")}
-                    className="rounded-md bg-blue/12 px-3 py-1.5 text-[12px] font-semibold text-blue-dark"
+                    className="rounded-0 bg-blue/12 px-3 py-1.5 text-[12px] font-semibold text-blue-dark"
                 >
                     Partners
                 </Link>
                 {canManageIntroductions(context) && (
                     <Link
                         href={link("/partners/introductions")}
-                        className="rounded-md px-3 py-1.5 text-[12px] font-semibold text-brand-muted transition-colors hover:bg-light hover:text-brand"
+                        className="rounded-0 px-3 py-1.5 text-[12px] font-semibold text-brand-muted transition-colors hover:bg-light hover:text-brand"
                     >
                         Introductions
                     </Link>

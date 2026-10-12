@@ -92,7 +92,7 @@ export default function LoginForm({
                         placeholder="m@example.com"
                         required
                         disabled={loading}
-                        className="h-10 rounded-md border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
+                        className="h-10 rounded-0 border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
                     />
                 </Field>
                 <Field>
@@ -113,7 +113,7 @@ export default function LoginForm({
                         type="password"
                         required
                         disabled={loading}
-                        className="h-10 rounded-md border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
+                        className="h-10 rounded-0 border border-white/20 bg-white/10 px-3 text-[13px] text-white placeholder:text-white/40 focus:border-blue-light focus:ring-1 focus:ring-blue-light"
                     />
                 </Field>
                 <Field>

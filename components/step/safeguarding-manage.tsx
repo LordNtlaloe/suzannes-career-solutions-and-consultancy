@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 
 const inputClass =
-    "h-9 rounded-md border border-input bg-input/20 px-2 text-[12px] outline-none focus-visible:border-ring";
+    "h-9 rounded-0 border border-input bg-input/20 px-2 text-[12px] outline-none focus-visible:border-ring";
 
 type Complaint = {
     id: string;
@@ -155,7 +155,7 @@ export function SafeguardingManage({
                 ) : (
                     <div className="flex flex-col gap-3">
                         {complaints.map((c) => (
-                            <div key={c.id} className="flex flex-col gap-3 rounded-md border border-line bg-card p-4">
+                            <div key={c.id} className="flex flex-col gap-3 rounded-0 border border-line bg-card p-4">
                                 <div>
                                     <p className="text-[14px] font-semibold">{c.subject}</p>
                                     {c.body ? <p className="section-copy mt-1">{c.body}</p> : null}
@@ -224,7 +224,7 @@ export function SafeguardingManage({
                 ) : (
                     <div className="flex flex-col gap-3">
                         {reports.map((r) => (
-                            <div key={r.id} className="flex flex-col gap-3 rounded-md border border-line bg-card p-4">
+                            <div key={r.id} className="flex flex-col gap-3 rounded-0 border border-line bg-card p-4">
                                 <div>
                                     <p className="text-[14px] font-semibold">{r.subject}</p>
                                     {r.body ? <p className="section-copy mt-1">{r.body}</p> : null}
@@ -294,7 +294,7 @@ export function SafeguardingManage({
                         {declarations.map((d) => (
                             <div
                                 key={d.id}
-                                className="flex flex-wrap items-center gap-x-4 gap-y-1 rounded-md border border-line bg-light/60 px-4 py-3"
+                                className="flex flex-wrap items-center gap-x-4 gap-y-1 rounded-0 border border-line bg-light/60 px-4 py-3"
                             >
                                 <div>
                                     <p className="text-[13px] font-semibold">

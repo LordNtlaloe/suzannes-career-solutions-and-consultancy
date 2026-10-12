@@ -96,7 +96,7 @@ export function ApplyForm({ cohorts, cycles, draft }: ApplyFormProps) {
     }
 
     const inputClass =
-        "h-10 rounded-md border border-input bg-input/20 px-3 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30";
+        "h-10 rounded-0 border border-input bg-input/20 px-3 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30";
 
     return (
         <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
@@ -192,7 +192,7 @@ export function ApplyForm({ cohorts, cycles, draft }: ApplyFormProps) {
                     rows={3}
                     defaultValue={draft?.goals ?? ""}
                     placeholder="What are you working towards over the next six months?"
-                    className="rounded-md border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30"
+                    className="rounded-0 border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30"
                 />
             </div>
 
@@ -206,7 +206,7 @@ export function ApplyForm({ cohorts, cycles, draft }: ApplyFormProps) {
                     rows={3}
                     defaultValue={draft?.baseline ?? ""}
                     placeholder="Briefly describe your current situation, experience or stage."
-                    className="rounded-md border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30"
+                    className="rounded-0 border border-input bg-input/20 px-3 py-2 text-[13px] outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30"
                 />
             </div>
 
@@ -250,7 +250,7 @@ export function ApplyForm({ cohorts, cycles, draft }: ApplyFormProps) {
             </div>
 
             {error && (
-                <p className="rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-[12px] text-destructive">
+                <p className="rounded-0 border border-destructive/40 bg-destructive/10 px-3 py-2 text-[12px] text-destructive">
                     {error}
                 </p>
             )}

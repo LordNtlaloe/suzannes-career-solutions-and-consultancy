@@ -199,7 +199,7 @@ export function CommentItem({
                                     </button>
                                     <div
                                         id={`comment-menu-${comment.id}`}
-                                        className="hidden absolute top-full left-0 mt-1 z-10 min-w-30 rounded-md border border-line bg-white shadow-soft py-1"
+                                        className="hidden absolute top-full left-0 mt-1 z-10 min-w-30 rounded-0 border border-line bg-white shadow-soft py-1"
                                     >
                                         {canEdit && (
                                             <button

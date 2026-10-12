@@ -77,12 +77,12 @@ export function PostRow({
     return (
         <div
             className={cn(
-                "group flex items-center gap-3 rounded-md border border-line bg-white px-3 py-2.5",
+                "group flex items-center gap-3 rounded-0 border border-line bg-white px-3 py-2.5",
                 "hover:border-ink/20 transition-colors"
             )}
         >
             {/* Thumbnail */}
-            <div className="h-12 w-16 shrink-0 overflow-hidden rounded-md border border-line bg-light">
+            <div className="h-12 w-16 shrink-0 overflow-hidden rounded-0 border border-line bg-light">
                 {coverSrc ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img

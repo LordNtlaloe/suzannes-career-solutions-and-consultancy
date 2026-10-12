@@ -7,13 +7,13 @@ import { Process } from "@/components/public/process"
 import { Testimonials } from "@/components/public/testimonials"
 
 export const metadata: Metadata = {
-    title: "The Programme — STEP",
+    title: "The Programmes — STEP",
     description:
-        "The STEP six-month pathway: learning, coaching, mentoring, practical application and a verified Skills Passport.",
+        "STEP's four connected programmes: the Career Readiness Academy, Talent Experience Pathway, Schools Career Discovery Bootcamps and Entrepreneurship & Creative Economy Lab.",
     openGraph: {
-        title: "The Programme — STEP",
+        title: "The Programmes — STEP",
         description:
-            "The STEP six-month pathway: learning, coaching, mentoring, practical application and a verified Skills Passport.",
+            "STEP's four connected programmes: the Career Readiness Academy, Talent Experience Pathway, Schools Career Discovery Bootcamps and Entrepreneurship & Creative Economy Lab.",
     },
 }
 
@@ -21,9 +21,9 @@ export default function ServicesPage() {
     return (
         <>
             <Hero
-                eyebrow="THE PROGRAMME"
-                title="A pathway that fits where you are."
-                text="Six structured months of learning, coaching, mentoring and assessed practice — organised around eight industry cohorts."
+                eyebrow="THE PROGRAMMES"
+                title="Four programmes, one continuous pathway."
+                text="STEP links learning, mentorship, supervised experience and markets — from school and ambition to sustainable livelihoods."
             />
 
             <Services />
@@ -33,21 +33,21 @@ export default function ServicesPage() {
             <section className="container-x py-16 sm:py-20">
                 <div className="rounded-2xl border border-line bg-linear-to-br from-blue/10 via-card to-muted p-8 sm:p-12 shadow-soft text-center">
                     <span className="text-[11px] font-semibold uppercase tracking-[2.4px] text-blue">
-                        Not sure which pathway fits?
+                        Not sure which programme fits?
                     </span>
                     <h2 className="section-heading mt-3 leading-tight">
-                        Apply and we&apos;ll help you find out.
+                        Register your interest and we&apos;ll help.
                     </h2>
                     <p className="section-copy mt-4 max-w-xl mx-auto">
-                        Registration is open to committed Basotho participants
-                        across every career stage. The programme team reviews
-                        every application before cohort allocation.
+                        The three open-call pathways launch their pilot
+                        recruitment no earlier than February 2027. School
+                        bootcamps use direct paid registration.
                     </p>
                     <Link
                         href="/apply"
                         className="btn-brand mt-6 inline-flex"
                     >
-                        Apply to STEP
+                        Register your interest
                         <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                 </div>

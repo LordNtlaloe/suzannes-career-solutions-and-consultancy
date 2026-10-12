@@ -1,9 +1,9 @@
 export function TrustBar() {
     const stats = [
-        { value: "600", label: "Basotho participants" },
-        { value: "8", label: "Industry cohorts" },
-        { value: "5", label: "Readiness levels" },
-        { value: "1", label: "Verified Skills Passport" },
+        { value: "4", label: "Connected programmes" },
+        { value: "75%", label: "Completion target" },
+        { value: "80%", label: "Mentoring target" },
+        { value: "10", label: "Districts served" },
     ]
 
     return (

@@ -16,16 +16,17 @@ export const images = {
 };
 
 export const services = [
-  { slug: "learning-and-coaching", title: "Learning & Coaching", short: "Structured coursework, coaching and mentoring across your industry cohort.", text: "Six months of guided learning, coaching and mentoring that build the skills and confidence behind verified readiness.", image: images.service1 },
-  { slug: "practical-application", title: "Practical Application", short: "Turn learning into demonstrated skill through assessed practice.", text: "Assessed projects and real-world practice that prove what you can do — not just what you know.", image: images.service2 },
-  { slug: "verified-opportunity", title: "Verified Opportunity", short: "Finish with a Skills Passport and introductions to opportunity providers.", text: "A verified STEP Skills Passport and consented, curated introductions connect you to employers and providers.", image: images.service3 },
+  { slug: "career-readiness-academy", title: "Career Readiness Academy", short: "Six months of training, mentorship, coaching and competency assessment.", text: "A blended programme combining online learning, workshops, peer support, career coaching and mentoring — finishing with a STEP Skills Passport.", image: images.service1 },
+  { slug: "talent-experience-pathway", title: "Talent Experience Pathway", short: "Structured, supervised work experience with employer exposure.", text: "Time-bound, supervised placements with host organisations that turn readiness into real workplace experience.", image: images.service2 },
+  { slug: "schools-discovery-bootcamps", title: "Schools Career Discovery Bootcamps", short: "Fee-based career guidance and foundational digital and creative skills.", text: "Annual, age-appropriate bootcamps for secondary-school learners exploring subject and career choices.", image: images.service3 },
+  { slug: "creative-economy-lab", title: "Entrepreneurship & Creative Economy Lab", short: "Enterprise development, creator skills, showcases and market links.", text: "Incubation and exposure for entrepreneurs, artists and creators — from business fundamentals to paid commissions.", image: images.project1 },
 ];
 
 export const differentiators = [
-  { title: "Six-month structure", text: "A focused six months with clear phases, deadlines and a defined endpoint — from baseline to verified passport." },
-  { title: "Verified readiness", text: "Every level is earned through assessed evidence and audited progression, never time served." },
-  { title: "Industry cohorts", text: "Learning, mentoring and practice are organised around eight real industry pathways into work." },
-  { title: "Skills Passport", text: "Participants finish with a verified STEP Skills Passport that employers and providers can trust." },
+  { title: "Continuous pathway", text: "Four connected programmes that move talent from school and ambition to skills, experience and livelihoods." },
+  { title: "Verified capabilities", text: "Assessed learning, mentor records and a STEP Skills Passport prove what participants can do." },
+  { title: "Inclusive access", text: "Representation across Lesotho's ten districts, with reasonable accommodations and alternative registration channels." },
+  { title: "Accountable partnerships", text: "Written scopes, agreed outcomes, safeguarding and measured first-cycle targets." },
 ];
 
 export const articles = [
@@ -35,8 +36,8 @@ export const articles = [
 ];
 
 export const portfolio = [
-  { slug: "business-finance", title: "Business & Finance", status: "Cohort 01", image: images.project1, text: "Accounting, banking, insurance, consulting, audit, procurement and administration." },
-  { slug: "technology-data", title: "Technology & Data", status: "Cohort 02", image: images.project2, text: "Information technology, cloud, AI, cybersecurity, data, product and digital operations." },
-  { slug: "media-creative", title: "Media & Creative", status: "Cohort 03", image: images.project3, text: "Content creation, film, music, design, journalism, marketing and communications." },
-  { slug: "entrepreneurship", title: "Entrepreneurship", status: "Cohort 04", image: images.project4, text: "Start-ups, micro and small enterprises, freelancers, consultants and innovation-led businesses." },
+  { slug: "career-readiness-academy", title: "Career Readiness Academy", status: "Pillar 01", image: images.project1, text: "Six months of blended training, mentorship, coaching and competency assessment." },
+  { slug: "talent-experience-pathway", title: "Talent Experience Pathway", status: "Pillar 02", image: images.project2, text: "Time-bound, supervised work experience with employer exposure." },
+  { slug: "schools-bootcamps", title: "Schools Career Discovery Bootcamps", status: "Pillar 03", image: images.project3, text: "Fee-based career guidance and foundational digital and creative skills." },
+  { slug: "creative-economy-lab", title: "Entrepreneurship & Creative Economy Lab", status: "Pillar 04", image: images.project4, text: "Enterprise development, creator skills, showcases and market links." },
 ];

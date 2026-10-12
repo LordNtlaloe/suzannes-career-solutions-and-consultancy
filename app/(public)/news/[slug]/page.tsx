@@ -106,14 +106,14 @@ export default async function PublicPostPage({ params }: PageProps) {
 
             {/* Status banners — brand-tinted */}
             {!post.published && (
-                <div className="mb-6 rounded-md border border-[#f0c36d]/40 bg-[#fef6e7] px-3 py-2 text-[13px] text-[#8a5a00]">
+                <div className="mb-6 rounded-0 border border-[#f0c36d]/40 bg-[#fef6e7] px-3 py-2 text-[13px] text-[#8a5a00]">
                     {post.scheduled_at
                         ? `Scheduled for ${new Date(post.scheduled_at * 1000).toLocaleString()}`
                         : "Draft — this post is not visible to the public"}
                 </div>
             )}
             {post.is_deleted && (
-                <div className="mb-6 rounded-md border border-[#e88]/40 bg-[#fdecec] px-3 py-2 text-[13px] text-[#8a1a1a]">
+                <div className="mb-6 rounded-0 border border-[#e88]/40 bg-[#fdecec] px-3 py-2 text-[13px] text-[#8a1a1a]">
                     This post is in the trash.
                 </div>
             )}

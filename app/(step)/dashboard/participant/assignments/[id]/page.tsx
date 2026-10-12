@@ -79,7 +79,7 @@ export default async function AssignmentDetailPage({
                     ) : null}
 
                     {assignment.completion_criteria ? (
-                        <div className="rounded-md border border-line bg-light/60 p-4">
+                        <div className="rounded-0 border border-line bg-light/60 p-4">
                             <p className="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-muted">
                                 Completion criteria
                             </p>
@@ -122,7 +122,7 @@ export default async function AssignmentDetailPage({
                                         <p className="mt-2 text-[13px] whitespace-pre-wrap">{String(ev.body)}</p>
                                     ) : null}
                                     {latest?.feedback ? (
-                                        <div className="mt-3 rounded-md border border-line bg-light/60 p-3">
+                                        <div className="mt-3 rounded-0 border border-line bg-light/60 p-3">
                                             <p className="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-muted">
                                                 {String(latest.decision).replace("_", " ")}
                                             </p>

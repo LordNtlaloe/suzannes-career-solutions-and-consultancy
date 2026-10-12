@@ -19,7 +19,7 @@ export function PostArticle({ html, className }: PostArticleProps) {
                 // Links
                 "prose-a:text-blue-dark prose-a:underline prose-a:underline-offset-4 prose-a:decoration-blue-dark/40 hover:prose-a:decoration-blue-dark",
                 // Code
-                "prose-code:bg-[#f6f6f6] prose-code:rounded prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:text-[#242527]",
+                "prose-code:bg-[#f6f6f6] prose-code:rounded-none prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:text-[#242527]",
                 "dark:prose-code:bg-[#2a2a2a] dark:prose-code:text-[#f6f6f6]",
                 "prose-code:before:content-none prose-code:after:content-none",
                 "prose-pre:bg-[#f6f6f6] prose-pre:border prose-pre:border-line prose-pre:rounded-lg prose-pre:overflow-x-auto",

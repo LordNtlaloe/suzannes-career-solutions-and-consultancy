@@ -125,7 +125,7 @@ export function TagSelect({
             {/* Selected chips */}
             <div
                 className={cn(
-                    "flex flex-wrap items-center gap-1.5 rounded-md border border-input bg-transparent px-2 py-1.5 min-h-9",
+                    "flex flex-wrap items-center gap-1.5 rounded-0 border border-input bg-transparent px-2 py-1.5 min-h-9",
                     disabled && "opacity-60 pointer-events-none"
                 )}
             >
@@ -171,7 +171,7 @@ export function TagSelect({
 
             {/* Dropdown */}
             {open && (loading || filtered.length > 0 || canCreate) && (
-                <div className="absolute z-50 mt-1 w-full rounded-md border border-line bg-white shadow-md max-h-64 overflow-y-auto">
+                <div className="absolute z-50 mt-1 w-full rounded-0 border border-line bg-white shadow-md max-h-64 overflow-y-auto">
                     {loading ? (
                         <p className="p-3 text-xs text-muted-foreground">
                             Loading tags...

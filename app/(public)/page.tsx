@@ -48,6 +48,7 @@ export default function HomePage() {
             <Partnerships />
             <TeamSection />
             {/* <Governance /> */}
+            
             {/* <Resources /> */}
             {/* <Funding /> */}
             {/* <Inclusion /> */}

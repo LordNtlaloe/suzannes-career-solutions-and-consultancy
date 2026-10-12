@@ -4,24 +4,24 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const COMPANY_LINKS = [
     { href: "/about", label: "About" },
-    { href: "/step", label: "STEP Programme" },
-    { href: "/team", label: "Our Team" },
-    { href: "/posts", label: "Articles" },
+    { href: "/", label: "STEP Programme" },
+    { href: "/apply", label: "Apply" },
+    { href: "/news", label: "News & Updates" },
     { href: "/contact", label: "Contact" },
 ];
 
 const MORE_LINKS = [
-    { href: "/services", label: "Services" },
-    { href: "/portfolio", label: "Portfolio" },
-    { href: "/contact", label: "Careers" },
-    { href: "/contact", label: "Terms" },
+    { href: "/services", label: "The Programme" },
+    { href: "/", label: "Cohorts" },
+    { href: "/apply", label: "Application portal" },
+    { href: "/privacy", label: "Privacy" },
 ];
 
 const SOCIAL_LINKS = [
     { href: "#", label: "LinkedIn", Icon: FaLinkedin },
-    { href: "mailto:hello@generalproject.co", label: "Email", Icon: Mail },
-    { href: "/team", label: "Team", Icon: Users },
-    { href: "/portfolio", label: "Portfolio", Icon: Award },
+    { href: "mailto:hello@step.org.ls", label: "Email", Icon: Mail },
+    { href: "/", label: "Programme", Icon: Users },
+    { href: "/about", label: "About", Icon: Award },
 ];
 
 export function SiteFooter() {
@@ -34,13 +34,15 @@ export function SiteFooter() {
                         href="/"
                         className="inline-block w-35 text-[15px] font-semibold leading-4.5 text-white"
                     >
-                        General
-                        <span className="block text-blue-light">Project</span>
+                        STEP
+                        <span className="block text-blue-light">Programme</span>
                     </Link>
 
                     <p className="mt-5.5 max-w-107.5 font-dm text-[13px] leading-[1.75] text-white/80">
-                        We are a career agency helping professionals navigate change,
-                        communicate their value and find meaningful next opportunities.
+                        STEP is a six-month industry-based incubation and
+                        opportunity pathway for 600+ Basotho participants —
+                        through learning, coaching, mentoring, practical
+                        application and assessment.
                     </p>
 
                     <div className="mt-6.25 flex gap-2.5">
@@ -89,7 +91,7 @@ export function SiteFooter() {
             {/* Bottom bar */}
             <div className="container-x mt-16.25 flex justify-between gap-5 border-t border-white/10 pt-17.5 font-dm text-[12px] text-[#c4c4c4] max-[520px]:flex-col">
                 <span>
-                    © 2026 General Project Career Agency. All rights reserved.
+                    © 2026 STEP — Skills, Talent &amp; Employment Pathway. All rights reserved.
                 </span>
                 <Link href="/contact" className="transition-opacity hover:opacity-70">
                     Privacy Policy

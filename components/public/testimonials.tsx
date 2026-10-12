@@ -8,19 +8,19 @@ type Testimonial = {
 
 const TESTIMONIALS: Testimonial[] = [
     {
-        quote: "I'd been applying on job boards for eight months with zero callbacks. Suzanne reviewed my CV, rewrote the top third, and I had three interviews in two weeks.",
-        author: "Priya M.",
-        role: "Product Designer, fintech",
+        quote: "I had qualifications but no clear path. STEP gave me structure, a cohort, and a Skills Passport that employers actually looked at.",
+        author: "Reitumetse K.",
+        role: "STEP Graduate, Business & Finance",
     },
     {
-        quote: "The mock interview was brutal in the best way. Nobody had ever told me I was rambling before. Two weeks later I got the offer.",
-        author: "Daniel K.",
-        role: "Engineering Manager, SaaS",
+        quote: "The mentoring was the part I didn't know I needed. Six months later I walked into interviews with evidence, not just confidence.",
+        author: "Thabo M.",
+        role: "STEP Graduate, Technology & Data",
     },
     {
-        quote: "As a founder I've worked with four agencies. This is the only one that sent me shortlists I actually interviewed. No filler.",
-        author: "Ana R.",
-        role: "CEO, Series A startup",
+        quote: "As an employer, the passport told me what a candidate could actually do. We've hired two STEP graduates so far.",
+        author: "Naledi R.",
+        role: "HR Lead, partner organisation",
     },
 ]
 
@@ -35,8 +35,8 @@ export function Testimonials() {
                     What people say
                 </h2>
                 <p className="section-copy">
-                    Unedited, from candidates and companies we&apos;ve worked
-                    with.
+                    Unedited, from participants and partners who&apos;ve been
+                    through the programme.
                 </p>
             </header>
 

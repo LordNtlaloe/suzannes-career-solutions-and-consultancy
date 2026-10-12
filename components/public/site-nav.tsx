@@ -9,10 +9,10 @@ import { PublicThemeToggle } from "./public-theme-toggle";
 import { useSession } from "@/lib/auth-client";
 
 const NAV_LINKS = [
-    { href: "/posts", label: "Posts" },
-    { href: "/step", label: "STEP" },
+    { href: "/news", label: "News & Updates" },
+    { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/services", label: "Services" },
+    { href: "/services", label: "The Programme" },
     { href: "/contact", label: "Contact" },
 ];
 
@@ -32,8 +32,8 @@ export function SiteNav() {
                         href="/"
                         className="w-35 text-[15px] font-semibold leading-4.5 text-white transition-opacity hover:opacity-80"
                     >
-                        General
-                        <span className="block text-blue-light">Project</span>
+                        STEP
+                        <span className="block text-blue-light">Programme</span>
                     </Link>
 
                     {/* Desktop primary nav */}
@@ -63,7 +63,7 @@ export function SiteNav() {
                                     </Link>
                                 )}
                                 <Link
-                                    href="/dashboard/posts/new"
+                                    href="/studio/posts/new"
                                     className="btn-brand min-h-9! px-5! text-[11px]!"
                                 >
                                     <PenLine className="mr-1.5 h-3.5 w-3.5" />
@@ -79,10 +79,10 @@ export function SiteNav() {
                                     Sign in
                                 </Link>
                                 <Link
-                                    href="/sign-up"
+                                    href="/apply"
                                     className="btn-brand min-h-9! px-5! text-[11px]!"
                                 >
-                                    Get started
+                                    Apply to STEP
                                 </Link>
                             </>
                         )}
@@ -138,7 +138,7 @@ export function SiteNav() {
                                                     </Link>
                                                 )}
                                                 <Link
-                                                    href="/dashboard/posts/new"
+                                                    href="/studio/posts/new"
                                                     onClick={() => setOpen(false)}
                                                     className="btn-brand mt-1 inline-flex items-center justify-center text-xs!"
                                                 >
@@ -156,11 +156,11 @@ export function SiteNav() {
                                                     Sign in
                                                 </Link>
                                                 <Link
-                                                    href="/sign-up"
+                                                    href="/apply"
                                                     onClick={() => setOpen(false)}
                                                     className="btn-brand mt-1 inline-flex items-center justify-center text-xs!"
                                                 >
-                                                    Get started
+                                                    Apply to STEP
                                                 </Link>
                                             </>
                                         )}

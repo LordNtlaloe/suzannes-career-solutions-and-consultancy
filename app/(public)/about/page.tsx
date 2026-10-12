@@ -7,13 +7,13 @@ import { MissionVision } from "@/components/public/mission-vision"
 import { TrustBar } from "@/components/public/trust-bar"
 
 export const metadata: Metadata = {
-    title: "About — Suzannes Agency",
+    title: "About — STEP",
     description:
-        "Learn more about our career agency, our mission, and the team behind it.",
+        "Learn more about STEP — a six-month incubation and opportunity pathway for 600+ Basotho participants.",
     openGraph: {
-        title: "About — Suzannes Agency",
+        title: "About — STEP",
         description:
-            "Learn more about our career agency, our mission, and the team behind it.",
+            "Learn more about STEP — a six-month incubation and opportunity pathway for 600+ Basotho participants.",
     },
 }
 
@@ -21,9 +21,9 @@ export default function AboutPage() {
     return (
         <>
             <Hero
-                eyebrow="ABOUT US"
-                title="We help professionals move with purpose."
-                text="From clarifying your direction to landing the right opportunity — we provide honest, practical career support built on years of experience."
+                eyebrow="ABOUT STEP"
+                title="A pathway from potential to verified readiness."
+                text="STEP links learning to application, application to assessment, and verified preparedness to opportunity — for 600+ Basotho participants every intake."
             />
 
             {/* Story section */}
@@ -33,7 +33,7 @@ export default function AboutPage() {
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src={images.story}
-                            alt="Professionals collaborating"
+                            alt="Participants collaborating"
                             className="h-full w-full object-cover"
                         />
                     </div>
@@ -43,36 +43,41 @@ export default function AboutPage() {
                             Our Story
                         </span>
                         <h2 className="section-heading leading-tight">
-                            Built from experience, driven by purpose.
+                            Built on experience, driven by opportunity.
                         </h2>
 
                         <div className="section-copy flex flex-col gap-4 leading-relaxed">
                             <p>
-                                Suzannes Agency started with a simple observation: the
-                                hiring process is broken for everyone. Candidates feel
-                                like numbers. Companies struggle to find the right
-                                people. And somewhere in the middle, good matches never
-                                happen.
+                                STEP started with a simple observation: access
+                                to learning isn&apos;t the same as preparedness.
+                                Many Basotho hold qualifications, experience,
+                                creative ability and viable ideas — yet remain
+                                disconnected from structured development,
+                                credible guidance and visible pathways into
+                                opportunity.
                             </p>
                             <p>
-                                We founded this agency to bridge that gap — with honesty
-                                on both sides, practical support at every stage, and a
-                                genuine commitment to the people we work with. We don&apos;t
-                                believe in volume. We believe in fit.
+                                We built STEP to bridge that gap. Six months of
+                                learning, coaching, mentoring and practical
+                                application, organised around eight industry
+                                cohorts and finished with a verified STEP
+                                Skills Passport. Every level is earned through
+                                assessed evidence — never time served.
                             </p>
                             <p>
-                                Whether you&apos;re a professional looking for your next
-                                move or a company building a team, we bring the same
-                                 principles: clear communication, targeted strategy, and
-                                follow-through that lasts beyond the placement.
+                                Whether you&apos;re a participant ready to be
+                                developed or a partner ready to open doors,
+                                STEP brings the same principles: clear
+                                structure, verified progress and follow-through
+                                that lasts beyond the six months.
                             </p>
                         </div>
 
                         <Link
-                            href="/services"
+                            href="/"
                             className="text-link-brand text-blue-dark transition-opacity hover:opacity-70 mt-2"
                         >
-                            See our services
+                            Explore the programme
                             <ArrowRight className="ml-1.5 h-3.5 w-3.5" aria-hidden />
                         </Link>
                     </div>
@@ -90,35 +95,35 @@ export default function AboutPage() {
                             How we work
                         </h2>
                         <p className="section-copy">
-                            These principles guide every conversation, every search, and
-                            every recommendation we make.
+                            These principles guide every application, every
+                            assessment, and every introduction we make.
                         </p>
                     </header>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         <ValueCard
-                            title="Honest feedback"
-                            body="We tell you what we see — even when it&apos;s hard to hear. No sugar-coating, no false hope."
+                            title="Verified, not assumed"
+                            body="Every level is earned through assessed evidence, audited progression and recorded decisions."
                         />
                         <ValueCard
-                            title="Personal approach"
-                            body="Every person is different. We take the time to understand your story, your goals, and your strengths."
+                            title="Industry-aligned"
+                            body="Eight cohorts keep learning, mentoring and practice relevant to real pathways into work."
                         />
                         <ValueCard
-                            title="Real results"
-                            body="We measure success by lasting placements and genuine career progression, not by how many CVs we send out."
+                            title="Participant-first"
+                            body="Applications are reviewed individually, and no participant is introduced without their consent."
                         />
                         <ValueCard
                             title="Transparent process"
-                            body="You always know where you stand. No black boxes, no surprise fees, no unanswered questions."
+                            body="You always know your level, your progress and exactly what&apos;s required to advance."
                         />
                         <ValueCard
-                            title="Confidentiality first"
-                            body="Your search stays private until you&apos;re ready to share. We never send your details without permission."
+                            title="Confidentiality"
+                            body="Demographic and safeguarding data is restricted to the people who genuinely need it."
                         />
                         <ValueCard
-                            title="Long-term thinking"
-                            body="A good placement is one that works for years, not months. We focus on sustainable fits."
+                            title="Lasting outcomes"
+                            body="Success is measured by verified readiness and real opportunity — not attendance."
                         />
                     </div>
                 </div>

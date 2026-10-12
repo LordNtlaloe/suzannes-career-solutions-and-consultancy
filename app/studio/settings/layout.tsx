@@ -10,9 +10,9 @@ import { Separator } from "@/components/ui/separator"
 import { cn } from "@/lib/utils"
 
 const sidebarNavItems = [
-    { title: "Profile", href: "/dashboard/settings/profile" },
-    { title: "Security", href: "/dashboard/settings/security" },
-    { title: "Appearance", href: "/dashboard/settings/appearance" },
+    { title: "Profile", href: "/studio/settings/profile" },
+    { title: "Security", href: "/studio/settings/security" },
+    { title: "Appearance", href: "/studio/settings/appearance" },
 ] as const
 
 export default function SettingsLayout({ children }: PropsWithChildren) {

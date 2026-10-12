@@ -10,7 +10,7 @@ export function TestimonialSection() {
                 <div className="relative pl-[20px] max-md:pl-0">
                     <img
                         src={images.client}
-                        alt="Career client"
+                        alt="STEP participant"
                         className="h-[344px] w-[269px] max-md:w-[230px]"
                     />
 
@@ -20,12 +20,13 @@ export function TestimonialSection() {
                         </div>
 
                         <strong className="block text-center text-[17px]">
-                            Jacob Molen
+                            Reitumetse Khabo
                         </strong>
 
                         <p className="mt-[12px] text-[10px] leading-[1.7] text-[#888] dark:text-[#9ca3af]">
-                            The clarity I gained changed how I approached my search. I
-                            finally had a career story that felt like mine.
+                            STEP gave structure to skills I already had. I finished
+                            with a verified passport and real introductions &mdash;
+                            not just a certificate.
                         </p>
                     </div>
                 </div>
@@ -35,18 +36,19 @@ export function TestimonialSection() {
                     <h2 className="text-[36px] font-semibold leading-[1.5]">
                         What we have done &amp;
                         <br />
-                        what our Customers say
+                        what our participants say
                     </h2>
 
                     <p className="mt-[32px] max-w-[465px] text-[13px] leading-[1.8] text-[#c4c4c4]">
-                        We help professionals move from uncertainty to a practical next
-                        step. See how our clients have used career strategy, positioning
-                        and preparation to make meaningful progress.
+                        We help Basotho participants move from potential to
+                        verified, opportunity-ready skill. See how cohorts have
+                        used learning, practice and assessment to make real
+                        progress.
                     </p>
 
                     <div className="mt-[75px] flex justify-end gap-[12px]">
                         <Link
-                            href="/portfolio"
+                            href="/"
                             aria-label="Previous"
                             className="grid h-[57px] w-[57px] place-items-center bg-blue-dark text-white transition-opacity hover:opacity-80"
                         >

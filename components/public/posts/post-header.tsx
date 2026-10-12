@@ -61,8 +61,8 @@ export function PostHeader({
             )}
             {!categoryId && (
                 <nav className="text-[11px] text-[#a1a1a1] dark:text-[#6b7280]">
-                    <Link href="/posts" className="text-link-brand text-blue-dark hover:opacity-70">
-                        All posts
+                    <Link href="/news" className="text-link-brand text-blue-dark hover:opacity-70">
+                        All news
                     </Link>
                 </nav>
             )}

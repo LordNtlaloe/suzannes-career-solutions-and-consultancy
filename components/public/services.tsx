@@ -17,42 +17,42 @@ type Service = {
 const CANDIDATE_SERVICES: Service[] = [
     {
         icon: FileText,
-        title: "Resume & portfolio review",
-        body: "A written critique plus a 30-minute call. We tell you what's working, what isn't, and what to cut.",
-        price: "From $150",
+        title: "Apply & baseline",
+        body: "Register online, get reviewed by the programme team, and start from a baseline profile that places you on the right pathway.",
+        price: "Month 0",
     },
     {
         icon: MessageSquare,
-        title: "Interview coaching",
-        body: "Mock interviews tailored to the roles you're targeting. Feedback that's specific, not generic.",
-        price: "From $200",
+        title: "Learning & coaching",
+        body: "Structured coursework, coaching and mentoring delivered around your industry cohort.",
+        price: "Months 1–3",
     },
     {
         icon: Target,
-        title: "Career strategy session",
-        body: "Two hours to map where you want to be in 3–5 years and the concrete steps to get there.",
-        price: "From $250",
+        title: "Practical application",
+        body: "Assessed projects and real-world practice that turn learning into demonstrated skill.",
+        price: "Month 4",
     },
     {
         icon: Rocket,
-        title: "Job search sprint",
-        body: "Six weeks of hands-on support: applications, outreach, negotiation, and offer review.",
-        price: "From $1,200",
+        title: "Verified readiness",
+        body: "Readiness assessment, progression decisions and a verified STEP Skills Passport.",
+        price: "Months 5–6",
     },
 ]
 
 const COMPANY_SERVICES: Service[] = [
     {
         icon: Users,
-        title: "Contingency search",
-        body: "We run the search, you pay only on a successful hire. Typical time to shortlist: 3–4 weeks.",
-        price: "% of salary",
+        title: "Provide opportunities",
+        body: "Offer placements, projects, introductions or hiring pathways for verified participants.",
+        price: "Partner",
     },
     {
         icon: Briefcase,
-        title: "Retained search",
-        body: "For senior or hard-to-fill roles. Deeper search, dedicated partner, better guarantees.",
-        price: "Custom",
+        title: "Contribute & mentor",
+        body: "Fund, mentor or support the programme and gain consented, field-scoped access to outcomes.",
+        price: "Partner",
     },
 ]
 
@@ -64,21 +64,21 @@ export function Services() {
         >
             <header className="flex flex-col gap-3 max-w-2xl mb-12">
                 <span className="text-[11px] font-semibold uppercase tracking-[2.4px] text-blue">
-                    Services
+                    The programme
                 </span>
                 <h2 className="section-heading">
-                    How we help
+                    How STEP works
                 </h2>
                 <p className="section-copy">
-                    Practical support for people building careers and companies
-                    building teams.
+                    A structured six-month pathway for participants — and a
+                    clear way for partners to open doors for them.
                 </p>
             </header>
 
-            {/* Candidates */}
+            {/* Participants */}
             <div className="mb-14">
                 <h3 className="text-[11px] font-semibold uppercase tracking-[2.4px] text-[#a1a1a1] mb-4">
-                    For candidates
+                    For participants
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {CANDIDATE_SERVICES.map((s) => (
@@ -87,10 +87,10 @@ export function Services() {
                 </div>
             </div>
 
-            {/* Companies */}
+            {/* Partners */}
             <div>
                 <h3 className="text-[11px] font-semibold uppercase tracking-[2.4px] text-[#a1a1a1] mb-4">
-                    For companies
+                    For partners
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {COMPANY_SERVICES.map((s) => (

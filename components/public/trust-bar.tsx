@@ -1,9 +1,9 @@
 export function TrustBar() {
     const stats = [
-        { value: "12+", label: "Years in recruiting" },
-        { value: "480", label: "Placements made" },
-        { value: "94%", label: "Still with us after a year" },
-        { value: "38", label: "Partner companies" },
+        { value: "600", label: "Basotho participants" },
+        { value: "8", label: "Industry cohorts" },
+        { value: "5", label: "Readiness levels" },
+        { value: "1", label: "Verified Skills Passport" },
     ]
 
     return (

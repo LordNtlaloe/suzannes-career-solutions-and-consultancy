@@ -3,15 +3,15 @@
 import { createContext, useContext } from "react";
 
 type StepPathContextValue = {
-    /** "" on the STEP subdomain, "/step" on the main domain. */
+    /** STEP is hosted at the root, so this is "" (paths are absolute). */
     basePath: string;
-    /** stepPath("/apply") → "/step/apply" or "/apply" depending on host. */
+    /** path("/apply") → "/apply". */
     path: (path: string) => string;
 };
 
 const StepPathContext = createContext<StepPathContextValue>({
-    basePath: "/step",
-    path: (p) => `/step${p === "/" ? "" : p}`,
+    basePath: "",
+    path: (p) => (p === "/" ? "/" : p),
 });
 
 export function StepPathProvider({

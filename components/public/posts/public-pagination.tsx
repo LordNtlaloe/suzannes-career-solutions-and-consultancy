@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 type Props = {
     currentPage: number // 1-indexed
     totalPages: number
-    /** Base path, e.g. /posts */
+    /** Base path, e.g. /news */
     basePath: string
     /** Current query params to preserve */
     searchParams: Record<string, string | undefined>

@@ -21,7 +21,7 @@ import type { NavItem } from "@/types";
 const mainNavItems: NavItem[] = [
     {
         title: "Dashboard",
-        href: "/dashboard",
+        href: "/studio",
         icon: LayoutGrid,
     },
     {
@@ -31,25 +31,25 @@ const mainNavItems: NavItem[] = [
         items: [
             {
                 title: "Categories",
-                href: "/dashboard/categories",
+                href: "/studio/categories",
                 icon: Group
             },
             {
                 title: "Tags",
-                href: "/dashboard/tags",
+                href: "/studio/tags",
                 icon: Tag
 
             },
         ],
     },
     {
-        title: "Posts",
-        href: "/dashboard/posts",
+        title: "News",
+        href: "/studio/posts",
         icon: BookIcon,
     },
     {
         title: "Bookmarks",
-        href: "/dashboard/bookmarks",
+        href: "/studio/bookmarks",
         icon: Bookmark,
     }
 ];
@@ -74,7 +74,7 @@ export function AppSidebar() {
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton size="lg" asChild>
-                            <Link href="/dashboard">
+                            <Link href="/studio">
                                 <AppLogo />
                             </Link>
                         </SidebarMenuButton>

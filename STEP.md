@@ -6,29 +6,30 @@ database and shared UI conventions.
 
 ## Current state
 
-STEP is live under `/step` on the main domain:
+STEP is the primary application and is hosted at the site root:
 
 | Path | Purpose |
 | --- | --- |
-| `/step` | Public programme homepage |
-| `/step/apply` | Registration / application portal (requires sign-in) |
-| `/step/dashboard` | Participant dashboard (requires sign-in) |
-| `/step/admin` | Programme administration — applications queue (admin/moderator) |
+| `/` | Public programme homepage |
+| `/apply` | Registration / application portal (requires sign-in) |
+| `/dashboard` | Participant dashboard (requires sign-in) |
+| `/admin` | Programme administration — applications queue (admin/moderator) |
 
-The existing blog and its URLs are unchanged.
+The blog CMS dashboard has been relocated to `/studio`; the public blog remains
+at `/posts` with its URLs unchanged.
 
 ## Module layout
 
-- `app/(step)/step/**` — STEP routes (own route group and chrome)
+- `app/(step)/**` — STEP routes (own route group and chrome)
 - `components/step/**` — STEP-specific UI
-- `lib/step/**` — hostname/path helpers, constants, metadata
+- `lib/step/**` — base-path helpers, constants, metadata
 - `db/queries/step.ts` — data access
 - `actions/step/*.actions.ts` — server actions split by domain
   (applications, learning, evidence, assessments, progression, passports,
   mentoring, staff) with shared helpers in `actions/step/helpers.ts`
 - `db/schema.sql` — `step_cohorts`, `step_applications`, `step_participants`
 - `db/seed/step-cohorts.mjs` — seeds the eight industry cohorts
-- `proxy.ts` — hostname validation, subdomain rewrite, route guards
+- `proxy.ts` — hostname validation and route guards
 
 ## Data model
 
@@ -93,13 +94,13 @@ enrolment is never blocked.
 
 - `step_partners` / `step_partner_agreements` / `step_partner_contributions` —
   partner records with contribution areas and agreements. A partner's name is
-  only shown publicly (`/step` approved-partners list) once written approval is
+  only shown publicly (the `/` approved-partners list) once written approval is
   recorded (`approved_at` set via `approvePartnerAction`).
 - `step_opportunity_providers` / `step_introductions` — consented introductions
   between a participant and a provider. Participants consent or decline from
   their dashboard (`consentIntroductionAction`); staff record outcomes.
 - Partner liaison is a scoped staff role: `canManagePartners` and
-  `canManageIntroductions` grant access to `/step/partners` only — no
+  `canManageIntroductions` grant access to `/partners` only — no
   application/evidence/progression tools. Partners never see the talent pool,
   only aggregate results or consented, field-scoped passport shares.
 - Optional, consented `district` and `gender` columns exist on
@@ -112,7 +113,7 @@ enrolment is never blocked.
   user can raise a complaint or safeguarding concern from the participant
   dashboard; active STEP staff can declare conflicts of interest.
 - Only programme administrators can view or resolve these records
-  (`canManageSafeguarding`), at `/step/admin/safeguarding`.
+  (`canManageSafeguarding`), at `/admin/safeguarding`.
 
 Referential consistency: `step_enrolments(cycle_id, cycle_cohort_id)` is a
 composite FK to `step_cycle_cohorts(cycle_id, id)`, so an enrolment's cohort
@@ -158,25 +159,25 @@ progression are transactional (`db.batch`).
 
 ### Dashboards
 
-`/step/dashboard` resolves the user's STEP access and either shows their
+`/dashboard` resolves the user's STEP access and either shows their
 application status (no STEP role), a workspace selector (multiple
 responsibilities) or redirects to the single applicable view:
 
-- `/step/dashboard/participant` — enrolments, readiness, deadlines,
+- `/dashboard/participant` — enrolments, readiness, deadlines,
   submissions, passport (including self-service limited share links once the
   passport is verified).
-- `/step/dashboard/staff` — scoped review queues, overdue work, progression
+- `/dashboard/staff` — scoped review queues, overdue work, progression
   candidates.
-- `/step/dashboard/mentor` — assigned participants, sessions, development
-  actions; `/step/dashboard/mentor/sessions/[id]` records attendance and
+- `/dashboard/mentor` — assigned participants, sessions, development
+  actions; `/dashboard/mentor/sessions/[id]` records attendance and
   feedback for assigned enrolments only.
-- `/step/dashboard/admin` — programme configuration, staff assignments,
+- `/dashboard/admin` — programme configuration, staff assignments,
   summary reporting.
 
 Every dashboard query uses the authorised scope (mentors read from mentor
 assignments, staff from their cycle/cohort scope).
 
-Verified passport shares resolve at `/step/passport/[token]` (no sign-in
+Verified passport shares resolve at `/passport/[token]` (no sign-in
 required). Field-scoped and full shares are enforced on the server; expired or
 revoked shares render an "unavailable" state and are not indexed.
 
@@ -189,77 +190,30 @@ revoked shares render an "unavailable" state and are not indexed.
   `comments.reply_count` in sync with soft-delete/restore, and both counters
   are reconciled.
 
-## Activating the subdomain (step.<domain>)
+## Routing
 
-The subdomain is **not live** until the configuration below is completed. The
-code path already exists in `proxy.ts`; it is disabled until the hostnames are
-configured.
+STEP is the primary application and is hosted at the site root:
 
-### 1. DNS and hosting
-
-- Add a DNS record for `step.<your-domain>` pointing at the same deployment
-  serving the main domain (CNAME or A record, depending on your host).
-- Configure the hosting platform to accept the new domain/hostname for this
-  project (e.g. add `step.<your-domain>` to the deployment's domains).
-
-### 2. Environment variables
-
-Set these in the deployment (and optionally `.env` for local testing):
-
-```bash
-# Hostnames that serve STEP (comma-separated). Enables the subdomain rewrite.
-STEP_SUBDOMAINS=step.example.com
-
-# Hostnames that serve the main blog. When set, any other host is rejected
-# with 404 by proxy.ts (explicit hostname validation).
-APP_HOSTNAMES=example.com,www.example.com
-
-# Canonical base for STEP. Once set, /step pages are noindexed and this
-# subdomain becomes the single indexed copy.
-NEXT_PUBLIC_STEP_BASE_URL=https://step.example.com
-
-# Existing app URL (already used by better-auth client).
-NEXT_PUBLIC_APP_URL=https://example.com
-```
-
-### 3. Behaviour after activation
-
-`proxy.ts` rewrites STEP-subdomain requests into the `/step` namespace:
-
-| Browser URL (subdomain) | Served route |
+| Path | Served route |
 | --- | --- |
-| `https://step.example.com/` | `app/(step)/step/page.tsx` |
-| `https://step.example.com/apply` | `app/(step)/step/apply/page.tsx` |
-| `https://step.example.com/dashboard` | `app/(step)/step/dashboard/page.tsx` |
-| `https://step.example.com/admin` | `app/(step)/step/admin/...` |
+| `/` | `app/(step)/page.tsx` |
+| `/apply` | `app/(step)/apply/page.tsx` |
+| `/dashboard` | `app/(step)/dashboard/page.tsx` |
+| `/admin` | `app/(step)/admin/...` |
 
 Links are generated through `lib/step/config.ts` (`stepPath` / the
-`StepPathProvider` client context), so the same components produce `/apply` on
-the subdomain and `/step/apply` on the main domain.
+`StepPathProvider` client context) with an empty base path, so the same
+components produce `/apply`, `/dashboard`, `/admin`, and so on.
 
-### 4. Authentication across hosts
-
-Both hosts run the same application and share the same `user` table, so
-accounts are shared — no duplicate identities. Sessions, however, are scoped
-to the host that issued the cookie (better-auth default). This is intentional:
-we do **not** broaden the cookie to `.example.com`, to avoid widening session
-exposure and cross-site cookie risks.
-
-Consequence: a user may need to sign in once on the main domain and once on
-`step.<domain>`. Sign-in/sign-up pages (`/sign-in`, `/sign-up`) work on both
-hosts and return users to the page they came from via `callbackUrl`.
-
-If single sign-on across both hosts is later required, configure better-auth's
-cookie domain explicitly and evaluate the security trade-off; do not do this
-silently. `NEXT_PUBLIC_APP_URL` and `BETTER_AUTH_URL` must match the
-publicly-reachable origin used by the auth client.
+The public marketing pages remain at `/about`, `/services`, `/contact`, and the
+public blog remains at `/posts`; the blog CMS dashboard has been relocated to
+`/studio`. `proxy.ts` guards `/dashboard` and `/admin` (authentication only —
+STEP authorisation is checked server-side against `step_staff`) and `/studio`
+(signed-in blog users).
 
 ## Search / SEO
 
-- Each STEP page emits a canonical URL via `lib/step/metadata.ts`. It points at
-  `/step/*` today and flips to `https://step.<domain>/*` once
-  `NEXT_PUBLIC_STEP_BASE_URL` is set (at which point `/step/*` pages are
-  noindexed).
-- `app/sitemap.ts` lists the blog and STEP `/step` routes. When the subdomain
-  is live, replace the STEP entries with the subdomain URLs (or serve a
-  separate sitemap from the subdomain host).
+- Each STEP page emits a canonical URL via `lib/step/metadata.ts`, pointing at
+  `https://<host><path>` on the application host.
+- `app/sitemap.ts` lists the programme (`/`, `/apply`) and the public blog and
+  marketing routes.

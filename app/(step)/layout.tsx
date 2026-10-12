@@ -39,13 +39,14 @@ export default async function StepLayout({
                     <div className="container-x flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                         <p className="text-[13px] text-brand-muted">
                             STEP &mdash; Skills, Talent &amp; Employment Pathway. A
-                            Suzanne&rsquo;s Career Solutions &amp; Consultancy programme.
+                            six-month incubation and opportunity pathway for 600
+                            Basotho participants.
                         </p>
                         <Link
-                            href="/"
+                            href="/contact"
                             className="text-[12px] font-semibold text-blue-dark transition-opacity hover:opacity-70"
                         >
-                            Visit the main site
+                            Contact the programme team
                         </Link>
                     </div>
                 </footer>

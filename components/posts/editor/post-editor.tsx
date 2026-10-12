@@ -286,7 +286,7 @@ export function PostEditor({ initial, mode, onCancel, onSaved }: PostEditorProps
                                 Slug
                             </FieldLabel>
                             <div className="flex items-center gap-2 text-xs text-brand-muted">
-                                <span className="font-mono">/posts/</span>
+                                <span className="font-mono">/news/</span>
                                 <Input
                                     id="post-slug"
                                     value={slug}

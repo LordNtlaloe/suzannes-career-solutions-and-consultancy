@@ -14,10 +14,13 @@ export function StorySection() {
                     </h2>
 
                     <p className="section-copy my-[30px] max-w-[550px]">
-                        Established with a simple idea: career decisions should be
-                        clearer, more personal and more practical. General Project has
-                        grown into a career agency supporting professionals through
-                        transitions, applications, development and opportunity matching.
+                        STEP was built on a simple observation: access alone
+                        isn&rsquo;t preparedness. Many Basotho hold qualifications,
+                        experience and viable ideas &mdash; yet remain disconnected
+                        from structured development and visible pathways into
+                        opportunity. STEP links learning to application,
+                        application to assessment, and verified preparedness to
+                        opportunity.
                     </p>
 
                     <Link href="/about" className="btn-brand">
@@ -27,7 +30,7 @@ export function StorySection() {
 
                 {/* Bordered image frame */}
                 <div className="h-[470px] border border-[#eee] p-[10px] shadow-soft max-md:mt-[20px] dark:border-[#333]">
-                    <img src={images.story} alt="Professionals collaborating" />
+                    <img src={images.story} alt="Participants collaborating" />
                 </div>
             </div>
         </section>

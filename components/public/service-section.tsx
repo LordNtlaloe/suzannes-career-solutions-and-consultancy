@@ -10,15 +10,15 @@ export function ServicesSection() {
                 <SectionIntro
                     heading={
                         <>
-                            Our Excellent
+                            What STEP
                             <br />
-                            Services
+                            Delivers
                         </>
                     }
                 >
-                    Explore focused career services designed to help you understand your
-                    direction, communicate your value and access the next opportunity
-                    with greater clarity.
+                    STEP links learning to application, application to assessment,
+                    and verified preparedness to opportunity &mdash; so participants
+                    finish work-ready with a Skills Passport.
                 </SectionIntro>
 
                 <div className="mt-[62px] grid grid-cols-1 gap-[24px] md:grid-cols-3">
@@ -36,7 +36,7 @@ export function ServicesSection() {
                                 {service.text}
                             </p>
 
-                            <ReadMore href={`/services/${service.slug}`} />
+                            <ReadMore href="/" />
                         </article>
                     ))}
                 </div>

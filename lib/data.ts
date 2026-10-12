@@ -16,16 +16,16 @@ export const images = {
 };
 
 export const services = [
-  { slug: "career-strategy", title: "Career Strategy", short: "Define where you are going and build a practical plan to get there.", text: "We help professionals define a clear direction, identify their strongest positioning and turn experience into a practical career plan.", image: images.service1 },
-  { slug: "talent-matching", title: "Talent Matching", short: "Connect your experience with opportunities that genuinely fit.", text: "We connect capable people with opportunities that fit their experience, goals and the kind of work they want to build next.", image: images.service2 },
-  { slug: "professional-growth", title: "Professional Growth", short: "Strengthen the skills, profile and confidence needed for your next move.", text: "From CV positioning to interview preparation, we build the confidence and tools needed to move forward with intention.", image: images.service3 },
+  { slug: "learning-and-coaching", title: "Learning & Coaching", short: "Structured coursework, coaching and mentoring across your industry cohort.", text: "Six months of guided learning, coaching and mentoring that build the skills and confidence behind verified readiness.", image: images.service1 },
+  { slug: "practical-application", title: "Practical Application", short: "Turn learning into demonstrated skill through assessed practice.", text: "Assessed projects and real-world practice that prove what you can do — not just what you know.", image: images.service2 },
+  { slug: "verified-opportunity", title: "Verified Opportunity", short: "Finish with a Skills Passport and introductions to opportunity providers.", text: "A verified STEP Skills Passport and consented, curated introductions connect you to employers and providers.", image: images.service3 },
 ];
 
 export const differentiators = [
-  { title: "Experienced", text: "Practical career guidance built around real hiring environments, professional positioning and measurable progress." },
-  { title: "Fair Approach", text: "Our advice is designed around your goals and strengths rather than forcing every candidate into the same career path." },
-  { title: "On Time", text: "We keep the process focused and structured so applications, preparation and opportunities keep moving." },
-  { title: "Trusted Guidance", text: "Confidential conversations, clear recommendations and practical support from the first consultation to the next opportunity." },
+  { title: "Six-month structure", text: "A focused six months with clear phases, deadlines and a defined endpoint — from baseline to verified passport." },
+  { title: "Verified readiness", text: "Every level is earned through assessed evidence and audited progression, never time served." },
+  { title: "Industry cohorts", text: "Learning, mentoring and practice are organised around eight real industry pathways into work." },
+  { title: "Skills Passport", text: "Participants finish with a verified STEP Skills Passport that employers and providers can trust." },
 ];
 
 export const articles = [
@@ -35,8 +35,8 @@ export const articles = [
 ];
 
 export const portfolio = [
-  { slug: "executive-transition", title: "Executive Transition", status: "Career Strategy", image: images.project1, text: "A structured transition plan for an experienced professional moving into a new leadership chapter." },
-  { slug: "graduate-launch", title: "Graduate Launch", status: "Talent Matching", image: images.project2, text: "A focused early-career programme combining positioning, applications and interview preparation." },
-  { slug: "leadership-path", title: "Leadership Path", status: "Professional Growth", image: images.project3, text: "A development roadmap built around leadership positioning, communication and professional growth." },
-  { slug: "career-repositioning", title: "Career Repositioning", status: "Executive Advisory", image: images.project4, text: "A repositioning project helping a professional translate transferable experience into a new industry." },
+  { slug: "business-finance", title: "Business & Finance", status: "Cohort 01", image: images.project1, text: "Accounting, banking, insurance, consulting, audit, procurement and administration." },
+  { slug: "technology-data", title: "Technology & Data", status: "Cohort 02", image: images.project2, text: "Information technology, cloud, AI, cybersecurity, data, product and digital operations." },
+  { slug: "media-creative", title: "Media & Creative", status: "Cohort 03", image: images.project3, text: "Content creation, film, music, design, journalism, marketing and communications." },
+  { slug: "entrepreneurship", title: "Entrepreneurship", status: "Cohort 04", image: images.project4, text: "Start-ups, micro and small enterprises, freelancers, consultants and innovation-led businesses." },
 ];

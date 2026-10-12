@@ -10,7 +10,7 @@ export function TeamSection() {
                 <div className="relative h-[540px] w-full max-md:h-[470px]">
                     <img
                         src={images.consultant}
-                        alt="Career consultant"
+                        alt="Programme lead"
                         className="object-center"
                     />
 
@@ -21,14 +21,15 @@ export function TeamSection() {
                             className="mx-auto mb-[20px] h-[100px] w-[100px] rounded-full object-top"
                         />
 
-                        <strong className="block text-[20px]">Dianne Russell</strong>
+                        <strong className="block text-[20px]">Mpho Lerotholi</strong>
 
                         <p className="mt-[5px] text-[11px] text-[#ddd]">
-                            Senior Career Consultant
+                            Programme Lead
                         </p>
 
                         <small className="mt-[20px] block text-[10px] leading-[1.7] text-[#e5e5e5]">
-                            20+ years helping professionals build meaningful careers.
+                            Supporting 600+ Basotho participants through a
+                            six-month pathway to verified readiness.
                         </small>
                     </div>
                 </div>
@@ -36,27 +37,27 @@ export function TeamSection() {
                 {/* Copy */}
                 <div className="feature-copy max-md:mt-[10px]">
                     <h2 className="text-[46px] font-semibold leading-[1.5] max-[520px]:text-[38px]">
-                        Meet and talk with
+                        Meet the team
                         <br />
-                        our best career team
+                        behind the programme
                     </h2>
 
                     <p className="mt-[25px] max-w-[470px] text-[14px] leading-[1.8] text-[#a1a1a1]">
-                        Our consultants are professional and experienced in their fields.
-                        They help you clarify your direction, strengthen your profile and
-                        prepare for the opportunities ahead.
+                        Programme staff, coaches and mentors guide participants
+                        through learning, practice and assessment — and connect
+                        verified readiness to real opportunity.
                     </p>
 
                     <div className="mt-[34px] flex items-center gap-[30px]">
-                        <Link href="/team" className="btn-brand">
-                            See all team
+                        <Link href="/about" className="btn-brand">
+                            About the programme
                         </Link>
 
                         <Link
-                            href="/contact"
+                            href="/"
                             className="text-link-brand transition-opacity hover:opacity-70"
                         >
-                            How it works
+                            How STEP works
                             <ArrowRight size={16} />
                         </Link>
                     </div>

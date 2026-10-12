@@ -140,7 +140,7 @@ export function PostRow({
                 {isPublished && (
                     <Button asChild size="sm" variant="ghost">
                         <Link
-                            href={`/posts/${post.slug}`}
+                            href={`/news/${post.slug}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="View"

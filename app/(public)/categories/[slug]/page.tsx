@@ -78,7 +78,7 @@ export default async function CategoryArchivePage({
     const ancestors = (pathToRoot as any[]).slice(0, -1) // exclude self
     const breadcrumbs = [
         { label: "Home", href: "/" },
-        { label: "Posts", href: "/posts" },
+        { label: "News", href: "/news" },
         ...ancestors.map((a) => ({
             label: a.name as string,
             href: `/categories/${a.slug}`,

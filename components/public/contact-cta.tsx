@@ -43,18 +43,18 @@ export function ContactCta() {
                             Get in touch
                         </span>
                         <h2 className="section-heading leading-tight">
-                            Start with a free 20-minute call.
+                            Start with a conversation about STEP.
                         </h2>
                         <p className="section-copy leading-relaxed">
-                            Whether you&apos;re hiring or looking, the first
-                            conversation is free. No pitch deck, no sales
-                            script, no obligation.
+                            Whether you want to join the next cohort or partner
+                            with the programme, the first conversation is free
+                            and there&apos;s no obligation to apply.
                         </p>
 
                         <ul className="flex flex-col gap-3 pt-2">
                             <Bullet>Response within one business day</Bullet>
-                            <Bullet>No commitment after the call</Bullet>
-                            <Bullet>We&apos;ll say so if we&apos;re not a fit</Bullet>
+                            <Bullet>No commitment until you apply</Bullet>
+                            <Bullet>We&apos;ll point you to the right pathway</Bullet>
                         </ul>
                     </div>
 
@@ -101,14 +101,14 @@ export function ContactCta() {
                                     className="w-full h-10 rounded-md border border-line bg-card px-3 text-[13px] text-ink outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors dark:bg-[#242527] dark:text-[#f6f6f6] dark:border-[#333]"
                                     disabled={loading}
                                 >
-                                    <option value="candidate">
-                                        I&apos;m looking for a role
+                                    <option value="participant">
+                                        I want to apply
                                     </option>
-                                    <option value="company">
-                                        I&apos;m hiring
+                                    <option value="partner">
+                                        I&apos;m an employer / partner
                                     </option>
-                                    <option value="coaching">
-                                        Career coaching
+                                    <option value="mentor">
+                                        I want to mentor or contribute
                                     </option>
                                     <option value="other">
                                         Something else
@@ -120,7 +120,7 @@ export function ContactCta() {
                                     rows={4}
                                     required
                                     disabled={loading}
-                                    placeholder="Tell us a bit about what you're working on..."
+                                    placeholder="Tell us a bit about yourself and which pathway interests you..."
                                     aria-label="Message"
                                     className="w-full rounded-md border border-line bg-card px-3 py-2 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors resize-none dark:bg-[#242527] dark:text-[#f6f6f6] dark:placeholder:text-[#6b7280] dark:border-[#333]"
                                 />

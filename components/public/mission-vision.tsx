@@ -17,25 +17,25 @@ export function MissionVision() {
                             </span>
                         </div>
                         <h3 className="section-heading text-[clamp(28px,3vw,34px)]! leading-snug">
-                            Make hiring work for the people inside it.
+                            Close the gap between access and preparedness.
                         </h3>
                         <p className="section-copy leading-relaxed">
-                            We exist to close the gap between the careers
-                            people want and the teams that need them — with
-                            honesty on both sides, and none of the noise.
+                            STEP exists to convert access to learning into
+                            verified preparedness — linking learning to
+                            application, application to assessment, and
+                            verified readiness to opportunity.
                         </p>
                         <ul className="flex flex-col gap-3 pt-2">
                             <Bullet>
-                                Every candidate gets a real response, not an
-                                automated rejection.
+                                600+ Basotho participants supported each intake.
                             </Bullet>
                             <Bullet>
-                                Every role has a real salary range, published
-                                upfront.
+                                Every level is earned through assessed
+                                evidence.
                             </Bullet>
                             <Bullet>
-                                We never send your CV to a company without
-                                asking first.
+                                No participant is introduced without their
+                                consent.
                             </Bullet>
                         </ul>
                     </div>
@@ -49,25 +49,23 @@ export function MissionVision() {
                             </span>
                         </div>
                         <h3 className="section-heading text-[clamp(28px,3vw,34px)]! leading-snug">
-                            A world where hiring is a conversation, not a
-                            lottery.
+                            A Basotho workforce that is seen, verified and
+                            opportunity-ready.
                         </h3>
                         <p className="section-copy leading-relaxed">
-                            We want to be the agency people recommend not
-                            because they got a job, but because they were
-                            treated like a person the whole way through.
+                            We want STEP to be the pathway people trust — not
+                            because it promises work, but because it proves
+                            readiness and opens doors fairly.
                         </p>
                         <ul className="flex flex-col gap-3 pt-2">
                             <Bullet>
-                                Referred by name — trusted because we earned
-                                it.
+                                Verified by evidence, not by connections.
                             </Bullet>
                             <Bullet>
-                                Remote-first, worldwide. Careers shouldn&apos;t
-                                depend on a postcode.
+                                Open across every career stage and industry.
                             </Bullet>
                             <Bullet>
-                                Placements that last. Promotions that follow.
+                                Outcomes that last beyond the six months.
                             </Bullet>
                         </ul>
                     </div>

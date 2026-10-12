@@ -52,7 +52,7 @@ export function PublicPostCard({ post, featured, className }: Props) {
 
     return (
         <Link
-            href={`/posts/${post.slug}`}
+            href={`/news/${post.slug}`}
             className={cn(
                 "group flex flex-col rounded-lg border border-line bg-card overflow-hidden",
                 "hover:border-[#c4c4c4] hover:shadow-soft transition-all",

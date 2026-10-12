@@ -88,7 +88,7 @@ export default async function PublicPostPage({ params }: PageProps) {
     const headersList = await headers()
     const host = headersList.get("host") ?? "localhost:3000"
     const protocol = host.startsWith("localhost") ? "http" : "https"
-    const url = `${protocol}://${host}/posts/${post.slug}`
+    const url = `${protocol}://${host}/news/${post.slug}`
 
     const coverUrl = (post as any).cover_image_url as string | null
     const coverAlt = (post as any).cover_image_alt as string | null
@@ -97,11 +97,11 @@ export default async function PublicPostPage({ params }: PageProps) {
         <article className="container-x w-[min(900px,calc(100%-48px))]! py-8 sm:py-12">
             {/* Back link */}
             <Link
-                href="/posts"
+                href="/news"
                 className="text-link-brand mb-6 inline-flex items-center gap-1.5 text-[#a1a1a1] transition-colors hover:text-blue-dark"
             >
                 <ArrowLeft className="h-3.5 w-3.5" />
-                All posts
+                All news
             </Link>
 
             {/* Status banners — brand-tinted */}
@@ -167,7 +167,7 @@ export default async function PublicPostPage({ params }: PageProps) {
                 {(session?.user?.id === post.user_id ||
                     session?.user?.role === "admin") && (
                         <Link
-                            href={`/dashboard/posts?edit=${post.id}`}
+                            href={`/studio/posts?edit=${post.id}`}
                             className="text-[12px] text-[#a1a1a1] transition-colors hover:text-blue-dark hover:underline"
                         >
                             Edit post

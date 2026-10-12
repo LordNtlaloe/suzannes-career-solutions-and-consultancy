@@ -8,7 +8,7 @@ export default function AuthSplitLayout({
     title,
     description,
 }: AuthLayoutProps) {
-    const name = "Suzanne's Career Agency";
+    const name = "STEP — Skills, Talent & Employment Pathway";
 
     return (
         <div className="bg-hero-grad relative grid h-dvh flex-col items-center justify-center px-8 sm:px-0 lg:max-w-none lg:grid-cols-2 lg:px-0">

@@ -16,7 +16,7 @@ export async function FeaturedPosts() {
 
     return (
         <section
-            id="posts"
+            id="news"
             className="scroll-mt-16 container-x py-16 sm:py-20"
         >
             <div className="flex items-end justify-between gap-4 flex-wrap mb-8">
@@ -33,10 +33,10 @@ export async function FeaturedPosts() {
                 </header>
 
                 <Link
-                    href="/posts"
+                    href="/news"
                     className="text-link-brand text-blue-dark transition-opacity hover:opacity-70"
                 >
-                    See all posts
+                    See all news
                     <ArrowRight className="ml-1 h-3.5 w-3.5" aria-hidden />
                 </Link>
             </div>

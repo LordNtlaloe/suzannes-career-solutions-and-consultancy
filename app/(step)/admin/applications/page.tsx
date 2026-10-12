@@ -41,7 +41,7 @@ export default async function StepAdminApplicationsPage({
     const status = sp.status ?? "all";
 
     const { user, context } = await getStepAccessContext();
-    if (!user || !canReviewApplications(context)) redirect("/step");
+    if (!user || !canReviewApplications(context)) redirect("/");
 
     // Authorised cycle scope: global staff see everything; scoped staff see
     // only their cycles. Only review-capable assignments contribute scope.

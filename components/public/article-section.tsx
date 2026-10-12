@@ -18,13 +18,13 @@ export async function ArticlesSection() {
         <section id="articles" className="py-22.5 pb-20">
             <div className="container-x">
                 <SectionHeadingRow
-                    heading={<>News &amp; Update</>}
+                    heading={<>News &amp; Updates</>}
                     action={
                         <Link
-                            href="/posts"
+                            href="/news"
                             className="text-link-brand transition-opacity hover:opacity-70"
                         >
-                            View all articles
+                            View all news
                             <ArrowRight size={16} />
                         </Link>
                     }
@@ -66,7 +66,7 @@ export async function ArticlesSection() {
 
                             <p className="section-copy mt-3 ml-12.5">
                                 {post.excerpt ?? ""}{" "}
-                                <ReadMore href={`/posts/${post.slug}`} />
+                                <ReadMore href={`/news/${post.slug}`} />
                             </p>
 
                             {hasMeta(post) && (

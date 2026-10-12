@@ -1,24 +1,14 @@
 // lib/step/config.ts
 //
-// Hostname detection, base-path and canonical URL helpers for the STEP module.
+// Hostname, base-path and canonical URL helpers for the STEP module.
 //
-// STEP is served under /step on the main domain today and will later be served
-// from step.<domain> at clean paths (/, /apply, /dashboard, …). The proxy
-// (./proxy.ts) rewrites step-host requests into the /step namespace internally,
-// so this module only needs to know two things:
+// STEP is hosted at the site root: the programme homepage is `/`, apply is
+// `/apply`, the dashboards are `/dashboard/*` and administration is `/admin`.
+// Links are therefore always built against an empty base path, and canonical
+// URLs are simply `https://<host><path>`.
 //
-//   1. Which hostname is the STEP host  (isStepHost)
-//   2. What URL prefix STEP links should use (stepBasePath / stepPath)
-//
-// Configuration is explicit and environment-driven to avoid accidental
-// rewrites or duplicate indexed copies:
-//
-//   STEP_SUBDOMAINS   comma-separated hostnames that serve STEP (e.g. step.example.com)
-//   APP_HOSTNAMES     comma-separated hostnames that serve the main blog
-//                     (optional; when set, unknown hosts are rejected in proxy.ts)
-//   NEXT_PUBLIC_STEP_BASE_URL  canonical base for STEP (https://step.example.com)
-//
-// Until these are set, only /step mode is active.
+//   APP_HOSTNAMES  comma-separated hostnames allowed to serve the application
+//                  (optional; when set, unknown hosts are rejected in proxy.ts)
 
 import { STEP_PATH } from "@/lib/step/constants";
 
@@ -35,37 +25,23 @@ export function normalizeHost(host: string): string {
     return host.trim().toLowerCase().replace(/:\d+$/, "");
 }
 
-export function getStepHostnames(): string[] {
-    return splitHostnames(
-        process.env.STEP_SUBDOMAINS || process.env.STEP_SUBDOMAIN,
-    );
-}
-
 export function getMainHostnames(): string[] {
     return splitHostnames(process.env.APP_HOSTNAMES);
-}
-
-/** True when `host` is a configured STEP hostname. */
-export function isStepHost(host: string): boolean {
-    const stepHosts = getStepHostnames();
-    if (stepHosts.length === 0) return false;
-    return stepHosts.includes(normalizeHost(host));
 }
 
 /** True when `host` is allowed to reach the application at all. */
 export function isAllowedHost(host: string): boolean {
     const main = getMainHostnames();
-    const step = getStepHostnames();
-    if (main.length === 0 && step.length === 0) return true; // validation disabled
-    return [...main, ...step].includes(normalizeHost(host));
+    if (main.length === 0) return true; // validation disabled
+    return main.includes(normalizeHost(host));
 }
 
-/** URL prefix for STEP routes: "" on the STEP host, "/step" otherwise. */
+/** URL prefix for STEP routes: "" because STEP is served at the root. */
 export function stepBasePath(host: string): string {
-    return isStepHost(host) ? "" : STEP_PATH;
+    return STEP_PATH;
 }
 
-/** Build a STEP path for links: stepPath("/apply") → "/step/apply" or "/apply". */
+/** Build a STEP path for links: stepPath("/apply") → "/apply". */
 export function stepPath(host: string, path: string): string {
     const base = stepBasePath(host);
     const p = path.startsWith("/") ? path : `/${path}`;
@@ -75,11 +51,6 @@ export function stepPath(host: string, path: string): string {
 
 /** Absolute canonical URL for a STEP route. */
 export function getStepCanonicalUrl(host: string, path: string): string {
-    const base = process.env.NEXT_PUBLIC_STEP_BASE_URL;
     const p = path.startsWith("/") ? path : `/${path}`;
-    if (base) {
-        return `${base.replace(/\/$/, "")}${p === "/" ? "" : p}`;
-    }
-    // No canonical subdomain configured yet: canonical is the /step path on this host.
-    return `https://${normalizeHost(host)}${stepPath(host, p)}`;
+    return `https://${normalizeHost(host)}${p === "/" ? "" : p}`;
 }

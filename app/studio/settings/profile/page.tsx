@@ -207,7 +207,7 @@ function UpdateProfileCard({
             if (emailChanged) {
                 const { error } = await authClient.changeEmail({
                     newEmail: email.trim(),
-                    callbackURL: "/dashboard/settings/profile",
+                    callbackURL: "/studio/settings/profile",
                 })
                 if (error) {
                     toast.error(error.message ?? "Could not update email")
@@ -233,7 +233,7 @@ function UpdateProfileCard({
         try {
             const { error } = await authClient.sendVerificationEmail({
                 email: user.email,
-                callbackURL: "/dashboard/settings/profile",
+                callbackURL: "/studio/settings/profile",
             })
             if (error) {
                 toast.error(error.message ?? "Could not resend email")
@@ -357,7 +357,7 @@ function SavedPostsList({
                 </div>
                 {posts.length > 0 && (
                     <Button asChild variant="ghost" size="sm" className="-mr-2">
-                        <Link href="/dashboard/saved">
+                        <Link href="/studio/saved">
                             See all
                             <ArrowRight
                                 className="ml-1 h-3.5 w-3.5"
@@ -374,7 +374,7 @@ function SavedPostsList({
                 <EmptyRow
                     message="You haven't saved any posts yet."
                     actionLabel="Browse posts"
-                    actionHref="/posts"
+                    actionHref="/news"
                 />
             ) : (
                 <ul className="flex flex-col gap-2">
@@ -421,7 +421,7 @@ function LikedPostsList({
                 <EmptyRow
                     message="You haven't liked any posts yet."
                     actionLabel="Find something to read"
-                    actionHref="/posts"
+                    actionHref="/news"
                 />
             ) : (
                 <ul className="flex flex-col gap-2">
@@ -468,14 +468,14 @@ function RecentCommentsList({
                 <EmptyRow
                     message="You haven't commented on anything yet."
                     actionLabel="Find a post"
-                    actionHref="/posts"
+                    actionHref="/news"
                 />
             ) : (
                 <ul className="flex flex-col gap-2">
                     {comments.map((c) => (
                         <li key={c.id}>
                             <Link
-                                href={`/posts/${c.post_slug}#comment-${c.id}`}
+                                href={`/news/${c.post_slug}#comment-${c.id}`}
                                 className="flex flex-col gap-1.5 rounded-lg border border-line bg-white p-3 hover:border-ink/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue"
                             >
                                 <div className="flex items-center gap-2 text-xs text-brand-muted">
@@ -511,7 +511,7 @@ function ActivityPostRow({ post }: { post: any }) {
     return (
         <li>
             <Link
-                href={`/posts/${post.slug}`}
+                href={`/news/${post.slug}`}
                 className="flex items-center gap-3 rounded-lg border border-line bg-white p-3 hover:border-ink/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue"
             >
                 <div className="relative h-12 w-16 shrink-0 overflow-hidden rounded-md border border-line bg-light">

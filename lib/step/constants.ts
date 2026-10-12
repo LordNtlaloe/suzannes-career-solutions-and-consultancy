@@ -3,7 +3,9 @@
 // Static STEP programme vocabulary. Kept in one place so routes, queries,
 // validation and UI all share the same values.
 
-export const STEP_PATH = "/step";
+// STEP is hosted at the site root: the programme homepage is `/`, apply is
+// `/apply`, the dashboards are `/dashboard/*` and administration is `/admin`.
+export const STEP_PATH = "";
 
 export const PATHWAYS = [
     { value: "employment", label: "Employment" },

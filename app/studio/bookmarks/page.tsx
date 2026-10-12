@@ -97,7 +97,7 @@ export default function SavedPostsPage() {
                             No saved posts yet
                         </p>
                         <Button asChild variant="outline">
-                            <Link href="/posts">Browse posts</Link>
+                            <Link href="/news">Browse news</Link>
                         </Button>
                     </div>
                 ) : (
@@ -124,7 +124,7 @@ export default function SavedPostsPage() {
                                     </div>
                                     <div className="flex-1 min-w-0">
                                         <Link
-                                            href={`/posts/${post.slug}`}
+                                            href={`/news/${post.slug}`}
                                             className="font-medium text-sm truncate hover:underline block"
                                         >
                                             {post.title}

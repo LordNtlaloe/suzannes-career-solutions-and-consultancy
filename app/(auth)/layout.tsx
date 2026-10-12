@@ -12,8 +12,8 @@ export default function AutenticationhLayout({ children }: { children: React.Rea
                                 href="/"
                                 className="w-35 text-[15px] font-semibold leading-4.5 text-white transition-opacity hover:opacity-80"
                             >
-                                General
-                                <span className="block text-blue-light">Project</span>
+                                STEP
+                                <span className="block text-blue-light">Programme</span>
                             </Link>
                         </div>
 

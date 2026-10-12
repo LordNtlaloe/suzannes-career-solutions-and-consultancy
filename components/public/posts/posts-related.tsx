@@ -40,7 +40,7 @@ export function PostRelated({ posts }: PostRelatedProps) {
                     return (
                         <Link
                             key={post.id}
-                            href={`/posts/${post.slug}`}
+                            href={`/news/${post.slug}`}
                             className="group flex flex-col rounded-lg border border-line bg-white overflow-hidden hover:border-[#c4c4c4] hover:shadow-soft transition-all dark:bg-[#242527] dark:border-[#333] dark:hover:border-[#555]"
                         >
                             {coverSrc ? (

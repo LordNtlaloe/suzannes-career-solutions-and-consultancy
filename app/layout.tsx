@@ -20,9 +20,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "General Project — Career Agency",
+  title: "STEP — Skills, Talent & Employment Pathway",
   description:
-    "We help ambitious professionals make clearer career decisions and move toward opportunities that fit their next chapter.",
+    "A six-month industry-based incubation and opportunity pathway for 600+ Basotho participants — through learning, coaching, mentoring, practical application and assessment.",
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

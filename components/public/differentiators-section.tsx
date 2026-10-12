@@ -20,14 +20,15 @@ export function DifferentiatorsSection() {
                 <SectionIntro
                     heading={
                         <>
-                            What Makes Us
+                            What Makes STEP
                             <br />
                             Different?
                         </>
                     }
                 >
-                    We combine structured career planning, honest feedback and practical
-                    support so every step has a clear purpose.
+                    STEP turns access to learning into verified preparedness —
+                    through industry cohorts, assessed progression and a Skills
+                    Passport that employers can trust.
                 </SectionIntro>
 
                 <div className="mt-[58px] grid grid-cols-1 gap-[36px] max-[1100px]:gap-[20px] md:grid-cols-2 lg:grid-cols-4">

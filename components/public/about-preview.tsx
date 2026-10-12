@@ -13,27 +13,27 @@ export function AboutPreview() {
                         About
                     </span>
                     <h2 className="section-heading leading-tight">
-                        Built by people who&apos;ve been on both sides of the
-                        table.
+                        Built by people who&apos;ve seen what access without
+                        structure does.
                     </h2>
                     <div className="section-copy flex flex-col gap-4 leading-relaxed">
                         <p>
-                            Suzannes Agency started because we got tired of
-                            watching good people get filtered out by systems
-                            that were never designed to see them.
+                            STEP started because we kept watching capable,
+                            qualified Basotho get filtered out — not for lack
+                            of ability, but for lack of structure, evidence
+                            and a visible pathway into opportunity.
                         </p>
                         <p>
-                            After years in recruiting, we learned something
-                            simple: most hiring isn&apos;t broken. It&apos;s just
-                            impersonal. We started this agency to do it
-                            differently — slow enough to understand a person,
-                            selective enough to only send candidates we believe
-                            in, direct enough to say when it&apos;s not a fit.
+                            So we built one: six months of learning, coaching,
+                            mentoring and assessed practice, organised around
+                            eight industry cohorts and finished with a verified
+                            STEP Skills Passport. Enough structure to develop
+                            people, enough rigour to prove what they can do.
                         </p>
                     </div>
                     <div>
                         <Link
-                            href="#contact"
+                            href="/about"
                             className="text-link-brand text-blue-dark transition-opacity hover:opacity-70"
                         >
                             Read our full story
@@ -44,10 +44,10 @@ export function AboutPreview() {
 
                 {/* Right column — visual anchor */}
                 <div className="grid grid-cols-2 gap-4">
-                    <StatCard value="12+" label="Years in recruiting" />
-                    <StatCard value="480" label="Placements made" />
-                    <StatCard value="94%" label="One-year retention" />
-                    <StatCard value="38" label="Partner companies" />
+                    <StatCard value="600" label="Basotho participants" />
+                    <StatCard value="8" label="Industry cohorts" />
+                    <StatCard value="5" label="Readiness levels" />
+                    <StatCard value="1" label="Skills Passport" />
                 </div>
             </div>
         </section>

@@ -24,16 +24,16 @@ export async function generateMetadata({
     if (sp.tag) parts.push(`#${sp.tag}`)
     if (sp.q) parts.push(`"${sp.q}"`)
 
-    const title = parts.length ? `Posts — ${parts.join(" ")}` : "Posts"
+    const title = parts.length ? `News — ${parts.join(" ")}` : "News"
 
     return {
         title,
         description:
-            "Read the latest articles, tutorials, and updates from our team.",
+            "Read the latest news, updates, and tutorials from the team.",
         openGraph: {
             title,
             description:
-                "Read the latest articles, tutorials, and updates from our team.",
+                "Read the latest news, updates, and tutorials from the team.",
         },
     }
 }
@@ -53,15 +53,15 @@ export default async function PublicPostsPage({
 
     return (
         <PostGridPage
-            title="Posts"
-            description="Articles, tutorials, and notes from the team."
+            title="News & Updates"
+            description="News, updates, and notes from the team."
             query={sp.q}
             page={page}
             activeCategorySlug={sp.category}
             activeTagSlug={sp.tag}
             categories={categories as any}
             tags={tags as any}
-            basePath="/posts"
+            basePath="/news"
         />
     )
 }

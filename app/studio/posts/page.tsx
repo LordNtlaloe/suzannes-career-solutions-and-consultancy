@@ -195,7 +195,7 @@ function PostsPageInner() {
         const params = new URLSearchParams(searchParams.toString())
         if (ids[0]) params.set("categoryId", ids[0])
         else params.delete("categoryId")
-        router.replace(`/dashboard/posts?${params.toString()}`, { scroll: false })
+        router.replace(`/studio/posts?${params.toString()}`, { scroll: false })
     }
 
     function handleClearCategory() {
@@ -203,7 +203,7 @@ function PostsPageInner() {
         setPage(0)
         const params = new URLSearchParams(searchParams.toString())
         params.delete("categoryId")
-        router.replace(`/dashboard/posts?${params.toString()}`, { scroll: false })
+        router.replace(`/studio/posts?${params.toString()}`, { scroll: false })
     }
 
     return (

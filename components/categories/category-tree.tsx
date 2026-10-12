@@ -85,7 +85,7 @@ function CategoryNode({
                             {category.name}
                         </span>
                         <Link
-                            href={`/dashboard/posts?categoryId=${category.id}`}
+                            href={`/studio/posts?categoryId=${category.id}`}
                             className="text-xs text-brand-muted bg-light px-2 py-0.5 rounded hover:bg-blue-dark/10 hover:text-blue-dark transition-colors"
                             title={`View posts in ${category.name}`}
                         >

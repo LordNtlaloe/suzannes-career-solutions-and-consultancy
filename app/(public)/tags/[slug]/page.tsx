@@ -62,7 +62,7 @@ export default async function TagArchivePage({ params, searchParams }: PageProps
             description={description}
             breadcrumbs={[
                 { label: "Home", href: "/" },
-                { label: "Posts", href: "/posts" },
+                { label: "News", href: "/news" },
                 { label: "Tags", href: "/tags" },
                 { label: `#${tag.name}` },
             ]}

@@ -137,7 +137,11 @@ export function useAppearance(): UseAppearanceReturn {
     const appearance = useSyncExternalStore<Appearance>(
         subscribe,
         (): Appearance => currentAppearance,
-        (): Appearance => "system",
+        // Server/hydration snapshot. The server cannot read the OS preference
+        // or localStorage, so it must be deterministic. "light" makes the
+        // first client render match the server and avoids hydration mismatches
+        // in theme toggles; the real value is adopted after hydration.
+        (): Appearance => "light",
     );
 
     const resolvedAppearance: ResolvedAppearance = isDarkMode(
@@ -163,4 +167,11 @@ export function useAppearance(): UseAppearanceReturn {
         resolvedAppearance,
         updateAppearance,
     };
+}
+
+// Sync the client-side store with the persisted theme before hydration so
+// toggles and the appearance settings reflect the real value (the inline
+// ThemeScript already applies the class, but not this store).
+if (typeof window !== "undefined") {
+    initializeTheme();
 }

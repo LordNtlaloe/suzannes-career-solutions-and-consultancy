@@ -6,13 +6,13 @@ import { Hero } from "@/components/public/hero"
 import { ContactCta } from "@/components/public/contact-cta"
 
 export const metadata: Metadata = {
-    title: "Contact — Suzannes Agency",
+    title: "Contact — STEP",
     description:
-        "Get in touch with Suzannes Agency. Book a free 20-minute call or reach out by email.",
+        "Get in touch with the STEP programme team. Apply to join a cohort or talk to us about partnering.",
     openGraph: {
-        title: "Contact — Suzannes Agency",
+        title: "Contact — STEP",
         description:
-            "Get in touch with Suzannes Agency. Book a free 20-minute call or reach out by email.",
+            "Get in touch with the STEP programme team. Apply to join a cohort or talk to us about partnering.",
     },
 }
 
@@ -20,19 +20,19 @@ const CONTACT_INFO = [
     {
         icon: Mail,
         label: "Email",
-        value: "hello@generalproject.co",
-        href: "mailto:hello@generalproject.co",
+        value: "hello@step.org.ls",
+        href: "mailto:hello@step.org.ls",
     },
     {
         icon: Phone,
         label: "Phone",
-        value: "+1 (555) 123-4567",
-        href: "tel:+15551234567",
+        value: "+266 2200 0000",
+        href: "tel:+26622000000",
     },
     {
         icon: MapPin,
         label: "Location",
-        value: "Remote — serving clients worldwide",
+        value: "Lesotho — serving Basotho participants",
         href: null,
     },
     {
@@ -48,8 +48,8 @@ export default function ContactPage() {
         <>
             <Hero
                 eyebrow="CONTACT"
-                title="Let&apos;s start a conversation."
-                text="Whether you&apos;re exploring your next career move or looking to hire — the first step is a 20-minute call, no strings attached."
+                title="Talk to the STEP team."
+                text="Whether you want to join the next cohort or partner with the programme — the first step is a conversation."
             />
 
             <ContactCta />
@@ -102,25 +102,25 @@ export default function ContactPage() {
             <section className="container-x py-16 sm:py-20">
                 <div className="text-center flex flex-col items-center gap-4">
                     <span className="text-[11px] font-semibold uppercase tracking-[2.4px] text-blue">
-                        Not ready to talk yet?
+                        Not ready to apply yet?
                     </span>
                     <h2 className="section-heading leading-tight max-w-2xl">
-                        Learn more about how we work first.
+                        Learn more about the programme first.
                     </h2>
                     <p className="section-copy max-w-lg">
-                        Browse our services or read about our approach. When you&apos;re
-                        ready, we&apos;re here.
+                        Explore the cohorts and the six-month journey. When
+                        you&apos;re ready, we&apos;re here.
                     </p>
                     <div className="flex items-center gap-4 mt-2">
-                        <Link href="/services" className="btn-brand">
-                            View services
+                        <Link href="/" className="btn-brand">
+                            Explore the programme
                             <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                         <Link
                             href="/about"
                             className="text-link-brand text-blue-dark transition-opacity hover:opacity-70"
                         >
-                            About us
+                            About STEP
                             <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
                         </Link>
                     </div>

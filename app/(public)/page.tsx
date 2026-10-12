@@ -18,6 +18,7 @@ import { Risks } from "@/components/public/risks";
 import { MonitoringEvaluationLearning } from "@/components/public/mel";
 import { WorkPlan } from "@/components/public/work-plan";
 import { Invitation } from "@/components/public/invitation";
+import { TeamSection } from "@/components/public/team-section";
 
 export const metadata: Metadata = {
     title: "STEP — Skills, Talent & Employment Pathway",
@@ -45,6 +46,7 @@ export default function HomePage() {
             <SuccessMeasures />
             <DeliveryModel />
             <Partnerships />
+            <TeamSection />
             {/* <Governance /> */}
             {/* <Resources /> */}
             {/* <Funding /> */}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { stepPageMetadata } from "@/lib/step/metadata";
 import { HeroSection } from "@/components/public/hero-section";
 import { VisionMission } from "@/components/public/vision-mission";
 import { ProgrammePillars } from "@/components/public/programme-pillars";
@@ -20,17 +21,45 @@ import { WorkPlan } from "@/components/public/work-plan";
 import { Invitation } from "@/components/public/invitation";
 import { TeamSection } from "@/components/public/team-section";
 
-export const metadata: Metadata = {
-    title: "STEP — Skills, Talent & Employment Pathway",
-    description:
-        "An opportunity pathway for Basotho talent. STEP is a proposed youth-led, non-profit institution connecting Basotho talent to learning, mentorship, supervised experience and markets.",
-    openGraph: {
-        title: "STEP — Skills, Talent & Employment Pathway",
-        description:
-            "An opportunity pathway for Basotho talent — four connected programmes linking learning, mentorship, supervised experience and markets.",
-        type: "website",
-    },
-};
+const TITLE = "STEP — Skills, Talent & Employment Pathway";
+const DESCRIPTION =
+    "An opportunity pathway for Basotho talent. STEP is a proposed youth-led, non-profit institution connecting Basotho talent to learning, mentorship, supervised experience and markets.";
+const OG_DESCRIPTION =
+    "An opportunity pathway for Basotho talent — four connected programmes linking learning, mentorship, supervised experience and markets.";
+
+export async function generateMetadata(): Promise<Metadata> {
+    const base = await stepPageMetadata({
+        path: "/",
+        title: TITLE,
+        description: DESCRIPTION,
+    });
+
+    return {
+        ...base,
+        keywords: [
+            "STEP",
+            "Skills Talent Employment Pathway",
+            "Basotho talent",
+            "Lesotho",
+            "youth employment",
+            "mentorship",
+            "incubation",
+            "skills development",
+        ],
+        openGraph: {
+            ...base.openGraph,
+            type: "website",
+            siteName: "STEP",
+            title: TITLE,
+            description: OG_DESCRIPTION,
+        },
+        twitter: {
+            card: "summary",
+            title: TITLE,
+            description: DESCRIPTION,
+        },
+    };
+}
 
 export default function HomePage() {
     return (

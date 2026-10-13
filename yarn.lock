@@ -1879,6 +1879,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/dm-sans@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/dm-sans@npm:5.3.0"
+  checksum: 10c0/e283f1b5a1cccd881457014de27894cf82bde0a4274b98d94608aefbea0cb31c3ead2276ffcd4edf6e9b79041e2054e2123ecdb78b140f8390d14fdad0e5f7d1
+  languageName: node
+  linkType: hard
+
+"@fontsource/poppins@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/poppins@npm:5.3.0"
+  checksum: 10c0/869fe85c618645a84f4ff331fd61b3fd856a6df15a42fff21c311b599a81104541f7402feccb3446ad50ddd73cfea20bd9191e9cfa533a382ec68d9ba1093038
+  languageName: node
+  linkType: hard
+
 "@fortawesome/react-fontawesome@npm:^3.5.0":
   version: 3.5.0
   resolution: "@fortawesome/react-fontawesome@npm:3.5.0"
@@ -11881,6 +11895,8 @@ __metadata:
   resolution: "suzannes-agency@workspace:."
   dependencies:
     "@base-ui/react": "npm:^1.8.0"
+    "@fontsource/dm-sans": "npm:^5.3.0"
+    "@fontsource/poppins": "npm:^5.3.0"
     "@fortawesome/react-fontawesome": "npm:^3.5.0"
     "@imagekit/next": "npm:^2.1.6"
     "@libsql/client": "npm:^0.18.0"

@@ -1,23 +1,18 @@
 import type { Metadata } from "next";
-import { Poppins, DM_Sans } from "next/font/google";
+import type { CSSProperties, ReactNode } from "react";
+import "@fontsource/poppins/latin-400.css";
+import "@fontsource/poppins/latin-500.css";
+import "@fontsource/poppins/latin-600.css";
+import "@fontsource/poppins/latin-700.css";
+import "@fontsource/dm-sans/latin-400.css";
+import "@fontsource/dm-sans/latin-500.css";
+import "@fontsource/dm-sans/latin-600.css";
+import "@fontsource/dm-sans/latin-700.css";
 import "./globals.css";
+
 import { cn } from "@/lib/utils";
 import { ThemeScript } from "@/components/theme-script";
 import { cookies } from "next/headers";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-dm",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "STEP — Skills, Talent & Employment Pathway",
@@ -25,9 +20,19 @@ export const metadata: Metadata = {
     "An opportunity pathway for Basotho talent. A proposed youth-led, non-profit institution connecting Basotho talent to learning, mentorship, supervised experience and markets.",
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   const cookieStore = await cookies();
   const appearance = cookieStore.get("appearance")?.value ?? "system";
+
+  const fontStyles = {
+    "--font-poppins": '"Poppins", sans-serif',
+    "--font-dm": '"DM Sans", sans-serif',
+    colorScheme: appearance === "dark" ? "dark" : "light",
+  } as CSSProperties;
 
   return (
     <html
@@ -35,11 +40,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       className={cn(
         "h-full",
         "antialiased",
-        poppins.variable,
-        dmSans.variable,
         appearance === "dark" && "dark",
       )}
-      style={{ colorScheme: appearance === "dark" ? "dark" : "light" }}
+      style={fontStyles}
     >
       <head>
         <ThemeScript />

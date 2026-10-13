@@ -1,5 +1,4 @@
 // lib/media/upload.ts
-import path from "node:path"
 
 export const MAX_UPLOAD_BYTES = 10 * 1024 * 1024 // 10 MB
 
@@ -20,11 +19,12 @@ export function isAllowed(mime: string) {
 }
 
 export function sanitizeFileName(name: string) {
-    const base = path.basename(name)
+    const base = name.split(/[\\/]/).pop() ?? ""
     const safe = base
         .replace(/[^\w.\- ]+/g, "")
         .replace(/\s+/g, "-")
         .toLowerCase()
+
     return safe || "file"
 }
 
@@ -37,5 +37,6 @@ export function buildKey(originalName: string) {
     const mm = String(now.getUTCMonth() + 1).padStart(2, "0")
     const uuid = crypto.randomUUID()
     const safe = sanitizeFileName(originalName)
+
     return `${yyyy}/${mm}/${uuid}-${safe}`
 }

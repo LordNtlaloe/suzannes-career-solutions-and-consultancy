@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "next build --webpack",
     "dev": "next dev",
     "start": "next start",
     "lint": "eslint",
@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/poppins": "^5.3.0",
     "@fortawesome/react-fontawesome": "^3.5.0",
     "@imagekit/next": "^2.1.6",
     "@libsql/client": "^0.18.0",

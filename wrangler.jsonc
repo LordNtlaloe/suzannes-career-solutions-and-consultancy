@@ -7,21 +7,30 @@
 		"nodejs_compat",
 		"global_fetch_strictly_public"
 	],
+	"workers_dev": false,
+	"preview_urls": false,
+	"routes": [
+		{
+			"pattern": "step.co.ls",
+			"custom_domain": true
+		}
+	],
+	"vars": {
+		"BETTER_AUTH_URL": "https://step.co.ls",
+		"IMAGEKIT_PUBLIC_KEY": "public_1bI9Iwi0PmvUlEBnm1c1kCQJ008=",
+		"TURSO_DATABASE_URL": "libsql://suzanne-lordntlaloe.aws-eu-west-1.turso.io"
+	},
 	"assets": {
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
 	},
 	"services": [
 		{
-			// Self-reference service binding, the service name must match the worker name
-			// see https://opennext.js.org/cloudflare/caching
 			"binding": "WORKER_SELF_REFERENCE",
 			"service": "suzannes-career-solutions-and-consultancy"
 		}
 	],
 	"images": {
-		// Enable image optimization
-		// see https://opennext.js.org/cloudflare/howtos/image
 		"binding": "IMAGES"
 	}
 }

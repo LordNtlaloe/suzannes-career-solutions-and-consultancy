@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { stepPageMetadata } from "@/lib/step/metadata";
+
 import { HeroSection } from "@/components/public/hero-section";
 import { VisionMission } from "@/components/public/vision-mission";
 import { ProgrammePillars } from "@/components/public/programme-pillars";
@@ -11,19 +12,16 @@ import { WhoStepServes } from "@/components/public/who-step-serves";
 import { SuccessMeasures } from "@/components/public/success-measures";
 import { DeliveryModel } from "@/components/public/delivery-model";
 import { Partnerships } from "@/components/public/partnerships";
-import { Governance } from "@/components/public/governance";
-import { Resources } from "@/components/public/resources";
-import { Funding } from "@/components/public/funding";
-import { Inclusion } from "@/components/public/inclusion";
-import { Risks } from "@/components/public/risks";
 import { MonitoringEvaluationLearning } from "@/components/public/mel";
 import { WorkPlan } from "@/components/public/work-plan";
 import { Invitation } from "@/components/public/invitation";
 import { TeamSection } from "@/components/public/team-section";
 
-const TITLE = "STEP — Skills, Talent & Employment Pathway";
+const TITLE = "STEP Lesotho — Skills, Talent & Employment Pathway";
+
 const DESCRIPTION =
-    "An opportunity pathway for Basotho talent. STEP is a proposed youth-led, non-profit institution connecting Basotho talent to learning, mentorship, supervised experience and markets.";
+    "Discover STEP, a proposed youth-led initiative connecting Basotho talent to skills development, mentorship, practical experience and employment pathways.";
+
 const OG_DESCRIPTION =
     "An opportunity pathway for Basotho talent — four connected programmes linking learning, mentorship, supervised experience and markets.";
 
@@ -36,24 +34,15 @@ export async function generateMetadata(): Promise<Metadata> {
 
     return {
         ...base,
-        keywords: [
-            "STEP",
-            "Skills Talent Employment Pathway",
-            "Basotho talent",
-            "Lesotho",
-            "youth employment",
-            "mentorship",
-            "incubation",
-            "skills development",
-        ],
         openGraph: {
             ...base.openGraph,
             type: "website",
-            siteName: "STEP",
+            siteName: "STEP Lesotho",
             title: TITLE,
             description: OG_DESCRIPTION,
         },
         twitter: {
+            ...base.twitter,
             card: "summary",
             title: TITLE,
             description: DESCRIPTION,
@@ -76,15 +65,9 @@ export default function HomePage() {
             <DeliveryModel />
             <Partnerships />
             <TeamSection />
-            {/* <Governance /> */}
-            
-            {/* <Resources /> */}
-            {/* <Funding /> */}
-            {/* <Inclusion /> */}
-            {/* <Risks /> */}
             <MonitoringEvaluationLearning />
             <WorkPlan />
             <Invitation />
         </>
     );
-}
+}   

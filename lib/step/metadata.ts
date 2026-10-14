@@ -1,31 +1,39 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
-import { getStepCanonicalUrl } from "@/lib/step/config";
 
-/**
- * Build metadata for a STEP page. STEP is served at the site root, so the
- * canonical URL is simply `https://<host><path>`.
- */
+const SITE_URL = new URL("https://step.co.ls");
+
 export async function stepPageMetadata(opts: {
     path: string;
     title: string;
     description: string;
     noIndex?: boolean;
 }): Promise<Metadata> {
-    const host = (await headers()).get("host") ?? "";
-    const canonical = getStepCanonicalUrl(host, opts.path);
+    const canonical = new URL(opts.path, SITE_URL).toString();
+    const indexable = !opts.noIndex;
 
     return {
+        metadataBase: SITE_URL,
         title: opts.title,
         description: opts.description,
+        alternates: {
+            canonical,
+        },
+        robots: {
+            index: indexable,
+            follow: indexable,
+        },
         openGraph: {
             title: opts.title,
             description: opts.description,
+            url: canonical,
+            siteName: "STEP Lesotho",
+            locale: "en_LS",
+            type: "website",
         },
-        alternates: { canonical },
-        robots: {
-            index: !opts.noIndex,
-            follow: !opts.noIndex,
+        twitter: {
+            card: "summary",
+            title: opts.title,
+            description: opts.description,
         },
     };
 }

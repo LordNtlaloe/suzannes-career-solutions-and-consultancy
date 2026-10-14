@@ -1,16 +1,14 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+const SITE_URL = "https://step.co.ls";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const now = new Date();
-
     return [
-        { url: `${baseUrl}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
-        { url: `${baseUrl}/apply`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-        { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-        { url: `${baseUrl}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-        { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-        { url: `${baseUrl}/news`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+        { url: `${SITE_URL}/` },
+        { url: `${SITE_URL}/apply` },
+        { url: `${SITE_URL}/about` },
+        { url: `${SITE_URL}/services` },
+        { url: `${SITE_URL}/contact` },
+        { url: `${SITE_URL}/news` },
     ];
 }

@@ -18,17 +18,17 @@ export function AboutPreview() {
                     </h2>
                     <div className="section-copy flex flex-col gap-4 leading-relaxed">
                         <p>
-                            STEP was conceived by Mammenyane Suzanne
-                            Mots&rsquo;oane through years of supporting job
-                            seekers — people with qualifications and ambition
-                            who were filtered out for lack of structure,
-                            evidence and a visible pathway into opportunity.
+                            STEP was co-founded by Mammenyane Suzanne
+                            Mots&rsquo;oane and Thabo Maibi, bringing together
+                            years of supporting job seekers with artificial
+                            intelligence and technology entrepreneurship.
                         </p>
                         <p>
-                            So she designed a continuous, non-profit pathway:
-                            four connected programmes linking learning,
-                            mentorship, supervised experience and markets,
-                            finished with a verified STEP Skills Passport.
+                            Together they designed a continuous, non-profit
+                            pathway: four connected programmes linking
+                            learning, mentorship, supervised experience and
+                            markets, finished with a verified STEP Skills
+                            Passport.
                         </p>
                     </div>
                     <div>

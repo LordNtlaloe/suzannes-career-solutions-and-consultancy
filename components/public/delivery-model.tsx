@@ -96,22 +96,22 @@ export function DeliveryModel() {
                     <img
                         src={current.image}
                         alt={current.title}
-                        className="h-[420px] w-full object-cover sm:h-[500px]"
+                        className="h-105 w-full object-cover sm:h-125"
                         loading="lazy"
                     />
-                    <div className="absolute -bottom-8 left-4 right-4 bg-white p-7 shadow-soft sm:left-8 sm:right-auto sm:max-w-[420px] dark:bg-[#242527]">
-                        <h3 className="text-[17px] font-semibold text-ink dark:text-white">
+                    <div className="absolute -bottom-8 left-4 right-4 bg-blue-dark p-7 shadow-btn sm:left-8 sm:right-auto sm:max-w-105">
+                        <h3 className="text-[17px] font-semibold text-white">
                             {current.title}
                         </h3>
-                        <p className="mt-3 text-[14px] leading-[26px] text-black/70 dark:text-white/70">
+                        <p className="mt-3 text-[14px] leading-6.5 text-white/90">
                             {current.body}
                         </p>
-                        <p className="mt-2 text-[12px] text-brand-muted">
+                        <p className="mt-2 text-[12px] text-white/70">
                             Evidence: {current.evidence}
                         </p>
                         <Link
                             href="/apply"
-                            className="group mt-5 inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[1.5px] text-blue-dark dark:text-blue-light"
+                            className="group mt-5 inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[1.5px] text-white transition-colors hover:text-white/80"
                         >
                             Learn more
                             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

@@ -48,11 +48,14 @@ export default function AboutPage() {
 
                         <div className="section-copy flex flex-col gap-4 leading-relaxed">
                             <p>
-                                STEP was conceived by Mammenyane Suzanne
-                                Mots&rsquo;oane, founder of Suzanne&rsquo;s Career
-                                Solutions &amp; Consultancy, through years of
-                                supporting job seekers with applications, career
-                                guidance and employability preparation.
+                                STEP was co-founded by Mammenyane Suzanne
+                                Mots&rsquo;oane and Thabo Maibi. Suzanne is the
+                                founder and CEO of Suzanne&rsquo;s Career Solutions
+                                &amp; Consultancy (SCS Consultancy) and holds a
+                                Master of Arts in Development Studies; Thabo is
+                                an engineer, AI researcher and technology
+                                entrepreneur who founded Career Agent, an
+                                AI-powered career platform.
                             </p>
                             <p>
                                 A strong CV or a single coaching session could

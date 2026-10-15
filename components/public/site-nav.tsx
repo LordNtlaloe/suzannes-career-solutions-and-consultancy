@@ -93,7 +93,7 @@ export function SiteNav() {
                         <SheetTrigger asChild>
                             <button
                                 type="button"
-                                className="ml-2 inline-flex h-8 w-8 items-center justify-center rounded-0 text-[#c4c4c4] hover:text-white md:hidden"
+                                className="ml-2 inline-flex h-8 w-8 items-center justify-center rounded-0 text-[#c4c4c4] hover:text-white max-sm:ml-auto md:hidden"
                                 aria-label="Open menu"
                             >
                                 <Menu className="h-5 w-5" />

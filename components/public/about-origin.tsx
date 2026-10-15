@@ -15,16 +15,19 @@ export function AboutOrigin() {
                         <h2 className="mt-4 text-[clamp(32px,4vw,48px)] font-bold leading-tight text-blue-dark">
                             Background &amp; origin
                         </h2>
-                        <p className="mt-6 max-w-[560px] text-[16px] leading-[28px] text-black/70">
-                            STEP was conceived by Mammenyane Suzanne
-                            Mots&rsquo;oane, founder of Suzanne&rsquo;s Career
-                            Solutions &amp; Consultancy. Through years of
-                            supporting job seekers, she saw that a strong CV or a
-                            single coaching session could not overcome missing
-                            skills, experience and networks. STEP is the
-                            independent, longer-term response &mdash; a proposed
-                            non-profit institution turning education and ambition
-                            into demonstrable skills and opportunity.
+                        <p className="mt-6 max-w-140 text-[16px] leading-7 text-black/70 dark:text-white/70">
+                            STEP was co-founded by Mammenyane Suzanne
+                            Mots&rsquo;oane and Thabo Maibi, combining youth
+                            employability and development practice with artificial
+                            intelligence and technology entrepreneurship. Through
+                            years of supporting job seekers, Suzanne saw that a
+                            strong CV or a single coaching session could not
+                            overcome missing skills, experience and networks.
+                            Thabo founded Career Agent, an AI-powered career
+                            platform. STEP is the independent, longer-term
+                            response &mdash; a proposed non-profit institution
+                            turning education and ambition into demonstrable
+                            skills and opportunity.
                         </p>
                         <Link
                             href="/about"
@@ -56,11 +59,11 @@ export function AboutOrigin() {
                         <img
                             src={images.story}
                             alt="Professionals collaborating"
-                            className="h-[480px] w-full rounded-lg border border-line object-cover bg-light shadow-soft"
+                            className="h-120 w-full rounded-lg border border-line object-cover bg-light shadow-soft"
                             loading="lazy"
                         />
-                        <div className="absolute -bottom-6 right-6 max-w-[380px] rounded-lg border border-line bg-white p-6 shadow-soft">
-                            <p className="text-[15px] leading-relaxed text-brand">
+                        <div className="absolute -bottom-6 right-6 max-w-95 rounded-lg bg-blue-dark p-6 shadow-btn">
+                            <p className="text-[15px] leading-relaxed text-white">
                                 STEP turns education and ambition into
                                 demonstrable skills, practical experience,
                                 enterprise growth and sustainable livelihoods

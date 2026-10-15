@@ -14,12 +14,14 @@ export function StorySection() {
                     </h2>
 
                     <p className="section-copy my-[30px] max-w-[550px]">
-                        STEP was conceived by Mammenyane Suzanne Mots&rsquo;oane,
-                        founder of Suzanne&rsquo;s Career Solutions &amp; Consultancy.
-                        Through years of supporting job seekers, she saw that a
-                        strong CV or a single coaching session could not overcome
-                        missing skills, experience and networks. The annual Career
-                        Excellence Youth Seminar proved the value of bringing
+                        STEP was co-founded by Mammenyane Suzanne Mots&rsquo;oane and
+                        Thabo Maibi in response to a shared challenge: too many
+                        capable young Basotho struggle to translate education,
+                        talent and ambition into demonstrable skills, credible work
+                        experience and meaningful economic opportunity. Suzanne
+                        founded SCS Consultancy and the annual Career Excellence
+                        Youth Seminar; Thabo founded Career Agent, an AI-powered
+                        career platform. The seminar proved the value of bringing
                         talent and employers together &mdash; and the limits of a
                         one-day event. STEP is the sustained follow-through: an
                         independent, non-profit institution turning education and

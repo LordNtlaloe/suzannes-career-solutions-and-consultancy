@@ -13,6 +13,8 @@ export const images = {
   project3: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=700&q=85",
   project4: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=85",
   client: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=85",
+  founderSuzanne: "/suzanne.jpeg",
+  founderThabo: "/thabo.jpeg",
 };
 
 export const services = [

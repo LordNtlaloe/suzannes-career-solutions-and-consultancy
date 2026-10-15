@@ -21,16 +21,16 @@ export function GoalsObjectives() {
                         <span className="text-[11px] font-semibold uppercase tracking-[2.4px] text-blue">
                             Goal &amp; objectives
                         </span>
-                        <h2 className="mt-4 max-w-[560px] text-[clamp(28px,3vw,40px)] font-bold leading-tight text-blue-dark">
+                        <h2 className="mt-4 max-w-140 text-[clamp(28px,3vw,40px)] font-bold leading-tight text-blue-dark">
                             Improve employability, enterprise readiness and
                             economic participation.
                         </h2>
-                        <p className="mt-5 max-w-[560px] text-[16px] leading-[28px] text-black/70">
+                        <p className="mt-5 max-w-140 text-[16px] leading-7 text-black/70 dark:text-white/70">
                             Accessible, measurable, market-linked development
                             pathways for Basotho youth.
                         </p>
 
-                        <ul className="mt-8 flex max-w-[560px] flex-col gap-3">
+                        <ul className="mt-8 flex max-w-140 flex-col gap-3">
                             {OBJECTIVES.map((objective) => (
                                 <li
                                     key={objective}
@@ -56,12 +56,12 @@ export function GoalsObjectives() {
                         <img
                             src={images.project2}
                             alt="Skills development in action"
-                            className="h-[520px] w-full rounded-lg border border-line object-cover bg-light shadow-soft"
+                            className="h-130 w-full rounded-lg border border-line object-cover bg-light shadow-soft"
                             loading="lazy"
                         />
-                        <div className="absolute -bottom-6 left-6 flex flex-col gap-1 rounded-lg border border-line bg-white p-6 shadow-soft">
-                            <span className="text-3xl font-bold text-blue-dark">75%</span>
-                            <span className="max-w-[220px] text-[13px] leading-relaxed text-brand">
+                        <div className="absolute -bottom-6 left-6 flex flex-col gap-1 rounded-lg bg-blue-dark p-6 shadow-btn">
+                            <span className="text-3xl font-bold text-white">75%</span>
+                            <span className="max-w-55 text-[13px] leading-relaxed text-white/90">
                                 of enrolled participants complete required
                                 learning &mdash; an indicative first-cycle target.
                             </span>

@@ -43,12 +43,12 @@ export function ProgrammePillars() {
             {/* Programme at a glance */}
             <section
                 id="programmes"
-                className="relative overflow-hidden bg-light py-16 text-ink dark:bg-[#052a3d] dark:text-white sm:py-24"
+                className="relative overflow-hidden bg-light py-16 text-ink dark:bg-[#202020] dark:text-white sm:py-24"
             >
                 {/* Subtle blue glow */}
                 <div
                     aria-hidden
-                    className="pointer-events-none absolute inset-0 bg-linear-to-br from-blue/10 via-transparent to-transparent dark:from-blue/20"
+                    className="pointer-events-none absolute inset-0 bg-linear-to-br from-blue/10 via-transparent to-transparent dark:hidden"
                 />
 
                 <div className="container-x relative z-1">
@@ -58,10 +58,10 @@ export function ProgrammePillars() {
                             <span className="text-[11px] font-semibold uppercase tracking-[2.4px] text-blue-dark dark:text-blue-light">
                                 Programme at a glance
                             </span>
-                            <h2 className="mt-3 max-w-[560px] text-[clamp(28px,3.4vw,42px)] font-semibold leading-[1.2] text-ink dark:text-white">
+                            <h2 className="mt-3 max-w-140 text-[clamp(28px,3.4vw,42px)] font-semibold leading-[1.2] text-ink dark:text-white">
                                 Four programme pillars.
                             </h2>
-                            <p className="mt-5 max-w-[560px] text-[16px] font-light leading-[28px] text-ink/70 dark:text-white/70">
+                            <p className="mt-5 max-w-140 text-[16px] font-light leading-7 text-ink/70 dark:text-white/70">
                                 STEP will support job seekers, emerging professionals,
                                 secondary-school learners, entrepreneurs and creative
                                 talent through four connected programmes.
@@ -77,7 +77,7 @@ export function ProgrammePillars() {
                                             <h3 className="text-[16px] font-semibold text-ink dark:text-white">
                                                 {pillar.title}
                                             </h3>
-                                            <p className="max-w-[480px] text-[14px] font-light leading-[24px] text-ink/60 dark:text-white/60">
+                                            <p className="max-w-120 text-[14px] font-light leading-6 text-ink/60 dark:text-white/60">
                                                 {pillar.gain}
                                             </p>
                                         </div>
@@ -105,7 +105,7 @@ export function ProgrammePillars() {
                             <img
                                 src={images.project2}
                                 alt="STEP participants collaborating"
-                                className="relative h-[420px] w-full rounded-none object-cover shadow-soft sm:h-[500px] lg:h-[580px]"
+                                className="relative h-105 w-full rounded-none object-cover shadow-soft sm:h-125 lg:h-145"
                                 loading="lazy"
                             />
                         </div>
@@ -114,7 +114,7 @@ export function ProgrammePillars() {
             </section>
 
             {/* Programme details */}
-            <section className="bg-white py-16 dark:bg-black sm:py-24">
+            <section className="bg-white py-16 dark:bg-[#202020] sm:py-24">
                 <div className="container-x">
                     <div className="flex flex-col gap-16 sm:gap-24">
                         {PILLARS.map((pillar, i) => {
@@ -129,7 +129,7 @@ export function ProgrammePillars() {
                                         <img
                                             src={pillar.image}
                                             alt={pillar.title}
-                                            className="h-64 w-full object-cover sm:h-80 lg:h-[460px]"
+                                            className="h-64 w-full object-cover sm:h-80 lg:h-115"
                                             loading="lazy"
                                         />
                                     </div>
@@ -151,10 +151,10 @@ export function ProgrammePillars() {
                                         <p className="mt-4 text-[15px] font-semibold text-blue-dark dark:text-blue-light">
                                             {pillar.gain}
                                         </p>
-                                        <p className="mt-4 text-[15px] font-light leading-[28px] text-ink/70 dark:text-white/70">
+                                        <p className="mt-4 text-[15px] font-light leading-7 text-ink/70 dark:text-white/70">
                                             {pillar.body}
                                         </p>
-                                        <p className="mt-3 text-[14px] font-light leading-[26px] text-ink/60 dark:text-white/60">
+                                        <p className="mt-3 text-[14px] font-light leading-6.5 text-ink/60 dark:text-white/60">
                                             {pillar.modules}
                                         </p>
                                         <Link

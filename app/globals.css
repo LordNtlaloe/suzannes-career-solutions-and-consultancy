@@ -154,7 +154,7 @@
 }
 
 .dark {
-  --background: #1a1a1a;
+  --background: #202020;
   --foreground: #f6f6f6;
 
   --card: #242527;
@@ -187,7 +187,7 @@
   --chart-4: #0a72ad;
   --chart-5: #003756;
 
-  --sidebar: #1a1a1a;
+  --sidebar: #202020;
   --sidebar-foreground: #f6f6f6;
 
   --sidebar-primary: #60bbee;
@@ -255,7 +255,7 @@
 
   .dark body,
   .dark .dark\:bg-brand-dark {
-    background: #1a1a1a;
+    background: #202020;
     color: #f6f6f6;
   }
 
@@ -390,7 +390,7 @@
 }
 
 .dark .team-section {
-  background: #1a1a1a !important;
+  background: #202020 !important;
 }
 
 .dark .client-strip {

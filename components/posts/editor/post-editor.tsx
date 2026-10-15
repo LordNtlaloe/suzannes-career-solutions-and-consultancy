@@ -323,7 +323,7 @@ export function PostEditor({ initial, mode, onCancel, onSaved }: PostEditorProps
                 {/* Sidebar */}
                 <div className="flex flex-col gap-3 min-w-0">
                     {/* Publish */}
-                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2">
+                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2 dark:bg-[#242527]">
                         <h3 className="font-semibold text-sm">Publish</h3>
                         <Select
                             value={publishMode}
@@ -353,7 +353,7 @@ export function PostEditor({ initial, mode, onCancel, onSaved }: PostEditorProps
                     </div>
 
                     {/* Cover image */}
-                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2">
+                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2 dark:bg-[#242527]">
                         <h3 className="font-semibold text-sm">Cover image</h3>
 
                         {coverMedia ? (
@@ -406,7 +406,7 @@ export function PostEditor({ initial, mode, onCancel, onSaved }: PostEditorProps
                     </div>
 
                     {/* Category */}
-                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2">
+                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2 dark:bg-[#242527]">
                         <h3 className="font-semibold text-sm">Category</h3>
                         <CategorySelect
                             value={categoryId}
@@ -417,13 +417,13 @@ export function PostEditor({ initial, mode, onCancel, onSaved }: PostEditorProps
                     </div>
 
                     {/* Tags */}
-                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2">
+                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2 dark:bg-[#242527]">
                         <h3 className="font-semibold text-sm">Tags</h3>
                         <TagSelect value={tags} onChange={setTags} />
                     </div>
 
                     {/* Excerpt */}
-                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2">
+                    <div className="rounded-lg border border-line bg-white p-3 flex flex-col gap-2 dark:bg-[#242527]">
                         <div className="flex items-center justify-between">
                             <h3 className="font-semibold text-sm">Excerpt</h3>
                             <Button

@@ -74,7 +74,7 @@ export function CommentForm({
                 rows={compact ? 2 : 3}
                 disabled={loading}
                 className={cn(
-                    "w-full rounded-0 border border-line bg-white px-3 py-2 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors resize-none",
+                    "w-full rounded-0 border border-line bg-white px-3 py-2 text-[13px] text-ink placeholder:text-[#a1a1a1] outline-none focus:border-blue-dark focus:ring-1 focus:ring-blue-dark transition-colors resize-none dark:bg-[#242527]",
                     compact ? "min-h-16" : "min-h-24"
                 )}
             />

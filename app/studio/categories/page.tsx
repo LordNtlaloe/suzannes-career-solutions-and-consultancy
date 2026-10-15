@@ -153,7 +153,7 @@ export default function CategoriesPage() {
                     />
                 </div>
 
-                <div className="inline-flex rounded-0 border border-line p-0.5 bg-white">
+                <div className="inline-flex rounded-0 border border-line p-0.5 bg-white dark:bg-[#242527]">
                     <button
                         type="button"
                         onClick={() => setView("tree")}
@@ -186,7 +186,7 @@ export default function CategoriesPage() {
             </div>
 
             {/* Body */}
-            <div className="rounded-lg border border-line bg-white p-4 sm:p-6">
+            <div className="rounded-lg border border-line bg-white p-4 sm:p-6 dark:bg-[#242527]">
                 {loading ? (
                     <div className="flex items-center justify-center py-8">
                         <p className="text-brand-muted">Loading categories...</p>

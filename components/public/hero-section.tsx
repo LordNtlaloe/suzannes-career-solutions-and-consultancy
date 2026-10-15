@@ -11,7 +11,7 @@ export function HeroSection() {
             <div className="hero-image-bg absolute inset-0 left-[59%] opacity-[.86] max-[1100px]:left-[52%] max-md:inset-0 max-md:opacity-35" />
 
             {/* Hero content */}
-            <div className="container-x relative z-2 pt-9.5 max-md:pt-[70px]">
+            <div className="container-x relative z-2 pt-9.5 max-md:pt-17.5">
                 <p className="mb-5.5 text-[11px] font-semibold tracking-[2.4px] text-blue-light">
                     SKILLS, TALENT &amp; EMPLOYMENT PATHWAY
                 </p>
@@ -44,21 +44,17 @@ export function HeroSection() {
             </div>
 
             {/* Hero stats */}
-            <div className="container-x absolute bottom-23.75 left-1/2 z-2 -translate-x-1/2 max-md:bottom-23.75 max-[520px]:bottom-26.25">
+            <div className="container-x absolute bottom-44 left-1/2 z-2 -translate-x-1/2 max-md:static max-md:mt-10 max-md:translate-x-0">
                 <div className="flex gap-13.5 max-md:gap-6.25 max-[520px]:gap-4.5">
                     <Stat value="4" label={<>Connected<br />Programmes</>} />
                     <Stat value="6" label={<>Month<br />Academy</>} />
-                    <Stat
-                        value="10"
-                        label={<>Districts<br />Served</>}
-                        className="max-[520px]:hidden"
-                    />
+                    <Stat value="10" label={<>Districts<br />Served</>} />
                 </div>
             </div>
 
             {/* Hero panel */}
-            <div className="absolute bottom-0 right-0 z-3 min-h-41.5 w-186.25 bg-panel-grad shadow-btn max-[1100px]:w-[58%] max-md:w-full">
-                <div className="flex h-41.5 items-center gap-7.5 p-[30px_32px] max-md:gap-4 max-md:p-5">
+            <div className="absolute bottom-0 right-0 z-3 min-h-41.5 w-186.25 bg-panel-grad shadow-btn max-[1100px]:w-[58%] max-md:static max-md:mt-10 max-md:w-full">
+                <div className="flex min-h-41.5 items-center gap-7.5 p-[30px_32px] max-md:flex-wrap max-md:gap-4 max-md:p-5">
                     <div>
                         <small className="block text-[9px]">SKILLS, TALENT &amp; EMPLOYMENT</small>
                         <b className="block text-[14px]">STEP</b>
@@ -73,7 +69,7 @@ export function HeroSection() {
                         </span>
                     </div>
 
-                    <p className="ml-auto max-w-75 text-[11px] leading-[1.7] max-md:hidden">
+                    <p className="ml-auto max-w-75 text-[11px] leading-[1.7] max-md:w-full max-md:max-w-full">
                         A youth-led, non-profit pathway linking learning,
                         mentorship, experience and markets.
                     </p>

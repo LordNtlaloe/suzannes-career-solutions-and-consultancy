@@ -5,7 +5,7 @@ import { SectionIntro } from "./section-intro";
 
 export function ServicesSection() {
     return (
-        <section id="services" className="bg-light/[.82] py-[80px] pb-[92px] dark:bg-[#1a1a1a]">
+        <section id="services" className="bg-light/[.82] py-[80px] pb-[92px] dark:bg-[#202020]">
             <div className="container-x">
                 <SectionIntro
                     heading={

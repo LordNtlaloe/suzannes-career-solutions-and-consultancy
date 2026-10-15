@@ -7,7 +7,7 @@ export function TrustBar() {
     ]
 
     return (
-        <section className="border-y border-line bg-light/82 dark:border-[#333] dark:bg-[#1a1a1a]">
+        <section className="border-y border-line bg-light/82 dark:border-[#333] dark:bg-[#202020]">
             <div className="container-x py-10">
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
                     {stats.map((s) => (

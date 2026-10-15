@@ -55,7 +55,7 @@ function CategoryRow({
     return (
         <div
             className={cn(
-                "group flex items-center gap-3 rounded-0 border border-line bg-white px-3 py-2",
+                "group flex items-center gap-3 rounded-0 border border-line bg-white px-3 py-2 dark:bg-[#242527]",
                 "hover:border-ink/20 transition-colors"
             )}
         >

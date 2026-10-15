@@ -27,7 +27,7 @@ export function MediaCard({ media, selected, onClick, onDelete }: MediaCardProps
     return (
         <div
             className={cn(
-                "group relative flex flex-col overflow-hidden rounded-0 border border-line bg-white transition-all",
+                "group relative flex flex-col overflow-hidden rounded-0 border border-line bg-white transition-all dark:bg-[#242527]",
                 "hover:border-ink/30",
                 selected && "ring-2 ring-primary border-primary",
                 onClick && "cursor-pointer"

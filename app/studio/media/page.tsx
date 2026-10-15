@@ -164,7 +164,7 @@ export default function MediaPage() {
             </div>
 
             {/* Grid */}
-            <div className="rounded-lg border border-line bg-white p-4">
+            <div className="rounded-lg border border-line bg-white p-4 dark:bg-[#242527]">
                 {loading ? (
                     <div className="flex items-center justify-center py-12">
                         <p className="text-brand-muted">Loading media...</p>

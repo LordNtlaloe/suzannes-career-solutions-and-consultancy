@@ -134,7 +134,7 @@ export default function TagsPage() {
             </div>
 
             {/* List */}
-            <div className="rounded-lg border border-line bg-white p-4 sm:p-6">
+            <div className="rounded-lg border border-line bg-white p-4 sm:p-6 dark:bg-[#242527]">
                 {loading ? (
                     <div className="flex items-center justify-center py-8">
                         <p className="text-brand-muted">Loading tags...</p>

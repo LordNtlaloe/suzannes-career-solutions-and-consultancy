@@ -5,7 +5,7 @@ import { ChevronRight, FileText, Folder } from "lucide-react"
 import { listPublishedPostsAction, countPublishedPostsAction } from "@/actions/post.actions"
 
 import { cn } from "@/lib/utils"
-import { PublicFilters } from "./public-filters"
+import { NewsFilters } from "./news-filters"
 import { PublicPagination } from "./public-pagination"
 import { PublicPostCard } from "./public-post-card"
 import { PublicSearch } from "./public-search"
@@ -172,7 +172,7 @@ export async function PostGridPage({
             {showFilters && (categories.length > 0 || tags.length > 0) && (
                 <div className="mb-8">
                     <Suspense fallback={null}>
-                        <PublicFilters
+                        <NewsFilters
                             categories={categories}
                             tags={tags}
                             activeCategorySlug={activeCategorySlug}

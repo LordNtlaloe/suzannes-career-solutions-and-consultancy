@@ -4,7 +4,7 @@ export function MissionVision() {
     return (
         <section
             id="mission"
-            className="scroll-mt-16 border-y border-line bg-light/82 dark:border-[#333] dark:bg-[#1a1a1a]"
+            className="scroll-mt-16 border-y border-line bg-light/82 dark:border-[#333] dark:bg-[#202020]"
         >
             <div className="container-x py-16 sm:py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">

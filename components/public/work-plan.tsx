@@ -13,7 +13,7 @@ const WORKPLAN = [
 
 export function WorkPlan() {
     return (
-        <section className="relative overflow-hidden bg-white dark:bg-[#1a1a1a]">
+        <section className="relative overflow-hidden bg-white dark:bg-[#202020]">
             {/* Content */}
             <div className="container-x relative z-1 py-16 sm:py-20">
                 <div className="max-w-xl">

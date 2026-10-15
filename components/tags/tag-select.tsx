@@ -171,7 +171,7 @@ export function TagSelect({
 
             {/* Dropdown */}
             {open && (loading || filtered.length > 0 || canCreate) && (
-                <div className="absolute z-50 mt-1 w-full rounded-0 border border-line bg-white shadow-md max-h-64 overflow-y-auto">
+                <div className="absolute z-50 mt-1 w-full rounded-0 border border-line bg-white shadow-md max-h-64 overflow-y-auto dark:bg-[#242527]">
                     {loading ? (
                         <p className="p-3 text-xs text-muted-foreground">
                             Loading tags...

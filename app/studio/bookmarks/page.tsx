@@ -85,7 +85,7 @@ export default function SavedPostsPage() {
                 ]}
             />
 
-            <div className="rounded-lg border border-line bg-white p-3 sm:p-4">
+            <div className="rounded-lg border border-line bg-white p-3 sm:p-4 dark:bg-[#242527]">
                 {loading ? (
                     <p className="text-center text-brand-muted py-8">
                         Loading...

@@ -22,7 +22,7 @@ export function AppearanceTabs({
     return (
         <div
             className={cn(
-                "inline-flex items-center gap-0.5 rounded-0 border border-line bg-white p-0.5",
+                "inline-flex items-center gap-0.5 rounded-0 border border-line bg-white p-0.5 dark:bg-[#242527]",
                 className
             )}
             role="group"

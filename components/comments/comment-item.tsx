@@ -105,7 +105,7 @@ export function CommentItem({
         >
             <div
                 className={cn(
-                    "flex gap-3 rounded-lg border border-line bg-white p-3",
+                    "flex gap-3 rounded-lg border border-line bg-white p-3 dark:bg-[#242527]",
                     isDeleted && "opacity-60"
                 )}
             >
@@ -199,7 +199,7 @@ export function CommentItem({
                                     </button>
                                     <div
                                         id={`comment-menu-${comment.id}`}
-                                        className="hidden absolute top-full left-0 mt-1 z-10 min-w-30 rounded-0 border border-line bg-white shadow-soft py-1"
+                                        className="hidden absolute top-full left-0 mt-1 z-10 min-w-30 rounded-0 border border-line bg-white shadow-soft py-1 dark:bg-[#242527]"
                                     >
                                         {canEdit && (
                                             <button

@@ -3,7 +3,7 @@ import { images } from "@/lib/data";
 
 export function StorySection() {
     return (
-        <section id="about" className="py-[100px] dark:bg-[#1a1a1a]">
+        <section id="about" className="py-[100px] dark:bg-[#202020]">
             <div className="container-x grid grid-cols-1 items-center gap-[70px] md:grid-cols-[.95fr_1.05fr]">
                 {/* Copy */}
                 <div>

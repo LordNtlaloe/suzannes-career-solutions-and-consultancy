@@ -278,7 +278,7 @@ export function StepNav({ signedIn, userName, roles, hasAdminTools, hasPartners 
                                         <SheetClose asChild>
                                             <Link
                                                 href={signInHref}
-                                                className="flex w-full items-center justify-center rounded-0 bg-white px-3 py-2.5 text-[14px] font-semibold text-hero-grad"
+                                                className="flex w-full items-center justify-center rounded-0 bg-white px-3 py-2.5 text-[14px] font-semibold text-hero-grad dark:bg-[#242527] dark:text-white"
                                             >
                                                 Sign in
                                             </Link>

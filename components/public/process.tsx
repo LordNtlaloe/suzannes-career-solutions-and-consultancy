@@ -21,7 +21,7 @@ export function Process() {
     return (
         <section
             id="process"
-            className="scroll-mt-16 border-y border-line bg-light/82 dark:border-[#333] dark:bg-[#1a1a1a]"
+            className="scroll-mt-16 border-y border-line bg-light/82 dark:border-[#333] dark:bg-[#202020]"
         >
             <div className="container-x py-16 sm:py-20">
                 <header className="flex flex-col gap-3 max-w-2xl mb-12">

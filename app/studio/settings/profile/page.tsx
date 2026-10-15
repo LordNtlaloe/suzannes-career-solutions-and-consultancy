@@ -476,7 +476,7 @@ function RecentCommentsList({
                         <li key={c.id}>
                             <Link
                                 href={`/news/${c.post_slug}#comment-${c.id}`}
-                                className="flex flex-col gap-1.5 rounded-lg border border-line bg-white p-3 hover:border-ink/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue"
+                                className="flex flex-col gap-1.5 rounded-lg border border-line bg-white p-3 hover:border-ink/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue dark:bg-[#242527]"
                             >
                                 <div className="flex items-center gap-2 text-xs text-brand-muted">
                                     <span className="truncate">
@@ -512,7 +512,7 @@ function ActivityPostRow({ post }: { post: any }) {
         <li>
             <Link
                 href={`/news/${post.slug}`}
-                className="flex items-center gap-3 rounded-lg border border-line bg-white p-3 hover:border-ink/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue"
+                className="flex items-center gap-3 rounded-lg border border-line bg-white p-3 hover:border-ink/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue dark:bg-[#242527]"
             >
                 <div className="relative h-12 w-16 shrink-0 overflow-hidden rounded-0 border border-line bg-light">
                     {cover ? (
@@ -553,7 +553,7 @@ function ActivitySkeleton() {
             {Array.from({ length: 3 }).map((_, i) => (
                 <div
                     key={i}
-                    className="flex items-center gap-3 rounded-lg border border-line bg-white p-3"
+                    className="flex items-center gap-3 rounded-lg border border-line bg-white p-3 dark:bg-[#242527]"
                 >
                     <div className="h-12 w-16 shrink-0 rounded-0 bg-light animate-pulse" />
                     <div className="flex-1 flex flex-col gap-2">
@@ -576,7 +576,7 @@ function EmptyRow({
     actionHref?: string
 }) {
     return (
-        <div className="flex flex-col items-center gap-2 rounded-lg border border-line bg-white py-8 text-center">
+        <div className="flex flex-col items-center gap-2 rounded-lg border border-line bg-white py-8 text-center dark:bg-[#242527]">
             <p className="text-sm text-brand-muted">{message}</p>
             {actionLabel && actionHref && (
                 <Button asChild variant="outline" size="sm">
